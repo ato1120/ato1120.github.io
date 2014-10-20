@@ -200,7 +200,7 @@ header{
 }
 
 #tabsContainer{
-	width:525px;
+	width:540px; /*OLD: 525PX */;
 	float:left;
 	background:#e3e2e2;
 	border-radius:4px;
@@ -379,17 +379,25 @@ ul#socials  li.vm:hover{background: url(../images/social-sprite.png) no-repeat -
 	height:17px;
 }
 
-#skills  li span.r1{background: url(../images/rating-sprite.png) no-repeat scroll 0 -56px}
+/*
+6 + 6
+5 - 36
+4 - 56
+3 - 76
+2 - 16
+*/
+#skills  li span.r1{background: url(../images/rating-sprite.png) no-repeat scroll 0 +06px}
 #skills  li span.r2{background: url(../images/rating-sprite.png) no-repeat scroll 0 -76px}
 #skills  li span.r3{background: url(../images/rating-sprite.png) no-repeat scroll 0 -36px}
 #skills  li span.r4{background: url(../images/rating-sprite.png) no-repeat scroll 0 -56px}
 #skills  li span.r5{background: url(../images/rating-sprite.png) no-repeat scroll 0 -76px}
 
-#skills  li span.r6{background: url(../images/rating-sprite.png) no-repeat scroll 0 -56px}
-#skills  li span.r7{background: url(../images/rating-sprite.png) no-repeat scroll 0 -76px}
+#skills  li span.r6{background: url(../images/rating-sprite.png) no-repeat scroll 0 +06px}
+#skills  li span.r7{background: url(../images/rating-sprite.png) no-repeat scroll 0 +06px}
 #skills  li span.r8{background: url(../images/rating-sprite.png) no-repeat scroll 0 -36px}
-#skills  li span.r9{background: url(../images/rating-sprite.png) no-repeat scroll 0 -76px}
+#skills  li span.r9{background: url(../images/rating-sprite.png) no-repeat scroll 0 -36px}
 #skills  li span.r10{background: url(../images/rating-sprite.png) no-repeat scroll 0 -56px}
+#skills  li span.r11{background: url(../images/rating-sprite.png) no-repeat scroll 0 -76px}
 
 
 
