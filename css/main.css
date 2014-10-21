@@ -400,7 +400,7 @@ ul#socials  li.vm:hover{background: url(../images/social-sprite.png) no-repeat -
 2 - 16
 */
 #skills  li span.r1{background: url(../images/rating-sprite.png) no-repeat scroll 0 +06px}
-#skills  li span.r2{background: url(../images/rating-sprite.png) no-repeat scroll 0 -76px}
+#skills  li span.r2{background: url(../images/rating-sprite.png) no-repeat scroll 0 -36px}
 #skills  li span.r3{background: url(../images/rating-sprite.png) no-repeat scroll 0 -36px}
 #skills  li span.r4{background: url(../images/rating-sprite.png) no-repeat scroll 0 -56px}
 #skills  li span.r5{background: url(../images/rating-sprite.png) no-repeat scroll 0 -76px}
@@ -1268,8 +1268,9 @@ blockquote.style3{
 	outline-width: 0;
 }
 
-
-.replyForm input[type="text"]:hover, input[type="email"]:hover, .commentForm input[type="text"]:hover, input[type="email"]:hover, .replyForm textarea:hover, .commentForm textarea:hover  {
+/* You might have broken this here */
+.replyForm input[type="text"]:hover, input[type="email"]:hover, .commentForm input[type="text"]:hover, 
+	input[type="email"]:hover, .replyForm textarea:hover, .commentForm textarea:hover  {
 	background:#fff;
 	border:1px solid #c0c0c0;
 	color:#CD5353;
