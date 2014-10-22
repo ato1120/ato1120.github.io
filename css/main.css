@@ -123,9 +123,6 @@ header{
 #mainNav li.active{
 	border-right: 5px solid #CD5353;
 	background:#fff  url(../images/nav-arrow-active.png) no-repeat 102% center;
-	
-	
-	
 }
 
 #mainNav li.active .tab-about{
@@ -579,9 +576,6 @@ blockquote.style3{
 	color:#ffffff;
 }
 
-
-
-
 .selected{
 	background:#CD5353;
 	border:1px solid #CD5353;
@@ -595,7 +589,7 @@ blockquote.style3{
 	padding:5px 8px 5px 8px;
 	color:#ffffff !important;
 }
-/* End experience tab */ 
+/* End experienc tab */ 
 
 
 /* Research tab */
@@ -607,7 +601,7 @@ blockquote.style3{
 	font-family: "Signika";
 	font-size:18px;
 	color:#CD5353;
-	margin: 0 0 10px;
+	margin: 0 0 10pex;
 	padding:0;
 }
 
