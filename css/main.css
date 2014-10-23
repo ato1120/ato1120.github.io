@@ -93,25 +93,31 @@ header{
 
 }
 
+/*ICON COLORS
+RED: #CB5456
+DARK RED: #B64C4D
+GRAY: #CCCCCC
+DRAK GRAY: #B7B7B7
+*/
+
 #mainNav li a.tab-about{
 	background-image: url(../images/about-ico.png);
 	background-position: 14px 7px;
 }
 
 #mainNav li a.tab-portfolio{
-	background-image: url(../images/folio-ico.png);
+	background-image: url(../images/broadcast.png);
 	background-position: 14px 7px;
 
 }
 
 #mainNav li a.tab-research{
-	background-image: url(../images/blog-ico.png);
+	background-image: url(../images/book.png);
 	background-position: 14px 7px;
-
 }
 
 #mainNav li a.tab-exp{
-	background-image: url(../images/blog-ico.png);
+	background-image: url(../images/laptop.png);
 	background-position: 14px 7px;
 }
 
@@ -133,21 +139,21 @@ header{
 }
 
 #mainNav li.active .tab-portfolio{
-	background-image: url(../images/folio-ico-active.png);
+	background-image: url(../images/broadcast-active.png);
 	background-position: 14px 7px;
 	color:#CD5353;
 	
 }
 
 #mainNav li.active .tab-research{
-	background-image: url(../images/blog-ico-active.png);
+	background-image: url(../images/book-active.png);
 	background-position: 14px 7px;
 	color:#CD5353;
 	
 }
 
 #mainNav li.active .tab-exp{
-	background-image: url(../images/blog-ico-active.png);
+	background-image: url(../images/laptop-active.png);
 	background-position: 14px 7px;
 	color:#CD5353;
 	
