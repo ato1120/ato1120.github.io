@@ -169,8 +169,13 @@ DRAK GRAY: #B7B7B7
 	
 }
 
-
 /* End main navigation */
+
+#header img {
+	padding-left: 10px;
+	max-width: 220px;
+}
+
 #img{
 	margin-left:12px;
 	margin-bottom:50px;
