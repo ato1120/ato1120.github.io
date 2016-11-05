@@ -295,7 +295,7 @@ ul#socials  li.vm:hover{background: url(../images/social-sprite.png) no-repeat -
 /* About tab */
 #about{
 	
-	font-size:12px;
+	font-size:14px;
 	width:478px;
 }
 
@@ -631,7 +631,7 @@ blockquote.style3{
 }
 
 #research p{
-	font-size:12px;
+	font-size:14px;
 	margin-bottom:20px;
 }
 
