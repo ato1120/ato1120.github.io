@@ -340,4 +340,19 @@ ul.blogInfo-no-image li{
 	margin-right:25px;
 }
 
+.imgInfo{
+	position:relative;
+	margin-bottom:10px;
+}
+
+.imgInfo img{
+	width:100%;
+	height:150px;
+}
+
+
+.info{
+	position:relative;
+	margin-bottom:10px;
+}
 

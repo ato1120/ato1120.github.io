@@ -613,26 +613,31 @@ blockquote.style3{
 	padding:0;
 }
 
-
-.imgInfo{
-	position:relative;
-	margin-bottom:10px;
+#research h3 {
+	font-style: italic;
 }
 
-.imgInfo img{
-	width:100%;
-	height:150px;
+#research div {
+	border-style: dashed;
+	border-width: thin; 
+	padding: 3px;
+	float:left; 
+	height: 100px;
+	position: relative;
+	margin-bottom: 10px;
 }
 
-
-.info{
-	position:relative;
-	margin-bottom:10px;
+#research img {
+	max-width: 125px;
+	max-height: 100px;
+	float: left;
+	padding-right: 6px;
 }
 
 #research p{
 	font-size:14px;
 	margin-bottom:20px;
+	width: 490px;
 }
 
 blockquote ~ p {
@@ -1152,6 +1157,8 @@ ul#socials {margin-left: 72px;}
 #styleSwitcher{display:none;}
 	
 }
+
+
 
 
 /*End media queries*/
