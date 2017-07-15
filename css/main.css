@@ -124,11 +124,16 @@ DRAK GRAY: #B7B7B7
 	background-position: 14px 7px;
 }
 
+#mainNav li a.tab-misc{
+	background-image: url(../images/folio-ico.png);
+	background-position: 14px 7px;
+}
+
 #mainNav li a.tab-contact{
 	background-image: url(../images/contact-ico.png);
 	background-position: 14px 7px;
-
 }
+
 #mainNav li.active{
 	border-right: 5px solid #b22626;
 	background:#fff  url(../images/nav-arrow-active.png) no-repeat 102% center;
@@ -143,6 +148,13 @@ DRAK GRAY: #B7B7B7
 
 #mainNav li.active .tab-portfolio{
 	background-image: url(../images/broadcast-active.png);
+	background-position: 14px 7px;
+	color:#b22626;
+	
+}
+
+#mainNav li.active .tab-misc{
+	background-image: url(../images/folio-ico-active.png);
 	background-position: 14px 7px;
 	color:#b22626;
 	
@@ -603,6 +615,54 @@ blockquote.style3{
 	color:#ffffff !important;
 }
 /* End experienc tab */ 
+
+
+
+
+/*  Miscellaneous Projects tab*/
+#misc{
+	width: 478px;
+}
+
+#misc h1{
+	font-family: "Signika";
+	font-size:18px;
+	color:#b22626;
+	margin: 0 0 10pex;
+	padding:0;
+}
+
+#misc h3 {
+	font-style: italic;
+}
+
+#misc div {
+	border-style: dashed;
+	border-width: thin; 
+	padding: 3px;
+	float:left; 
+	height: 100px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+
+#misc img {
+	max-width: 125px;
+	max-height: 100px;
+	float: left;
+	padding-right: 6px;
+}
+
+#misc p{
+	font-size:14px;
+	margin-bottom:20px;
+	width: 490px;
+}
+
+/*  End Miscellaneous Projects tab*/
+
+
 
 
 /* Research tab */
