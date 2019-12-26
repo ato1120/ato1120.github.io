@@ -9,13 +9,26 @@ html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h
 	font: inherit;
 	text-decoration:none;
 	list-style:none;
-	
 }
 
 
-a.hover, a.hover:hover {
-	text-decoration: underline;
+a { 
+	color: #696969; 
+	text-decoration: underline;}
+
+a:link {
+ 	color: #696969;
 }
+
+a:visited {
+ 	color: #696969;
+}
+
+a:hover {
+	color: black;
+}
+
+
 
 /*html5 display rule*/
 address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
@@ -90,7 +103,7 @@ header{
 	font-weight:300;
 	font-size:15px;
 	color:#787878;
-
+	text-decoration: none;
 	height:21px;
 
 
