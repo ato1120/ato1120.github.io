@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>CARE_Vignette_Design_TEMPLATE</title>
+<title>CARE_Design_TEMPLATE</title>
 <style title="Twine CSS">@-webkit-keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes appear{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@-webkit-keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@-webkit-keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@-webkit-keyframes box-flash{0%{background-color:white;color:white}}@keyframes box-flash{0%{background-color:white;color:white}}@-webkit-keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@-webkit-keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@-webkit-keyframes rumble-in{0%, to{-webkit-transform:translateY(0em);transform:translateY(0em)}5%, 25%, 45%{-webkit-transform:translateY(-1em);transform:translateY(-1em)}15%, 35%, 55%{-webkit-transform:translateY(1em);transform:translateY(1em)}65%{-webkit-transform:translateY(-0.6em);transform:translateY(-0.6em)}75%{-webkit-transform:translateY(0.6em);transform:translateY(0.6em)}85%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}95%{-webkit-transform:translateY(0.2em);transform:translateY(0.2em)}}@keyframes rumble-in{0%, to{-webkit-transform:translateY(0em);transform:translateY(0em)}5%, 25%, 45%{-webkit-transform:translateY(-1em);transform:translateY(-1em)}15%, 35%, 55%{-webkit-transform:translateY(1em);transform:translateY(1em)}65%{-webkit-transform:translateY(-0.6em);transform:translateY(-0.6em)}75%{-webkit-transform:translateY(0.6em);transform:translateY(0.6em)}85%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}95%{-webkit-transform:translateY(0.2em);transform:translateY(0.2em)}}@-webkit-keyframes slide-right{0%{-webkit-transform:translateX(-100vw);transform:translateX(-100vw)}}@keyframes slide-right{0%{-webkit-transform:translateX(-100vw);transform:translateX(-100vw)}}@-webkit-keyframes slide-left{0%{-webkit-transform:translateX(100vw);transform:translateX(100vw)}}@keyframes slide-left{0%{-webkit-transform:translateX(100vw);transform:translateX(100vw)}}@-webkit-keyframes slide-up{0%{-webkit-transform:translateY(100vh);transform:translateY(100vh)}}@keyframes slide-up{0%{-webkit-transform:translateY(100vh);transform:translateY(100vh)}}@-webkit-keyframes slide-down{0%{-webkit-transform:translateY(-100vh);transform:translateY(-100vh)}}@keyframes slide-down{0%{-webkit-transform:translateY(-100vh);transform:translateY(-100vh)}}@-webkit-keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}.debug-mode tw-expression[type=hookref]{background-color:rgba(115,123,140,0.15)}.debug-mode tw-expression[type=hookref]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"?" attr(name)}.debug-mode tw-expression[type=variable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+0){background-color:rgba(136,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(2n+1){background-color:rgba(102,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+2){background-color:rgba(102,153,136,0.15)}.debug-mode tw-expression[type=macro][name="for"],.debug-mode tw-expression[type=macro][name="loop"],.debug-mode tw-expression[type=macro][name="print"],.debug-mode tw-expression[type=macro][name="enchant"],.debug-mode tw-expression[type=macro][name="display"]{background-color:rgba(0,170,255,0.1) !important}.debug-mode tw-expression[type=macro][name="if"],.debug-mode tw-expression[type=macro][name="if"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="unless"],.debug-mode tw-expression[type=macro][name="unless"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="elseif"],.debug-mode tw-expression[type=macro][name="elseif"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="else"],.debug-mode tw-expression[type=macro][name="else"]+tw-hook:not([name]){background-color:rgba(0,255,0,0.1) !important}.debug-mode tw-expression[type=macro][name="hidden"],.debug-mode tw-expression[type=macro].false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro][name="hidden"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro].false+tw-hook:not([name]){display:none}.debug-mode tw-expression[type=macro][name="either"],.debug-mode tw-expression[type=macro][name="a"],.debug-mode tw-expression[type=macro][name="dm"],.debug-mode tw-expression[type=macro][name="ds"],.debug-mode tw-expression[type=macro][name="array"],.debug-mode tw-expression[type=macro][name^="sub"],.debug-mode tw-expression[type=macro][name="altered"],.debug-mode tw-expression[type=macro][name="count"],.debug-mode tw-expression[type=macro][name^="data"],.debug-mode tw-expression[type=macro][name="find"],.debug-mode tw-expression[type=macro][name$="ed"],.debug-mode tw-expression[type=macro][name$="-pass"],.debug-mode tw-expression[type=macro][name="range"],.debug-mode tw-expression[type=macro][name^="num"],.debug-mode tw-expression[type=macro][name^="str"],.debug-mode tw-expression[type=macro][name="text"],.debug-mode tw-expression[type=macro][name^="lower"],.debug-mode tw-expression[type=macro][name^="upper"],.debug-mode tw-expression[type=macro][name="words"],.debug-mode tw-expression[type=macro][name="ceil"],.debug-mode tw-expression[type=macro][name="floor"],.debug-mode tw-expression[type=macro][name="random"],.debug-mode tw-expression[type=macro][name="abs"],.debug-mode tw-expression[type=macro][name="cos"],.debug-mode tw-expression[type=macro][name="exp"],.debug-mode tw-expression[type=macro][name^="log"],.debug-mode tw-expression[type=macro][name="max"],.debug-mode tw-expression[type=macro][name="min"],.debug-mode tw-expression[type=macro][name="pow"],.debug-mode tw-expression[type=macro][name="sign"],.debug-mode tw-expression[type=macro][name="sin"],.debug-mode tw-expression[type=macro][name="sqrt"],.debug-mode tw-expression[type=macro][name="tan"],.debug-mode tw-expression[type=macro][name="round"],.debug-mode tw-expression[type=macro][name^="hsl"],.debug-mode tw-expression[type=macro][name^="rgb"]{background-color:rgba(255,255,0,0.2) !important}.debug-mode tw-expression[type=macro][name$="-game"],.debug-mode tw-expression[type=macro][name="move"],.debug-mode tw-expression[type=macro][name="put"],.debug-mode tw-expression[type=macro][name="set"]{background-color:rgba(255,128,0,0.2) !important}.debug-mode tw-expression[type=macro][name^="link"],.debug-mode tw-expression[type=macro][name$="-link"],.debug-mode tw-expression[type=macro][name="dropdown"],.debug-mode tw-expression[type=macro][name^="click"],.debug-mode tw-expression[type=macro][name="goto"],.debug-mode tw-expression[type=macro][name="undo"],.debug-mode tw-expression[type=macro][name^="mouseo"]{background-color:rgba(32,191,223,0.2) !important}.debug-mode tw-expression[type=macro][name^="replace"],.debug-mode tw-expression[type=macro][name^="prepend"],.debug-mode tw-expression[type=macro][name^="append"],.debug-mode tw-expression[type=macro][name="show"],.debug-mode tw-expression[type=macro][name^="remove"]{background-color:rgba(223,96,32,0.2) !important}.debug-mode tw-expression[type=macro][name="event"],.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(32,32,223,0.2) !important}.debug-mode tw-expression[type=macro][name="align"],.debug-mode tw-expression[type=macro][name^="colo"],.debug-mode tw-expression[type=macro][name="background"],.debug-mode tw-expression[type=macro][name="css"],.debug-mode tw-expression[type=macro][name="font"],.debug-mode tw-expression[type=macro][name="hook"],.debug-mode tw-expression[type=macro][name$="-style"],.debug-mode tw-expression[type=macro][name^="text-"],.debug-mode tw-expression[type=macro][name^="transition"],.debug-mode tw-expression[type=macro][name^="t8n"],.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(255,191,0,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;-webkit-animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}@-webkit-keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em 1em 1em 1em;font-size:1.25em;font-family:sans-serif;color:#000;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit;color:#000}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .panel{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger .panel table{border-spacing:0px}tw-debugger .variable-row{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;flex-shrink:0}tw-debugger .variable-row:nth-child(2n){background:#EEE}tw-debugger .variable-name{display:inline-block;width:50%}tw-debugger .temporary-variable-scope{opacity:0.8;font-size:0.75em}tw-debugger .temporary-variable-scope::before{content:" in "}tw-debugger .global::before{content:"$"}tw-debugger .temporary::before{content:"_"}tw-debugger .variable-path{opacity:0.4}tw-debugger .variable-value{display:inline-block;width:50%}tw-debugger .error-row{background-color:rgba(230,101,204,0.3)}tw-debugger .error-row:nth-child(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .error-row *{padding:0.25em 0.5em}tw-debugger .error-row .error-message{cursor:help}tw-debugger .panel-source{font-family:monospace;overflow-x:scroll;white-space:pre}tw-debugger .tabs{padding-bottom:0.5em}tw-debugger .tab{border-radius:0px 0px 0.5em 0.5em;border-top:none}tw-dialog{z-index:999997;position:fixed;left:auto;right:auto;bottom:auto;top:auto;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block;max-width:50vw;max-height:75vh;overflow:hidden}tw-dialog input[type=text]{font-size:inherit;width:100%}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-passage tw-enchantment[style^="color"] tw-link:not(:hover),tw-passage tw-enchantment[style*=" color"] tw-link:not(:hover),tw-passage tw-enchantment[style^="color"] .enchantment-link:not(:hover),tw-passage tw-enchantment[style*=" color"] .enchantment-link:not(:hover){color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-passage tw-enchantment[style^="color"] .visited:not(:hover),tw-passage tw-enchantment[style*=" color"] .visited:not(:hover){color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-passage tw-enchantment[style^="color"] tw-broken-link:not(:hover),tw-passage tw-enchantment[style*=" color"] tw-broken-link:not(:hover){color:inherit}.enchantment-mouseover{border-bottom:1px dashed #666}.enchantment-mouseout{border:rgba(64,149,191,0.25) 1px solid}.enchantment-mouseout:hover{background-color:rgba(64,149,191,0.25);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{box-shadow:inset 0 0 0 0.5vmax;display:block;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock:hover{color:rgba(0,191,255,0.5)}.enchantment-clickblock:active{color:rgba(222,78,59,0.5)}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 20%;margin:0;overflow:hidden;background-color:#000;color:#fff}tw-story br[data-cons]{display:block;height:0;margin:0.8ex 0}tw-story select{background-color:transparent;font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-passage{display:block}tw-sidebar{left:-5em;width:3em;position:absolute;text-align:center;display:block}tw-icon{display:block;margin:0.5em 0;opacity:0.2;font-size:2.75em}tw-icon:hover{opacity:0.4}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help}tw-error.error{background-color:rgba(223,58,190,0.4);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.4);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-error-explanation-button{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;opacity:0.5}tw-error-explanation-button .folddown-arrowhead{display:inline-block}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate;-webkit-animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-justify-content:space-between;-moz-justify-content:space-between;justify-content:space-between}tw-outline{color:white;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000}tw-shadow{text-shadow:0.08em 0.08em 0.08em #000}tw-emboss{text-shadow:0.08em 0.08em 0em #000;color:white}tw-condense{letter-spacing:-0.08em}tw-expand{letter-spacing:0.1em}tw-blur{color:transparent;text-shadow:0em 0em 0.08em #000}tw-blurrier{color:transparent;text-shadow:0em 0em 0.2em #000}tw-blurrier::selection{background-color:transparent;color:transparent}tw-blurrier::-moz-selection{background-color:transparent;color:transparent}tw-smear{color:transparent;text-shadow:0em 0em 0.02em rgba(0,0,0,0.75),-0.2em 0em 0.5em rgba(0,0,0,0.5),0.2em 0em 0.5em rgba(0,0,0,0.5)}tw-mirror{display:inline-block;transform:scaleX(-1);-webkit-transform:scaleX(-1)}tw-upside-down{display:inline-block;transform:scaleY(-1);-webkit-transform:scaleY(-1)}tw-fade-in-out{text-decoration:none;animation:fade-in-out 2s ease-in-out infinite alternate;-webkit-animation:fade-in-out 2s ease-in-out infinite alternate}tw-rumble{-webkit-animation:rumble linear 0.1s 0s infinite;animation:rumble linear 0.1s 0s infinite;display:inline-block}tw-shudder{-webkit-animation:shudder linear 0.1s 0s infinite;animation:shudder linear 0.1s 0s infinite;display:inline-block}tw-shudder-in{animation:shudder-in 1s ease-out;-webkit-animation:shudder-in 1s ease-out}.transition-in{-webkit-animation:appear 0ms step-start;animation:appear 0ms step-start}.transition-out{-webkit-animation:appear 0ms step-end;animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in{-webkit-animation:appear .8s;animation:appear .8s}[data-t8n^=dissolve].transition-out{-webkit-animation:appear .8s reverse;animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block;-webkit-animation:shudder-in .8s;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block;-webkit-animation:shudder-in .8s reverse;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block;-webkit-animation:rumble-in .8s;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block;-webkit-animation:rumble-in .8s reverse;animation:rumble-in .8s reverse}[data-t8n^=boxflash].transition-in{-webkit-animation:box-flash .8s;animation:box-flash .8s}[data-t8n^=pulse].transition-in{-webkit-animation:pulse .8s;animation:pulse .8s;display:inline-block}[data-t8n^=pulse].transition-out{-webkit-animation:pulse .8s reverse;animation:pulse .8s reverse;display:inline-block}[data-t8n^=slideleft].transition-in{-webkit-animation:slide-left .8s;animation:slide-left .8s;display:inline-block}[data-t8n^=slideleft].transition-out{-webkit-animation:slide-right .8s reverse;animation:slide-right .8s reverse;display:inline-block}[data-t8n^=slideright].transition-in{-webkit-animation:slide-right .8s;animation:slide-right .8s;display:inline-block}[data-t8n^=slideright].transition-out{-webkit-animation:slide-left .8s reverse;animation:slide-left .8s reverse;display:inline-block}[data-t8n^=slideup].transition-in{-webkit-animation:slide-up .8s;animation:slide-up .8s;display:inline-block}[data-t8n^=slideup].transition-out{-webkit-animation:slide-down .8s reverse;animation:slide-down .8s reverse;display:inline-block}[data-t8n^=slidedown].transition-in{-webkit-animation:slide-down .8s;animation:slide-down .8s;display:inline-block}[data-t8n^=slidedown].transition-out{-webkit-animation:slide-up .8s reverse;animation:slide-up .8s reverse;display:inline-block}[data-t8n^=flicker].transition-in{-webkit-animation:flicker .8s;animation:flicker .8s}[data-t8n^=flicker].transition-out{-webkit-animation:flicker .8s reverse;animation:flicker .8s reverse}[data-t8n$=fast]{animation-duration:.4s;-webkit-animation-duration:.4s}[data-t8n$=slow]{animation-duration:1.6s;-webkit-animation-duration:1.6s}
 </style>
 </head>
@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="CARE_Vignette_Design_TEMPLATE" startnode="1" creator="Twine" creator-version="2.3.5" ifid="6EF3800B-03D4-426C-8917-1AA43B9CD914" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="cafe"] { 
+<tw-storydata name="CARE_Design_TEMPLATE" startnode="1" creator="Twine" creator-version="2.3.5" ifid="6EF3800B-03D4-426C-8917-1AA43B9CD914" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="cafe"] { 
 	background-image: url("https://i.imgur.com/wxnxWm9.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -45,6 +45,12 @@ tw-story[tags~="table"] {
 	background-size: cover;
 }
 
+tw-story[tags~="bus"] { 
+	background-image: url("https://images.unsplash.com/photo-1583680024996-7dffd9f32d7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 div.box{
   margin-top:5px;
   margin-bottom:5px;
@@ -59,14 +65,20 @@ div.box{
    display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
+}
+
+div.email {
+ font-family: "Courier New"; 
+  font-size: .75em;
+  margin-left: 10%;
 }
 
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
-</script><tw-tag name="cafe" color="red"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="dorm" color="blue"></tw-tag>,<tw-tag name="hallway" color="yellow"></tw-tag><tw-passagedata pid="1" name="New Welcome" tags="start" position="50,175" size="100,100">(set: $surveyLink to &quot;https://qtrial2019q2az1.az1.qualtrics.com/jfe/form/SV_d4IRWXpS7QYWbPv&quot;) 
+</script><tw-tag name="cafe" color="red"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="dorm" color="blue"></tw-tag>,<tw-tag name="hallway" color="yellow"></tw-tag>,<tw-tag name="bus" color="purple"></tw-tag><tw-passagedata pid="1" name="New Welcome" tags="start" position="50,175" size="100,100">(set: $surveyLink to &quot;https://qtrial2019q2az1.az1.qualtrics.com/jfe/form/SV_d4IRWXpS7QYWbPv&quot;) 
 (set: $q1 to &quot;&quot;)
 (set: $q2 to &quot;&quot;) 
 
@@ -86,17 +98,15 @@ all passages with &quot;box&quot; div will have transparent box around text.
 
 --!&gt; 
 &lt;div class=&quot;box&quot;&gt;	
+Welcome! This is an interactive story, which means you will read the story from the perspective of the main character, Sam, and make choices as Sam. There are no right or wrong answers. 
 
-Welcome! 
+Some of the situations in the story may be socially uncomfortable and/or involve bias or prejudice. 
 
-This is an interactive story about a racial microaggression used for research on the CARE Project led by Alexandra To. 
+In the story, you will encounter and have the opportunity to use a futuristic, fictional technology. 
 
-Although there are some embedded survey questions built-in, we are not collecting data for this publicly available version of the vignette.
+When the story is complete, you will be taken to a survey to give feedback about the experience. 
 
-CW: Racism, Racist Microaggressions
-
-[[Continue -&gt;Beginning]] 
-
+[[Let&#39;s Begin -&gt;Beginning]] 
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name=" Bookstore" tags="campus" position="300,175" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
@@ -148,207 +158,147 @@ Morgan: “You work with Professor Smith right? I’ve heard a lot of good thing
 [[Eh, it&#39;s a job -&gt; It&#39;s a job]]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name=" Lab Mates" tags="dorm" position="1100,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
-Morgan: “Oh yeah, I know Ashley and Robert from intramural. But I haven’t seen Mia around before.”
+Morgan, “Oh yeah, I know Ashley and Luis from intramural. But I don&#39;t think I&#39;ve met Mia.”
 
 “Yeah, I think they spend a lot of time over in the Engineering school so you probably wouldn’t see her around the multicultural center.” 
 
 Morgan: “Yeah this is a big school. I’m not surprised.”
 
-[[Next... -&gt; story9]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name=" story9" tags="dorm" position="1250,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+*piiiiinngg*
 
-*Ping*
+[[Check your phone -&gt; Email]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name=" Email" tags="dorm" position="1250,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
-You look down at your phone and notice the email icon had appeared along with the email address associated with your Lab director’s work email. 
+The email icon flashes across the screen and you see your professor&#39;s email address. What weird timing. 
+&lt;div class=&quot;email&quot;&gt;
+	Hi Sam, Mia, Luis, and Ashley!  
 
-
-[[Read email -&gt; story10]]
-[[Ignore email -&gt; story11]]
-
-&lt;audio src=&quot;https://vocaroo.com/i/s0VgJHRAaiIA&quot; autoplay&gt; 
-
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name=" story10" tags="dorm" position="1425,450" size="100,100">&lt;div class = &quot;box&quot;&gt;
-
-The email read as follows:
-
-	Hi Sam, Mia, Robert, and Ashley!  
-
-	Just a reminder that we have a meeting at 3 pm in Simon Hall! 
-	We will be meeting to discuss future plans. 
-	We will also have a visiting professor, Dr. Avery, joining us today.
+	Just a reminder that we have a meeting at 3pm in Simon Hall with 		visiting professor, Dr. Avery, joining us today! 
+	
+	We&#39;ll spend at least some time discussing your future career plans. 
  
-
 	Best,
-	Professor Smith
-
-[[Respond with &quot;See you there!&quot; -&gt; averyBefore]]
-[[Don&#39;t respond and just show up -&gt; averyBefore]]
-
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name=" story11" tags="dorm" position="1425,325" size="100,100">&lt;div class = &quot;box&quot;&gt;
-You open your laptop and look at your Google Calendar. You’re suddenly reminded that you have a meeting at 3 pm with your research lab to discuss future plans. You remember you can’t be late because a visiting professor will be joining the meeting today. 
-You’re really excited to be meeting Dr. Avery because she worked at a company you hope to intern with this summer. 
-
-
-[[Next -&gt; averyBefore]]
-
+	Professor Jack Smith
 &lt;/div&gt;
+	&lt;audio&gt;https://old.vocaroo.com/i/s0VgJHRAaiIA&lt;/audio&gt;
+[[Write back to confirm -&gt; Anticipation]]
+[[Close phone -&gt; Anticipation]]
 
-</tw-passagedata><tw-passagedata pid="11" name=" averyBefore" tags="" position="1550,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Peanut Butter" tags="dorm" position="1550,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
-Rate how much you agree with the following statement:
-
-I am looking forward to meeting Dr. Avery
-
-[[1 - strongly disagree -&gt; morganPeanut]]
-[[2 - disagree -&gt; morganPeanut]]
-[[3 - slightly disagree -&gt; morganPeanut]]
-[[4 - neither agree nor disagree -&gt; morganPeanut]]
-[[5 - Slightly agree -&gt; morganPeanut]]
-[[6 - agree -&gt; morganPeanut]]
-[[7 - strongly agree -&gt; morganPeanut]]
-
-
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name=" morganPeanut" tags="dorm" position="1675,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+(set: $lunch to &quot;nothing&quot;)
 
 You look back up at Morgan who had moved from the couch to the kitchen. He was dipping a spoon into a peanut butter jar and smearing the peanut butter onto a peeled banana.
 
-On your laptop, you see a message notification of an article that Robert has sent in the lab group chat last night. You meant to read it, but fell asleep before you could. 
-
-[[Read the article -&gt; article]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name=" article" tags="dorm" position="1825,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
-
-The article is about a lawsuit against Harvard University, alleging that the school discriminates against Asian American applicants in the admissions process, and holds Asian American students to a higher standard than others in the admissions process. You read in the article that the judge has ruled in favor of Harvard University. 
-
-After reading the article, you decide to send a text to Mia. 
-“Wow did you all read the article Robert sent?”
-
-“Which one is that?”  Mia responds.
-
-“The one about how to advocacy group Students for Fair Admissions (SFFA) sued Harvard University for considering race too much and discriminating against Asian American applicants, and the judge ruling in favor of Harvard.”
-
-Mia: “Oh yeah! I meant to ask you guys about that earlier! What did you think of it?”
-
-[[Next... -&gt; question1]]
-
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name=" question1" tags="" position="1950,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
-
-&quot;It...&quot;
-[[Made me anxious for the future -&gt; cafe]]
-[[Made me angry -&gt; cafe]]
-[[Disrespected -&gt; cafe]]
-[[Surprised me -&gt; cafe]]
-[[Didn’t affect me -&gt; cafe]]
-[[Made me happy -&gt; cafe]] 
-
-
-
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name=" cafe" tags="cafe" position="1900,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+(link: &quot;Make one for me!&quot;)[\
+	(set: $lunch to &quot;banana&quot;)\
+	(go-to: &quot;Eat Banana&quot;)\
+	]	
+(link: &quot;Gross.&quot;)[\
+	(set: $lunch to &quot;sandwich&quot;)\
+	(go-to: &quot;Eat Sandwich&quot;)\
+	]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name=" Enter Cafe" tags="cafe" position="1900,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
 *At 2:58 pm..*
 
-You pick up the pace as you reach the door to the cafe. People exiting brush past, and you notice the place is fully packed. Tables are full and noise is bustling as you scan the room, looking for your peers. Out of the corner of your eye, you see a hand waving and it’s not long before you realize the hand is waving at you. 
-It’s Robert, one of the lab members. you recognize the faces of the rest of the lab as you steadily walk over to their table, slipping and weaving past occupied chairs and other customers patrolling the space. 
+You pick up the pace as you reach the door to the cafe. People exiting brush past, and you notice the place is fully packed. Tables are full and noise is bustling as you scan the room, looking for your peers. Out of the corner of your eye, you see a hand waving and it’s not long before you realize the hand is waving at you, it&#39;s Luis. 
 
-[[Next -&gt; introAvery]]
+You recognize the faces of the rest of the lab as you walk over to their table, slipping and weaving past occupied chairs and other customers patrolling the space. 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name=" introAvery" tags="cafe" position="2050,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
-“Thanks for making it Sam.” Professor Smith says as you find an empty seat at the table. 
+[[Grab a seat -&gt; Meet Avery]]
 
-You smile. “Good afternoon, everyone.”
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name=" Meet Avery" tags="cafe" position="2050,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+“Good to see you Sam.” Professor Smith smiles as you sit. 
 
-“I would like for everyone to meet Dr. Avery! She has been a good friend of mine for a long time and is visiting from Cornell University.”
+You smile back. “Hi everyone.”
+
+“I would like for everyone to meet Dr. Avery! She has been a good friend of mine for a long time and is visiting from the East Coast.” Dr. Avery looks around and smiles warmly at everyone. 
 
 “Drinks are on me for today!” he continues “Everyone else is already settled, what would you like, Sam?” 
 
-[[Ask for a drink -&gt; story12]]
-[[Respectfully decline -&gt;robertsPlans]]
+(set: $drink to &quot;nothing&quot;)
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name=" story12" tags="cafe" position="2200,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
+(link: &quot;Pumpkin Spice Latte&quot;)[\
+	(set: $drink to &quot;Pumpkin Spice Latte&quot;)\
+	(go-to: &quot;Get Drink&quot;)\
+	]
+(link: &quot;Iced Tea&quot;)[\
+	(set: $drink to &quot;iced tea&quot;)\
+	(go-to: &quot;Get Drink&quot;)\
+	]
+(link: &quot;Black Coffee&quot;)[\
+	(set: $drink to &quot;coffee&quot;)\
+	(go-to: &quot;Get Drink&quot;)\
+	]
+(link: &quot;Water&quot;)[\
+	(set: $drink to &quot;water&quot;)\
+	(go-to: &quot;Get Drink&quot;)\
+	]
 
-“Great! I’ll be right back” Prof. Smith stands up and heads for the counter. And not too long he comes back with a latte and hands it to you. 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Get Drink" tags="cafe" position="2200,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&quot;Could I get a $drink?&quot;
 
-[[Next... -&gt;robertsPlans]]
+“Of course! I’ll be right back” Prof. Smith stands up and heads for the counter. There wasn&#39;t much line and he quickly returns and hands you your drink. 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="robertsPlans" tags="cafe" position="2200,725" size="100,100">&lt;div class = &quot;box&quot;&gt;
+[[Take a sip -&gt;robertsPlans]]
+[[Thank Prof. Smith -&gt;robertsPlans]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="robertsPlans" tags="cafe" position="2350,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 “Alright! Now that everyone’s here, I’d like to just get right into it. Let’s have everyone go around real quick and discuss future plans and aspirations after you graduate, and maybe Dr. Avery can give some input as well!” 
 
-Professor Smith glances at Robert. “Robert, how about we start with you?” 
+Professor Smith glances around, “Luis, how about we start with you?” 
 
-Robert straightens up a bit “Sure, um... For me, I’d like to start off a career in web services, and maybe work on game development on the side or in my free time.”
+Luis straightens up a bit “Sure, um... For me, I’d like to start off a career in web services, and maybe work on game development on the side or in my free time. I would like to work from home or near home if I can, I want to look after my parents.”
 
-“That’s really cool, Robert!” Dr. Avery exclaims. I have a friend in game development working at an ed-tech firm in New York. Let me know if you’d like me to connect you guys.”
+“That’s really cool, Luis!” Dr. Avery exclaims, &quot;I know a few game devs.&quot;
 
-“Thanks Dr. Avery! That would be awesome.”
+She begins to grill him about his favorite games and they animatedly chat. 
 
-[[Next... -&gt; samsChoices]]
+[[Zone out -&gt;Zone Out]]
+[[Listen up -&gt;Listen to Luis]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name=" Sam Grad School" tags="cafe" position="2725,525" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name=" samsChoices" tags="cafe" position="2350,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
-Professor Smith turns to you. “Now how about you Sam?”
+“I’d like to take my chances with grad school… I want to be able to advance my career in the future, and I’ve also become more interested in being more involved with research and academic publishing.” 
 
-[[Tell him you have academic/career plans -&gt; samAcad]]
-[[Tell him you plan to take some time off -&gt; samTimeOff]]
-[[Tell him you aren&#39;t sure -&gt; samUnsure]]
+Professor Smith beams. “That is wonderful! There are so many opportunities with excellent programs. If you want to get started, I could send some summer internships your way that could certainly boost your application if you were to apply.”
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name=" samAcad" tags="cafe" position="2550,775" size="100,100">&lt;div class = &quot;box&quot;&gt;
+[[That would be great! -&gt;Avery Articulate]] 
+[[Take notes -&gt;Avery Articulate]] 
 
-“I’d like to take my chances with grad school… I want to be able to advance my career in the future, and I’ve also become more interested in being more involved with research and academic publishings.” 
 
-Professor Smith is beaming. “That is wonderful! There are so many opportunities with excellent programs. If you want to get started, I could send some summer internships your way that could certainly boost your application if you were to apply.”
-
-[[Next... -&gt; averyMicro]]
-
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name=" samTimeOff" tags="cafe" position="2550,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name=" Sam Travel" tags="cafe" position="2725,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 “I actually plan to take a little break from academics. I’ve always planned on traveling for a bit and I want to take the opportunity to think about what I plan to spend the rest of my life doing.” 
 
-Prof. Smith’s brows go up. “How exciting! Not many have the courage to decide something so major for themselves like that. I hope it all works out for you. In the future, if you decide to continue your studies, I’d be glad to help you in figuring out your next steps.” 
+Prof. Smith smiles. “How exciting! Not many have the courage to decide something so major. I think the uniersity even has some programs for going abroad if you wanted to start while you&#39;re here. And in the future when you&#39;re ready, I&#39;d be glad to help in figuring out next steps.” 
 
-[[Next... -&gt; averyMicro]] 
+[[That would be great! -&gt;Avery Articulate]] 
+[[Take notes -&gt;Avery Articulate]] 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name=" samUnsure" tags="cafe" position="2550,525" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name=" Sam Unsure" tags="cafe" position="2725,775" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 “Hmm.. I’ve explored a lot of different fields - from data science to project management to machine learning, and there hasn’t been anything that I am confident in enough to be set on.” 
 
-Professor Smith smiles, “No worries, Sam. College is about exploring options. Keep working hard and looking for things you’re passionate about.
+Professor Smith smiles, “No worries, Sam. College is about exploring options. Keep working hard and looking for things you’re passionate about. Whenever you’d like I’d be happy to help you figure out some options in office hours or over email.&quot;
 
-[[Next... -&gt; averyMicro]] 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name=" averyMicro" tags="cafe" position="2750,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+[[That would be great! -&gt;Avery Articulate]] 
+[[Take notes -&gt;Avery Articulate]] 
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Avery Articulate" tags="cafe" position="2900,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
 “I completely agree with Professor Smith!” Dr. Avery exclaims. “It looks like you’ve given this a lot of thought, Sam, and your English is so advanced; you’re so articulate. I know you’ll go far!”
+ 
+[[Actually, English is my first language -&gt;Where Are You From]]
 
- “Oh, thanks Dr. Avery. English is my first language, actually.”
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="END" tags="campus" position="4325,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
-“Oh, really, I was wondering why you didn’t have an accent. Where are you from?
+Thanks for completing the vignette! Follow the link to complete the final survey.
 
-“I’m from the Bay Area in California.” 
-
-“Hmm… How about your parents?” 
-
-“They’re from Los Angeles.” 
-
-Professor Smith interjects, “Anyway, regarding your future plans, if either of you need any further consulting, you know how to reach me.” 
-
-Professor Smith and Dr. Avery leave to get refills. 
-
-[[Next... -&gt; remainingMeeting]]
-
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name=" remainingMeeting" tags="cafe" position="2900,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
-
-The rest of the meeting goes by fairly quickly. You learn the last member of your lab, Mia, is going to be using her degree to help with her family business, creating a website for their real estate company. 
-
-[[Next... -&gt; walkOut]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name=" walkOut" tags="campus" position="3050,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
-
-You all walk out the building together before parting ways. 
-
-“It’s great that Dr. Avery was so supportive about our plans and aspirations for the future,” says Ashley. 
-
-“Yeah, definitely. I’ll see you guys later!”
-
-You say goodbye to your lab team, and head to the bus stop. 
+[NOTE TO TESTERS, LINK NOT ACTIVE YET, END HERE]
 
 (link: &quot;Exit&quot;) [(goto-url: &quot;http://alexandrato.com&quot;)]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Beginning" tags="start" position="175,175" size="100,100">
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Beginning" tags="start" position="175,175" size="100,100">
 &lt;div class=&quot;box&quot;&gt;	
 You are a racial-minority undergraduate student in Connecticut studying computer science. You are currently working in an artificial intelligence lab with 3 other students. 
 
@@ -357,7 +307,7 @@ Working together in the lab, you have all come to be good friends.
 After a long morning at the lab, you glance at your watch, seeing it&#39;s high time you went home. You head outside to cross campus to your dorm.
 
 [[Head outside -&gt; Bookstore]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name=" Shout Greeting" tags="campus" position="475,250" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name=" Shout Greeting" tags="campus" position="475,250" size="100,100">&lt;div class = &quot;box&quot;&gt;
 &quot;Hey guys, how&#39;s it going?&quot; 
 
 You walk over and talk with them a while. They&#39;re waiting on a friend to grab a new lab notebook before heading off to class together. 
@@ -365,7 +315,7 @@ You walk over and talk with them a while. They&#39;re waiting on a friend to gra
 As she finally runs up, you give them a wave and continue home. 
 
 [[Head home -&gt; Apt Entrance]] 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name=" Like Smith" tags="dorm" position="950,275" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name=" Like Smith" tags="dorm" position="950,275" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 &quot;He&#39;s been a pretty great mentor so far. I really like working in his lab and it&#39;s cool he&#39;s been involving me in meeting other researchers.&quot; 
 
@@ -374,7 +324,7 @@ Morgan, &quot;That&#39;s awesome! Remind me whose in your lab again?&quot;
 [[Mia Zhang, Ashley Williams, and Luis Castillo -&gt; Lab Mates]]
 
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="29" name=" Like Work" tags="dorm" position="950,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+</tw-passagedata><tw-passagedata pid="22" name=" Like Work" tags="dorm" position="950,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 &quot;He&#39;s alright. I&#39;m really enjoying getting to do research though. It feels like I&#39;m really getting somewhere with it.&quot; 
 
@@ -383,7 +333,7 @@ Morgan, &quot;That&#39;s awesome! Remind me whose in your lab again?&quot;
 [[Mia Zhang, Ashley Williams, and Luis Castillo -&gt; Lab Mates]]
 
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="30" name=" It&#39;s a job" tags="dorm" position="950,525" size="100,100">&lt;div class = &quot;box&quot;&gt;
+</tw-passagedata><tw-passagedata pid="23" name=" It&#39;s a job" tags="dorm" position="950,525" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 &quot;He&#39;s alright. A job&#39;s a job. It&#39;s just nice to do something outside of classwork, you know?&quot; 
 
@@ -391,6 +341,239 @@ Morgan, &quot;Haha, yeah I get that. Remind me, who&#39;s in your lab again?&quo
 
 [[Mia Zhang, Ashley Williams, Luis Castillo -&gt; Lab Mates]]
 
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name=" Anticipation" tags="dorm" position="1400,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+You&#39;re really excited to meet Dr. Avery. She worked at a company you&#39;re hoping to intern with this summer. 
+
+You exchanged some emails with one of her former students last week, talking about the company, and she seemed so nice.
+[[Grab some lunch -&gt;Peanut Butter]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Eat Banana" tags="dorm" position="1700,325" size="100,100">&lt;div class = &quot;box&quot;&gt;
+
+&quot;That looks great! Can you make me one too?&quot;
+
+&quot;Sure,&quot; smiles Morgan, &quot;just a minute.&quot; He grabs another one for you. 
+
+[[Eat lunch -&gt; Enjoy lunch]] 
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Eat Sandwich" tags="dorm" position="1700,450" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&quot;Wow, I can&#39;t believe you like that.&quot; 
+
+Morgan laughs, &quot;what do you mean, this is great!&quot; 
+
+You try not to grimace, and begin working around Morgan to throw together a a sandwich.
+
+[[Eat Lunch -&gt; Enjoy lunch]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name=" Enjoy lunch" tags="dorm" position="1850,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+You splay out on the couch, $lunch in one hand, phone in the other. 
+
+You see a couple of notifications from the lab group chat. Looks like Luis forwarded some article about bias in admissions, but it&#39;s already been buried in gifs and memes from Ashley and Mia. 
+
+You chuckle, closing the chat. 
+
+[[Flip through phone mindlessly -&gt; Browse Phone]]
+[[Check out new apps -&gt; Browse Phone]]
+&lt;/div&gt; </tw-passagedata><tw-passagedata pid="28" name=" Browse Phone" tags="dorm" position="2000,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+You flip through your phone absentmindedly. 
+
+Mia had sent a couple links yesterday for some news ones that you downloaded but hadn&#39;t had the time to look at just yet. 
+
+The time flies by and soon you need to head out the door. 
+
+[[Head to the cafe -&gt; Enter Cafe]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Zone Out" tags="cafe" position="2500,575" size="100,100">&lt;div class = &quot;box&quot;&gt;
+It was a long morning, you have a bit of a hard time paying attention and you glance around the cafe, sipping your $drink. It&#39;s suprisingly crowded.
+
+You snap back to attention as you hear your name. 
+
+Professor Smith turns to you. “Now how about you Sam?”
+
+[[I&#39;m thinking about grad school -&gt; Sam Grad School]]
+[[I&#39;m thinking of traveling for a while -&gt; Sam Travel]]
+[[I&#39;m really not sure -&gt; Sam Unsure]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="Listen to Luis" tags="cafe" position="2500,700" size="100,100">&lt;div class = &quot;box&quot;&gt;
+Luis and Dr. Avery debate the merits of different games. Luis is into quirky narrative games, but Dr. Avery seems to play bigger AAA games to unwind.
+
+&quot;Haha, yeah, I know those games can be great, but I just do so much reading during the day!&quot; Dr. Avery laughs, &quot;so like I said, I have a friend in game development working at an ed-tech firm in New York. Let me know if you’d like me to connect you guys.”
+
+&quot;Thanks, that would be amazing!&quot; Luis enthuses.
+
+Professor Smith turns to you. “Now how about you Sam?”
+
+[[I&#39;m thinking about grad school -&gt; Sam Grad School]]
+[[I&#39;m thinking of traveling for a while -&gt; Sam Travel]]
+[[I&#39;m really not sure -&gt; Sam Unsure]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Where Are You From" tags="cafe" position="3050,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&quot;Oh thanks Dr. Avery. English is my first language, actually.&quot; 
+
+Unphased, she replies, &quot;oh really? I was wondering why you didn&#39;t have an accent. Where are you from?&quot;
+
+(set: $home to &quot;nothing&quot;)
+
+(link: &quot;West Coast&quot;)[\
+	(set: $home to &quot;the west coast&quot;)\
+	(go-to: &quot;Interjection&quot;)\
+	]
+(link: &quot;Northern California&quot;)[\
+	(set: $home to &quot;NorCal&quot;)\
+	(go-to: &quot;Interjection&quot;)\
+	]
+(link: &quot;Bay Area&quot;)[\
+	(set: $home to &quot;the Bay Area&quot;)\
+	(go-to: &quot;Interjection&quot;)\
+	]
+
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Interjection" tags="" position="3200,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&quot;Oh, I&#39;m from $home.&quot;
+
+&quot;Hm,&quot; she ponders, &quot;how about your parents?&quot;
+
+&quot;They&#39;re from Los Angeles.&quot; 
+
+Professor Smith chimes happily in, “I am so glad that you all got to meet. Regarding your future plans, if either of you need any further consulting, you know how to reach me. But I see that Dr. Avery needs a refill. Let’s take a short break.”
+
+Professor Smith and Dr. Avery leave to get refills. 
+
+Luis says, “Gosh, Dr. Avery seems so nice doesn’t she? I am excited to get to talk to her more.” 
+
+[[Agree -&gt;Avery Agree]]
+[[Disagree -&gt;Avery Disagree]]
+[[Say Nothing -&gt;Avery Say Nothing]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Avery Agree" tags="cafe" position="3350,525" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&quot;Yeah, she certainly seems interested in us.&quot;
+
+After Professor Smith and Dr. Avery return, the rest of the meeting goes by fairly quickly. 
+
+You learn Mia is going to be using her degree to help with her family business, creating a website for their real estate company. 
+
+[[Continue chatting casually-&gt;Casual Chat]]
+[[Bring up summer internships-&gt;Summer Internships]]
+[[Stay quiet for the rest of the meeting-&gt;Stay Quiet]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Avery Disagree" tags="cafe" position="3350,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&quot;I don&#39;t know about that. That was a lot.&quot;
+
+After Professor Smith and Dr. Avery return, the rest of the meeting goes by fairly quickly. 
+
+You learn Mia is going to be using her degree to help with her family business, creating a website for their real estate company. 
+
+[[Continue chatting casually-&gt;Casual Chat]]
+[[Bring up summer internships-&gt;Summer Internships]]
+[[Stay quiet for the rest of the meeting-&gt;Stay Quiet]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="Avery Say Nothing" tags="cafe" position="3350,775" size="100,100">&lt;div class = &quot;box&quot;&gt;
+You shrug and check your phone.
+
+After Professor Smith and Dr. Avery return, the rest of the meeting goes by fairly quickly. 
+
+You learn Mia is going to be using her degree to help with her family business, creating a website for their real estate company. 
+
+[[Continue chatting casually-&gt;Casual Chat]]
+[[Bring up summer internships-&gt;Summer Internships]]
+[[Stay quiet for the rest of the meeting-&gt;Stay Quiet]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Casual Chat" tags="cafe" position="3550,525" size="100,100">&lt;div class = &quot;box&quot;&gt;
+Everyone breaks out into side conversations. You and Ashley chat a bit about your upcoming Thanksgiving plans. She’s going to be heading home to New York. 
+
+Dr. Avery looks down at her watch and raises her eyebrows. 
+
+&quot;Look how the time flies! Unfortunately I think I need to head to another meeting. But here, take my card and please reach out if you all ever need anything,&quot; she says as she passes out her colorful business cards to everyone. 
+
+Professor Smith says a quick goodbye to you all, &quot;I&#39;ll see you all in lab meeting next week!&quot; and heads out to show Dr. Avery to her next meeting. 
+
+[[Gulp down your drink -&gt;Finish Drink]]
+[[Toss out your drink -&gt;Finish Drink]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Summer Internships" tags="cafe" position="3550,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+You get to talk to Dr. Avery about how you are hoping to get an internship at the company she worked at previously. She offers to review your resume and cover letter for you before you turn in your application.
+
+Dr. Avery looks down at her watch and raises her eyebrows. 
+
+&quot;Look how the time flies! Unfortunately I think I need to head to another meeting. But here, take my card and please reach out if you all ever need anything,&quot; she says as she passes out her colorful business cards to everyone. 
+
+Professor Smith says a quick goodbye to you all, &quot;I&#39;ll see you all in lab meeting next week!&quot; and heads out to show Dr. Avery to her next meeting. 
+
+[[Gulp down your drink -&gt;Finish Drink]]
+[[Toss out your drink -&gt;Finish Drink]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Stay Quiet" tags="cafe" position="3550,775" size="100,100">&lt;div class = &quot;box&quot;&gt;
+Everyone breaks out into side conversations. You listen in here and there but don’t really engage much.
+
+Dr. Avery looks down at her watch and raises her eyebrows. 
+
+&quot;Look how the time flies! Unfortunately I think I need to head to another meeting. But here, take my card and please reach out if you all ever need anything,&quot; she says as she passes out her colorful business cards to everyone. 
+
+Professor Smith says a quick goodbye to you all, &quot;I&#39;ll see you all in lab meeting next week!&quot; and heads out to show Dr. Avery to her next meeting. 
+
+[[Gulp down your drink -&gt;Finish Drink]]
+[[Toss out your drink -&gt;Finish Drink]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Finish Drink" tags="bus" position="3700,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+The rest of your lab mates stand up to leave. Finishing your drink you toss it on your way out the door. 
+
+You and Ashley realize you&#39;re both headed to the same bus station and jovially wave to Mia and Luis as you head off together. 
+
+Checking your phone, you chuckle, seeing a couple texts from Morgan pop up, complaining about the neighbor&#39;s secret dog making too much noise. He swears he&#39;s going to report her dog to the manager, no matter how cute it is. 
+
+Ashley turns to you. 
+
+[[What&#39;s up? -&gt;Ashley Question]]
+[[Wait for her to speak -&gt;Ashley Question]]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="40" name="Ashley Question" tags="bus" position="3850,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+“So what did you think of Dr. Avery?&quot; she asks, &quot;that was my first time meeting a visiting professor like that.”
+
+[[Express satisfaction -&gt;Satisfied]]
+[[Express concern -&gt;Concerned]]
+[[Avoid the question -&gt;Avoid]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Satisfied" tags="bus" position="4000,525" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&quot;Yeah that was cool. It was nice she was so interested in our careers.&quot;
+
+“Yeah! Oh shoot, my bus is here, are you taking this one too?&quot; she asks.
+
+You shake your head. 
+
+&quot;Shoot, well I&#39;ll see you later,&quot; she shouts over her shoulder as she boards, &quot;but let’s definitely talk more about it soon!” 
+
+Ashley smiles and waves to you, and you can see your bus just pulling up behind hers. 
+
+[[Head home-&gt;Return home]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Concerned" tags="bus" position="4000,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&quot;Yeah I don&#39;t know, it was a little weird.&quot; 
+
+“Huh, yeah it did get a little weird. Oh that&#39;s my bus, are you taking this one too?&quot; she asks.
+
+You shake your head. 
+
+&quot;Shoot, well I&#39;ll see you later,&quot; she shouts over her shoulder as she boards, &quot;but let’s definitely talk more about it soon!” 
+
+Ashley smiles and waves to you, and you can see your bus just pulling up behind hers. 
+
+[[Head home-&gt;Return home]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Avoid" tags="bus" position="4000,775" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&quot;Oh yeah I don&#39;t know. Same for me.&quot; 
+
+“Oh shoot, my bus is here, are you taking this one too?&quot; she asks.
+
+You shake your head. 
+
+&quot;Shoot, well I&#39;ll see you later,&quot; she shouts over her shoulder as she boards, &quot;but let’s definitely talk more about it soon!” 
+
+Ashley smiles and waves to you, and you can see your bus just pulling up behind hers. 
+
+[[Head home-&gt;Return home]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Return home" tags="dorm" position="4150,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+When you finally reach home you head straight to your room and flop down on the bed. Looks like Morgan headed out for a bit, probably to the library to get some studying in. 
+
+It was a pretty busy day and you still have hours of homework tonight and a test next week. Maybe you can catch a quick nap before digging in for the night.
+
+[[Take a nap-&gt;END]]
 
 &lt;/div&gt;</tw-passagedata></tw-storydata>
 
