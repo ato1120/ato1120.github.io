@@ -46,7 +46,7 @@ tw-story[tags~="table"] {
 }
 
 tw-story[tags~="bus"] { 
-	background-image: url("https://images.unsplash.com/photo-1583680024996-7dffd9f32d7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+	background-image: url("https://images.unsplash.com/photo-1542372483-c18275e83e45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -70,7 +70,7 @@ div.box{
 
 div.email {
  font-family: "Courier New"; 
-  font-size: .75em;
+  font-size: .8em;
   margin-left: 10%;
 }
 
@@ -112,9 +112,9 @@ When the story is complete, you will be taken to a survey to give feedback about
 
 A rush of cool air surrounds you as the late Fall scene unfolds... it&#39;s a couple of weeks before Thanksgiving and all the leaves on the ground are crisp. You watch the beautiful leaves twirl and glide to the sidewalk as students blur past you. 
 
-The sound of the *crunch crunch crunch* paired with upbeat chatter gets you excited to the fast approaching holiday season. 
+The sound of the *crunch crunch crunch* paired with upbeat chatter gets you excited for the fast approaching holiday season. 
 
-You pass some friendly faces and give a few nods. A group standing outside a bookstore wave at you and yell &quot;Hi Sam! What&#39;s up?&quot;
+You pass some friendly faces and give a few nods. A group standing outside a bookstore waves at you and one of them yells, &quot;Hey Sam! What&#39;s up?&quot;
 
 [[Smile and wave -&gt; Smile and Wave]]
 [[Shout a greeting back -&gt; Shout Greeting]]
@@ -127,13 +127,13 @@ Eager to grab lunch at home, you wave emphatically back, but keep up your brisk 
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="4" name=" Apt Entrance" tags="hallway" position="650,175" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
-A few more blocks up Main Street and then you turn left onto your block. Approaching the brick building, you scan your student ID by the door. 
+You walk a few more blocks up Main Street and then turn left onto your street. Approaching the brick building, you scan your student ID by the door. 
 
 *beeeeeeeep*
 
 You climb up 6 flights of stairs and walk down a narrow hallway lined with doors. 
 
-[[Head inside -&gt; Hallway]]
+[[Walk to your apartment door -&gt; Hallway]]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name=" Hallway" tags="hallway" position="800,175" size="100,100">&lt;div class = &quot;box&quot;&gt;
 You can hear lots of noise from the different apartments. The sweet smell of baking wafts down the corridor. 
@@ -141,28 +141,29 @@ You can hear lots of noise from the different apartments. The sweet smell of bak
 You stop in front of a door with a big wooden &#39;H&#39; on it. Your door has plenty to distinguish it from the rest. There&#39;s a rainbow flag pin, a few country flags from South Africa, Germany, Singapore, and Spain, and a bear flag from your home state of California. Your roommates also put up some memes about tuition and organic chemistry to rival the ones across the hall trolling the CS kids. 
 
 You fumble in your pocket for your keys and remove your shoes.  
+
 [[Open the Door -&gt; Hi Morgan]]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name=" Hi Morgan" tags="dorm" position="800,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 You’re instantly greeted by your roommate lounging on the sofa reading a book. 
 
-Morgan, “Hey Sam! What&#39;s going on?&quot; 
+Morgan glances up, “Hey Sam! What&#39;s going on?&quot; 
 
 &quot;Not much. I think I’m gonna make something to eat and then later I have a meeting with my lab.&quot; 
 
-Morgan: “You work with Professor Smith right? I’ve heard a lot of good things about him but never met him. “What do you think of him?” 
+“You work with Professor Smith right?&quot; asks Morgan, &quot;I’ve heard a lot of good things about him but never met him. How do you like working with him?” 
 
 [[I like him -&gt; Like Smith]]
 [[I like the work -&gt; Like Work]]
 [[Eh, it&#39;s a job -&gt; It&#39;s a job]]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name=" Lab Mates" tags="dorm" position="1100,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
-Morgan, “Oh yeah, I know Ashley and Luis from intramural. But I don&#39;t think I&#39;ve met Mia.”
+“Oh yeah, I know Ashley and Luis from intramural. But I don&#39;t think I&#39;ve met Mia,” he stares up at the ceiling, puzzling.
 
 “Yeah, I think she spends a lot of time over in the Engineering school so you probably wouldn’t see her around the multicultural center.” 
 
-Morgan: “Yeah this is a big school. I’m not surprised.”
+“Yeah this is a big school,&quot; he replies looking back at you, &quot;I’m not surprised.”
 
 *piiiiinngg*
 
@@ -217,8 +218,8 @@ You smile back. “Hi everyone.”
 	(set: $drink to &quot;Pumpkin Spice Latte&quot;)\
 	(go-to: &quot;Get Drink&quot;)\
 	]
-(link: &quot;Iced Tea&quot;)[\
-	(set: $drink to &quot;iced tea&quot;)\
+(link: &quot;Hot Tea&quot;)[\
+	(set: $drink to &quot;tea&quot;)\
 	(go-to: &quot;Get Drink&quot;)\
 	]
 (link: &quot;Black Coffee&quot;)[\
@@ -306,12 +307,12 @@ After a long morning at the lab, you glance at your watch, seeing it&#39;s high 
 
 You walk over and talk with them a while. They&#39;re waiting on a friend to grab a new lab notebook before heading off to class together. 
 
-As she finally runs up, you give them a wave and continue home. 
+As she finally runs up, you give them a wave as you part ways. 
 
 [[Head home -&gt; Apt Entrance]] 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name=" Like Smith" tags="dorm" position="950,275" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
-&quot;He&#39;s been a pretty great mentor so far. I really like working in his lab and it&#39;s cool he&#39;s been involving me in meeting other researchers.&quot; 
+&quot;He&#39;s been a pretty great mentor so far. I really like working in his lab and it&#39;s cool he&#39;s been involving me in meetings and introduced me to other researchers.&quot; 
 
 Morgan, &quot;That&#39;s awesome! Remind me who&#39;s in your lab again?&quot;
 
@@ -341,23 +342,23 @@ You&#39;re really excited to meet Dr. Avery. She worked at a company you&#39;re 
 
 You exchanged some emails with one of her former students last week, talking about the company, and she seemed so nice.
 
-[[Grab some lunch -&gt;Peanut Butter]]
+[[Make some lunch -&gt;Peanut Butter]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Eat Banana" tags="dorm" position="1700,325" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 &quot;That looks great! Can you make me one too?&quot;
 
-&quot;Sure,&quot; smiles Morgan, &quot;just a minute.&quot; He grabs another one for you. 
+&quot;Sure,&quot; smiles Morgan, &quot;just a minute.&quot; He grabs another one for you and starts prepping it. 
 
-[[Eat lunch -&gt; Enjoy lunch]] 
+[[Eat the banana -&gt; Enjoy lunch]] 
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Eat Sandwich" tags="dorm" position="1700,450" size="100,100">&lt;div class = &quot;box&quot;&gt;
 &quot;Wow, I can&#39;t believe you like that.&quot; 
 
 Morgan laughs, &quot;what do you mean, this is great!&quot; 
 
-You try not to grimace, and begin working around Morgan to throw together a a sandwich.
+You try not to grimace, and begin working around Morgan to throw together a sandwich.
 
-[[Eat Lunch -&gt; Enjoy lunch]]
+[[Eat your sandwich -&gt; Enjoy lunch]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name=" Enjoy lunch" tags="dorm" position="1850,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
 You splay out on the couch, $lunch in one hand, phone in the other. 
 
