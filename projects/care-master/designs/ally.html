@@ -82,13 +82,14 @@ div.alert {
   font-weight: bold;
 }
 
+tw-sidebar {
+ display: none;  
+}
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
-</script><tw-tag name="bus" color="purple"></tw-tag>,<tw-tag name="cafe" color="red"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="dorm" color="blue"></tw-tag>,<tw-tag name="hallway" color="yellow"></tw-tag>,<tw-tag name="smartwatch" color="green"></tw-tag><tw-passagedata pid="1" name="New Welcome" tags="start" position="50,175" size="100,100">(set: $surveyLink to &quot;http://cmu.ca1.qualtrics.com/jfe/form/SV_0lyvLx4NreZIpLL&quot;) 
-(set: $q1 to &quot;&quot;)
-(set: $q2 to &quot;&quot;) 
+</script><tw-tag name="bus" color="purple"></tw-tag>,<tw-tag name="cafe" color="red"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="dorm" color="blue"></tw-tag>,<tw-tag name="hallway" color="yellow"></tw-tag>,<tw-tag name="smartwatch" color="green"></tw-tag><tw-passagedata pid="1" name="New Welcome" tags="start" position="50,174" size="100,100">(set: $surveyLink to &quot;http://cmu.ca1.qualtrics.com/jfe/form/SV_0lyvLx4NreZIpLL&quot;) 
 
 &lt;!--
 Set all variables you wish to send to survey at start of story.
@@ -291,7 +292,7 @@ Professor Smith smiles, “No worries, Sam. College is about exploring options. 
 
 Thanks for completing the story! Follow the link to complete the final survey.
 
-(link: &quot;Go to Survey&quot;) [(goto-url: &quot;http://cmu.ca1.qualtrics.com/jfe/form/SV_0lyvLx4NreZIpLL&quot;)]
+(link: &quot;Go to Survey&quot;) [(goto-url: $surveyLink)]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Beginning, SMARTWATCH ALLY" tags="start smartwatch" position="175,175" size="100,100">
 &lt;div class=&quot;box&quot;&gt;	
@@ -343,7 +344,7 @@ You&#39;re really excited to meet Dr. Avery. She worked at a company you&#39;re 
 You exchanged some emails with one of her former students last week, talking about the company, and she seemed so nice.
 
 [[Make some lunch -&gt;Peanut Butter]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Eat Banana" tags="dorm" position="1700,325" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Eat Banana" tags="dorm" position="1701,325" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 &quot;That looks great! Can you make me one too?&quot;
 
@@ -359,7 +360,9 @@ Morgan laughs, &quot;What do you mean, this is great!&quot;
 You try not to grimace, and begin working around Morgan to throw together a sandwich.
 
 [[Eat your sandwich -&gt; Enjoy lunch]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name=" Enjoy lunch" tags="dorm" position="1850,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name=" Enjoy lunch" tags="dorm" position="1850,400" size="100,100">(set: $surveyLink to it + &quot;?lunch=&quot; + (text:$lunch))
+
+&lt;div class = &quot;box&quot;&gt;
 You splay out on the couch, $lunch in one hand, phone in the other. 
 
 You see a couple of notifications from the lab group chat. Looks like Luis forwarded some article about bias in admissions, but it&#39;s already been buried in gifs and memes from Ashley and Mia. 
@@ -433,7 +436,10 @@ Your watch *buzzes* again and you look down at it. It&#39;s the new app. A quest
 [[Press &#39;Listen, don&#39;t record&#39;-&gt;Listen]]
 [[Shut it off!-&gt;Shut off]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Avery Agree" tags="cafe" position="4500,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Avery Agree" tags="cafe" position="4500,599" size="100,100">(set: $averyNice to &quot;agree&quot;)
+(set: $surveyLink to it + &quot;&amp;averyNice=&quot; + (text:$averyNice))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Yeah, she certainly seems interested in us.&quot;
 
 After Professor Smith and Dr. Avery return, the rest of the meeting goes by fairly quickly. 
@@ -444,7 +450,10 @@ You learn Mia is going to be using her degree to help with her family business, 
 [[Bring up summer internships-&gt;Summer Internships]]
 [[Stay quiet for the rest of the meeting-&gt;Stay Quiet]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Avery Disagree" tags="cafe" position="4500,725" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Avery Disagree" tags="cafe" position="4500,725" size="100,100">(set: $averyNice to &quot;disagree&quot;)
+(set: $surveyLink to it + &quot;&amp;averyNice=&quot; + (text:$averyNice))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;I don&#39;t know about that. That was a lot.&quot;
 
 After Professor Smith and Dr. Avery return, the rest of the meeting goes by fairly quickly. 
@@ -455,7 +464,10 @@ You learn Mia is going to be using her degree to help with her family business, 
 [[Bring up summer internships-&gt;Summer Internships]]
 [[Stay quiet for the rest of the meeting-&gt;Stay Quiet]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="Avery Say Nothing" tags="cafe" position="4500,850" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="Avery Say Nothing" tags="cafe" position="4500,850" size="100,100">(set: $averyNice to &quot;sayNothing&quot;)
+(set: $surveyLink to it + &quot;&amp;averyNice=&quot; + (text:$averyNice))
+
+&lt;div class = &quot;box&quot;&gt;
 You shrug and check your phone.
 
 After Professor Smith and Dr. Avery return, the rest of the meeting goes by fairly quickly. 
@@ -466,7 +478,10 @@ You learn Mia is going to be using her degree to help with her family business, 
 [[Bring up summer internships-&gt;Summer Internships]]
 [[Stay quiet for the rest of the meeting-&gt;Stay Quiet]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Casual Chat" tags="cafe" position="4700,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Casual Chat" tags="cafe" position="4700,600" size="100,100">(set: $conversation to &quot;casual&quot;)
+(set: $surveyLink to it + &quot;&amp;conversation=&quot; + (text:$conversation))
+
+&lt;div class = &quot;box&quot;&gt;
 Everyone breaks out into side conversations. You and Ashley chat a bit about your upcoming Thanksgiving plans. She’s going to be heading home to New York. 
 
 Dr. Avery looks down at her watch and raises her eyebrows. 
@@ -478,7 +493,10 @@ Professor Smith says a quick goodbye to you all, &quot;I&#39;ll see you all in l
 [[Gulp down your drink -&gt;Finish Drink]]
 [[Toss out your drink -&gt;Finish Drink]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Summer Internships" tags="cafe" position="4700,725" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Summer Internships" tags="cafe" position="4700,725" size="100,100">(set: $conversation to &quot;internship&quot;)
+(set: $surveyLink to it + &quot;&amp;conversation=&quot; + (text:$conversation))
+
+&lt;div class = &quot;box&quot;&gt;
 You get to talk to Dr. Avery about how you are hoping to get an internship at the company she worked at previously. She offers to review your resume and cover letter for you before you turn in your application.
 
 Dr. Avery looks down at her watch and raises her eyebrows. 
@@ -490,7 +508,10 @@ Professor Smith says a quick goodbye to you all, &quot;I&#39;ll see you all in l
 [[Gulp down your drink -&gt;Finish Drink]]
 [[Toss out your drink -&gt;Finish Drink]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Stay Quiet" tags="cafe" position="4700,850" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Stay Quiet" tags="cafe" position="4700,850" size="100,100">(set: $conversation to &quot;quiet&quot;)
+(set: $surveyLink to it + &quot;&amp;conversation=&quot; + (text:$conversation))
+
+&lt;div class = &quot;box&quot;&gt;
 Everyone breaks out into side conversations. You listen in here and there but don’t really engage much.
 
 Dr. Avery looks down at her watch and raises her eyebrows. 
@@ -520,7 +541,10 @@ Ashley turns to you.
 [[Express concern -&gt;Concerned]]
 [[Avoid the question -&gt;Avoid]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Satisfied" tags="bus" position="5150,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Satisfied" tags="bus" position="5150,600" size="100,100">(set: $opinion to &quot;satisfied&quot;)
+(set: $surveyLink to it + &quot;&amp;opinion=&quot; + (text:$opinion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Yeah that was cool. It was nice she was so interested in our careers.&quot;
 
 “Yeah! Oh shoot, my bus is here, are you taking this one too?&quot; she asks.
@@ -533,7 +557,10 @@ Ashley smiles and waves to you, and you can see your bus just pulling up behind 
 
 [[Head home-&gt;Return home]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Concerned" tags="bus" position="5150,725" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Concerned" tags="bus" position="5150,725" size="100,100">(set: $opinion to &quot;concerned&quot;)
+(set: $surveyLink to it + &quot;&amp;opinion=&quot; + (text:$opinion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Yeah I don&#39;t know, it was a little weird.&quot; 
 
 “Huh, yeah it did get a little weird. Oh that&#39;s my bus, are you taking this one too?&quot; she asks.
@@ -546,7 +573,10 @@ Ashley smiles and waves to you, and you can see your bus just pulling up behind 
 
 [[Head home-&gt;Return home]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Avoid" tags="bus" position="5150,850" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Avoid" tags="bus" position="5150,850" size="100,100">(set: $opinion to &quot;avoid&quot;)
+(set: $surveyLink to it + &quot;&amp;opinion=&quot; + (text:$opinion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Oh yeah I don&#39;t know. Same for me.&quot; 
 
 “Oh shoot, my bus is here, are you taking this one too?&quot; she asks.
@@ -592,7 +622,7 @@ Gah! The meeting with Dr Avery and your lab mates starts in ten minutes!
 
 [[Rush out the door! -&gt; Enter Cafe]] 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Interjection" tags="cafe" position="4300,700" size="100,100">&lt;div class=&quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Interjection" tags="cafe" position="4300,699" size="100,100">&lt;div class=&quot;box&quot;&gt;
 Professor Smith chimes happily in, “I am so glad that you all got to meet. Regarding your future plans, if either of you need any further consulting, you know how to reach me. But I see that Dr. Avery needs a refill. Let’s take a short break.”
 
 Professor Smith and Dr. Avery leave to get refills. 
@@ -603,7 +633,10 @@ Luis says, “Gosh, Dr. Avery seems so nice doesn’t she? I am excited to get t
 [[Disagree -&gt;Avery Disagree]]
 [[Say Nothing -&gt;Avery Say Nothing]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Record" tags="cafe smartwatch" position="3875,475" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Record" tags="cafe smartwatch" position="3875,474" size="100,100">(set: $record to &quot;record&quot;)
+(set: $surveyLink to it + &quot;&amp;record=&quot; + (text:$record))
+
+&lt;div class = &quot;box&quot;&gt;
 A little red light blinks on the watch face.
 
 &quot;Hm,&quot; she looks thoughtful, &quot;how about your parents?&quot;
@@ -617,7 +650,10 @@ Your watch grabs your attention again,
 [[Contact an ally -&gt;ContactAlly]]
 [[I&#39;m fine, ignore -&gt;Ignore]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="Listen" tags="cafe smartwatch" position="3875,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="Listen" tags="cafe smartwatch" position="3875,599" size="100,100">(set: $record to &quot;listen&quot;)
+(set: $surveyLink to it + &quot;&amp;record=&quot; + (text:$record))
+
+&lt;div class = &quot;box&quot;&gt;
 Your watch screen goes black again.
 
 &quot;Hm,&quot; she looks thoughtful, &quot;how about your parents?&quot;
@@ -631,14 +667,23 @@ Your watch grabs your attention again,
 [[Contact an ally -&gt;ContactAlly]]
 [[I&#39;m fine, ignore -&gt;Ignore]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="Shut off" tags="cafe smartwatch" position="3875,725" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="Shut off" tags="cafe smartwatch" position="3875,725" size="100,100">(set: $record to &quot;off&quot;)
+(set: $surveyLink to it + &quot;&amp;record=&quot; + (text:$record))
+
+(set: $watchUse to &quot;nothing&quot;)
+(set: $surveyLink to it + &quot;&amp;watchUse=&quot; + (text:$watchUse))
+
+&lt;div class = &quot;box&quot;&gt;
 Your watch screen goes black again.
 
 &quot;Hm,&quot; she looks thoughtful, &quot;how about your parents?&quot;
 
 [[Los Angeles -&gt;Interjection]] 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="Ring Phone" tags="cafe smartwatch" position="4100,350" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="Ring Phone" tags="cafe smartwatch" position="4100,350" size="100,100">(set: $watchUse to &quot;ringPhone&quot;)
+(set: $surveyLink to it + &quot;&amp;watchUse=&quot; + (text:$watchUse))
+
+&lt;div class = &quot;box&quot;&gt;
 Your phone, deep in your pocket, rings out loud. You&#39;re sure you had set it to silent. 
 
 “Oh! Excuse me.” You say, as you fish your phone out of your pocket. It reads &#39;R. Ally&#39;. “I have to take this, sorry!” 
@@ -653,7 +698,10 @@ You nod and smile in case anyone from the group is watching you. You take a few 
 
 [[Head back to the table -&gt;Interjection]] 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="ContactAlly" tags="cafe smartwatch" position="4100,475" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="ContactAlly" tags="cafe smartwatch" position="4100,474" size="100,100">(set: $watchUse to &quot;contactAlly&quot;)
+(set: $surveyLink to it + &quot;&amp;watchUse=&quot; + (text:$watchUse))
+
+&lt;div class = &quot;box&quot;&gt;
 You select the option to “Ping an ally” even though you don’t quite know what will happen. Who does this app think is an ally? 
 
 Mia’s watch buzzes, she glances down at it and then at you. 
@@ -668,7 +716,10 @@ Mia’s watch buzzes, she glances down at it and then at you.
 [[Smile at Mia -&gt;Interjection]]
 [[Drink your $drink -&gt;Interjection]] 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="Ignore" tags="cafe smartwatch" position="4100,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="Ignore" tags="cafe smartwatch" position="4100,600" size="100,100">(set: $watchUse to &quot;ignore&quot;)
+(set: $surveyLink to it + &quot;&amp;watchUse=&quot; + (text:$watchUse))
+
+&lt;div class = &quot;box&quot;&gt;
 You turn off the notifications quickly and turn back to Dr. Avery to answer.
 
 [[&quot;My parents are from Los Angeles&quot; -&gt;Interjection]] 
