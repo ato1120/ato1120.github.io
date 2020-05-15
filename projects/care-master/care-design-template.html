@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="CARE_Design_TEMPLATE" startnode="1" creator="Twine" creator-version="2.3.5" ifid="6EF3800B-03D4-426C-8917-1AA43B9CD914" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="cafe"] { 
+<tw-storydata name="CARE_Design_TEMPLATE" startnode="1" creator="Twine" creator-version="2.3.5" ifid="6EF3800B-03D4-426C-8917-1AA43B9CD914" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="cafe"] { 
 	background-image: url("https://i.imgur.com/wxnxWm9.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -74,11 +74,15 @@ div.email {
   margin-left: 10%;
 }
 
+/* removes back button */
+tw-sidebar {
+ display: none;  
+}
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
-</script><tw-tag name="bus" color="purple"></tw-tag>,<tw-tag name="cafe" color="red"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="dorm" color="blue"></tw-tag>,<tw-tag name="hallway" color="yellow"></tw-tag><tw-passagedata pid="1" name="New Welcome" tags="start" position="50,175" size="100,100">(set: $surveyLink to &quot;https://qtrial2019q2az1.az1.qualtrics.com/jfe/form/SV_d4IRWXpS7QYWbPv&quot;) 
+</script><tw-tag name="bus" color="purple"></tw-tag>,<tw-tag name="cafe" color="red"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="dorm" color="blue"></tw-tag>,<tw-tag name="hallway" color="yellow"></tw-tag><tw-passagedata pid="1" name="New Welcome" tags="" position="50,175" size="100,100">(set: $surveyLink to &quot;https://qtrial2019q2az1.az1.qualtrics.com/jfe/form/SV_d4IRWXpS7QYWbPv&quot;) 
 (set: $q1 to &quot;&quot;)
 (set: $q2 to &quot;&quot;) 
 
@@ -154,14 +158,14 @@ Morgan glances up, “Hey Sam! What&#39;s going on?&quot;
 
 “You work with Professor Smith right?&quot; asks Morgan, &quot;I’ve heard a lot of good things about him. How do you like working with him?” 
 
-[[&quot;I like him&quot; -&gt; Like Smith]]
-[[&quot;I like the work&quot; -&gt; Like Work]]
-[[&quot;Eh, it&#39;s a job&quot; -&gt; It&#39;s a job]]
+[[He&#39;s a good mentor -&gt; Like Smith]]
+[[Research has been fun -&gt; Like Work]]
+[[Eh, it&#39;s a job -&gt; It&#39;s a job]]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name=" Lab Mates" tags="dorm" position="1100,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
 “Oh yeah, I know Ashley and Luis from intramural. But I don&#39;t think I&#39;ve met Mia,” he stares up at the ceiling, puzzling.
 
-“Yeah, I think she spends a lot of time over in the Engineering school so you probably wouldn’t see her around the multicultural center.” 
+“Yeah, I think she spends a lot of time over in the Engineering school.” 
 
 “Yeah this is a big school,&quot; he replies looking back at you, &quot;I’m not surprised.”
 
@@ -266,7 +270,7 @@ Professor Smith beams. “That is wonderful! There are so many opportunities wit
 
 “I actually plan to take a little break from academics. I’ve always planned on traveling for a bit and I want to take the opportunity to think about what I plan to spend the rest of my life doing.” 
 
-Prof. Smith smiles. “How exciting! Not many have the courage to decide something so major. I think the uniersity even has some programs for going abroad if you wanted to start while you&#39;re here. And in the future when you&#39;re ready, I&#39;d be glad to help in figuring out next steps.” 
+Prof. Smith smiles. “How exciting! Not many have the courage to decide something so major. I think the university even has some programs for going abroad if you wanted to start while you&#39;re here. And in the future when you&#39;re ready, I&#39;d be glad to help in figuring out next steps.” 
 
 [[&quot;That would be great!&quot; -&gt;Avery Articulate]] 
 [[Take notes -&gt;Avery Articulate]] 
@@ -428,7 +432,7 @@ Professor Smith chimes happily in, “I am so glad that you all got to meet. Reg
 
 Professor Smith and Dr. Avery leave to get refills. 
 
-Luis says, “Gosh, Dr. Avery seems so nice doesn’t she? I am excited to get to talk to her more.” 
+Luis says, “Gosh, Dr. Avery seems so helpful doesn’t she? I am excited to get to talk to her more.” 
 
 [[Agree -&gt;Avery Agree]]
 [[Disagree -&gt;Avery Disagree]]
