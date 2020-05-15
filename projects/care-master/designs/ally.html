@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="CARE_Design_1" startnode="1" creator="Twine" creator-version="2.3.5" ifid="A708AC77-4F4E-413E-A9D6-0EEE850F6E05" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="cafe"] { 
+<tw-storydata name="CARE_Design_1" startnode="1" creator="Twine" creator-version="2.3.5" ifid="A708AC77-4F4E-413E-A9D6-0EEE850F6E05" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="cafe"] { 
 	background-image: url("https://i.imgur.com/wxnxWm9.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -82,6 +82,14 @@ div.alert {
   font-weight: bold;
 }
 
+div.watch {
+ font-family: "Courier New"; 
+  font-size: .9em;
+  color: silver;
+  font-weight: bold;
+  display: inline;
+}
+
 tw-sidebar {
  display: none;  
 }
@@ -89,7 +97,7 @@ tw-sidebar {
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
-</script><tw-tag name="bus" color="purple"></tw-tag>,<tw-tag name="cafe" color="red"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="dorm" color="blue"></tw-tag>,<tw-tag name="hallway" color="yellow"></tw-tag>,<tw-tag name="smartwatch" color="green"></tw-tag><tw-passagedata pid="1" name="New Welcome" tags="start" position="50,174" size="100,100">(set: $surveyLink to &quot;http://cmu.ca1.qualtrics.com/jfe/form/SV_0lyvLx4NreZIpLL&quot;) 
+</script><tw-tag name="bus" color="purple"></tw-tag>,<tw-tag name="cafe" color="red"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="dorm" color="blue"></tw-tag>,<tw-tag name="hallway" color="yellow"></tw-tag>,<tw-tag name="smartwatch" color="green"></tw-tag><tw-passagedata pid="1" name="New Welcome" tags="" position="50,174" size="100,100">(set: $surveyLink to &quot;http://cmu.ca1.qualtrics.com/jfe/form/SV_0lyvLx4NreZIpLL&quot;) 
 
 &lt;!--
 Set all variables you wish to send to survey at start of story.
@@ -116,7 +124,7 @@ When the story is complete, you will be taken to a survey to give feedback about
 
 [[I&#39;m ready to begin -&gt;Beginning, SMARTWATCH ALLY]] 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name=" Bookstore" tags="campus" position="300,175" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name=" Bookstore" tags="campus" position="301.6666666666667,175" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 A rush of cool air surrounds you as the late Fall scene unfolds... it&#39;s a couple of weeks before Thanksgiving and all the leaves on the ground are crisp. You watch the beautiful leaves twirl and glide to the sidewalk as students blur past you. 
 
@@ -125,7 +133,7 @@ The sound of the *crunch crunch crunch* paired with upbeat chatter gets you exci
 You pass some friendly faces and give a few nods. A group standing outside a bookstore waves at you and one of them yells, &quot;Hey Sam! What&#39;s up?&quot;
 
 [[Smile and wave -&gt; Smile and Wave]]
-[[Shout a greeting back -&gt; Shout Greeting]]
+[[Stop and chat for a minute -&gt; Shout Greeting]]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name=" Smile and Wave" tags="campus" position="475,125" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
@@ -169,7 +177,7 @@ Morgan glances up, “Hey Sam! What&#39;s going on?&quot;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name=" Lab Mates" tags="dorm" position="1100,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
 “Oh yeah, I know Ashley and Luis from intramural. But I don&#39;t think I&#39;ve met Mia,” he stares up at the ceiling, puzzling.
 
-“Yeah, I think she spends a lot of time over in the Engineering school so you probably wouldn’t see her around the multicultural center.” 
+“Yeah, I think she spends a lot of time over in the Engineering school.” 
 
 “Yeah this is a big school,&quot; he replies looking back at you, &quot;I’m not surprised.”
 
@@ -271,7 +279,7 @@ Professor Smith beams. “That is wonderful! There are so many opportunities wit
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name=" Sam Travel" tags="cafe" position="3250,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
 “I actually plan to take a little break from academics. I’ve always planned on traveling for a bit and I want to take the opportunity to think about what I plan to spend the rest of my life doing.” 
 
-Prof. Smith smiles. “How exciting! Not many have the courage to decide something so major. I think the uniersity even has some programs for going abroad if you wanted to start while you&#39;re here. And in the future when you&#39;re ready, I&#39;d be glad to help in figuring out next steps.” 
+Prof. Smith smiles. “How exciting! Not many have the courage to decide something so major. I think the university even has some programs for going abroad if you wanted to start while you&#39;re here. And in the future when you&#39;re ready, I&#39;d be glad to help in figuring out next steps.” 
 
 [[&quot;That would be great!&quot; -&gt;Avery Articulate]] 
 [[Take notes -&gt;Avery Articulate]] 
@@ -340,13 +348,13 @@ Morgan, &quot;Haha, yeah I get that. Remind me, who&#39;s in your lab again?&quo
 [[&quot;Mia Zhang, Ashley Williams, Luis Castillo&quot; -&gt; Lab Mates]]
 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name=" Anticipation" tags="dorm" position="1400,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name=" Anticipation" tags="dorm" position="1401.6666666666667,398.3333333333333" size="100,100">&lt;div class = &quot;box&quot;&gt;
 You&#39;re really excited to meet Dr. Avery. She worked at a company you&#39;re hoping to intern with this summer. 
 
 You exchanged some emails with one of her former students last week, talking about the company, and she seemed so nice.
 
 [[Make some lunch -&gt;Peanut Butter]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Eat Banana" tags="dorm" position="1701,325" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Eat Banana" tags="dorm" position="1702,325" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 &quot;That looks great! Can you make me one too?&quot;
 
@@ -373,16 +381,16 @@ You chuckle, closing the chat.
 
 [[Flip through phone mindlessly -&gt; Browse Phone]]
 [[Check out new apps -&gt; Browse Phone]]
-&lt;/div&gt; </tw-passagedata><tw-passagedata pid="28" name=" Browse Phone" tags="dorm smartwatch" position="2000,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt; </tw-passagedata><tw-passagedata pid="28" name=" Browse Phone" tags="dorm smartwatch" position="2000,398.3333333333333" size="100,100">&lt;div class = &quot;box&quot;&gt;
 You flip through your phone absentmindedly. 
 
 Mia had sent a couple links yesterday for some new apps that you downloaded but hadn&#39;t had the time to look at just yet. 
 
-One app catches your eye, &quot;Racism Ally.&quot; This tool for your smartwatch claims to offer advice when you&#39;re stuck in awkward or hurtful moments like racial microaggressions. 
+One app catches your eye, &quot;Ally Watch.&quot; This tool for your smartwatch claims to detect your emotions and offer advice when you&#39;re stuck in awkward or hurtful moments. Mia said it&#39;s been especially useful for friends who deal with sexism, racism, and homophobia.  
 
 You&#39;re skeptical, but interested. 
 
-[[Set-up the app -&gt;Racism Ally Set-Up]]
+[[Set-up the app -&gt;Ally Watch Set-Up]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Zone Out" tags="cafe" position="3025,525" size="100,100">&lt;div class = &quot;box&quot;&gt;
 It was a long morning, you have a bit of a hard time paying attention and you glance around the cafe, sipping your $drink. It&#39;s suprisingly crowded.
 
@@ -410,7 +418,7 @@ Professor Smith turns to you. “Now how about you Sam?”
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Where Are You From" tags="cafe smartwatch" position="3575,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
 &quot;Oh thanks Dr. Avery. English is my first language, actually.&quot; 
 
-You feel your smartwatch start to *buzzzzz bzz bzz* as your pulse begins to race.
+You feel your smartwatch start to &lt;div class=&quot;watch&quot;&gt;*buzzzzz bzz bzz*&lt;/div&gt; as your pulse begins to race.
 
 Unphased, she replies, &quot;oh really? I was wondering why you didn&#39;t have an accent. Where are you from?&quot;
 (set: $home to &quot;nothing&quot;)
@@ -426,14 +434,14 @@ Unphased, she replies, &quot;oh really? I was wondering why you didn&#39;t have 
 	(set: $home to &quot;the Bay Area&quot;)\
 	(go-to: &quot;Should I Capture This&quot;)\
 	]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Should I Capture This" tags="cafe smartwatch" position="3725,600" size="100,100">(set: $surveyLink to it + &quot;&amp;home=&quot; + (text:$home))
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Should I Capture This" tags="cafe smartwatch" position="3726.6666666666665,600" size="100,100">(set: $surveyLink to it + &quot;&amp;home=&quot; + (text:$home))
 
 &lt;div class = &quot;box&quot;&gt;
 &quot;Oh, I&#39;m from $home.&quot;
 
-Your watch *buzzes* again and you look down at it. It&#39;s the new app. A question pops up on the screen. 
+Your watch &lt;div class=&quot;watch&quot;&gt;*buzzes*&lt;/div&gt; again and you look down at it. It&#39;s the new app. A question pops up on the screen. 
 &lt;div class=&quot;alert&quot;&gt;
-&quot;This seems racist, would you like me to capture this?&quot;
+&quot;You seem to be getting upset. Do you want me to start capturing what is happening?&quot;
 &lt;/div&gt;
 
 [[Press &#39;Yes, record&#39;-&gt;Record]]
@@ -600,8 +608,8 @@ It was a pretty busy day and you still have hours of homework tonight and a test
 
 [[Take a nap-&gt;END]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Racism Ally Set-Up" tags="dorm smartwatch" position="2125,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
-*Racism Ally* starts up and requests to access your calendar and address book. Then it asks that you say a few words to calibrate your voice. 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Ally Watch Set-Up" tags="dorm smartwatch" position="2125,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+*Ally Watch* starts up and requests to access your calendar and address book. Then it asks that you say a few words to calibrate your voice. 
 
 It asks for you to speak first in an angry voice, then a scared voice, a startled voice, and a laughing voice - to learn your emotion signals. 
 
@@ -637,7 +645,7 @@ Professor Smith chimes happily in, “I am so glad that you all got to meet. Reg
 
 Professor Smith and Dr. Avery leave to get refills. 
 
-Luis says, “Gosh, Dr. Avery seems so nice doesn’t she? I am excited to get to talk to her more.” 
+Luis says, “Gosh, Dr. Avery seems so helpful doesn’t she? I am excited to get to talk to her more.” 
 
 [[Agree -&gt;Avery Agree]]
 [[Disagree -&gt;Avery Disagree]]
@@ -660,7 +668,7 @@ Your watch grabs your attention again,
 [[Contact an ally -&gt;ContactAlly]]
 [[I&#39;m fine, ignore -&gt;Ignore]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="Listen" tags="cafe smartwatch" position="3875,599" size="100,100">(set: $record to &quot;listen&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="Listen" tags="cafe smartwatch" position="3876.6666666666665,599" size="100,100">(set: $record to &quot;listen&quot;)
 (set: $surveyLink to it + &quot;&amp;record=&quot; + (text:$record))
 
 &lt;div class = &quot;box&quot;&gt;
@@ -677,7 +685,7 @@ Your watch grabs your attention again,
 [[Contact an ally -&gt;ContactAlly]]
 [[I&#39;m fine, ignore -&gt;Ignore]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="Shut off" tags="cafe smartwatch" position="3875,725" size="100,100">(set: $record to &quot;off&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="Shut off" tags="cafe smartwatch" position="3875,723.3333333333334" size="100,100">(set: $record to &quot;off&quot;)
 (set: $surveyLink to it + &quot;&amp;record=&quot; + (text:$record))
 
 (set: $watchUse to &quot;nothing&quot;)
@@ -696,13 +704,13 @@ Your watch screen goes black again.
 &lt;div class = &quot;box&quot;&gt;
 Your phone, deep in your pocket, rings out loud. You&#39;re sure you had set it to silent. 
 
-“Oh! Excuse me.” You say, as you fish your phone out of your pocket. It reads &#39;R. Ally&#39;. “I have to take this, sorry!” 
+“Oh! Excuse me.” You say, as you fish your phone out of your pocket. It reads &#39;Ally W.&#39;. “I have to take this, sorry!” 
 
 You step away from the table and put the phone to your ear. 
 
 “Hello?” 
 
-A recorded message responds. “This is Racism Ally. Thank you for using our service. This is a recorded message. You can talk to us as long as you like, if it helps you get out of a difficult situation.” 
+A recorded message responds. “This is Ally Watch. Thank you for using our service. This is a recorded message. You can talk to us as long as you like, if it helps you get out of a difficult situation.” 
 
 You nod and smile in case anyone from the group is watching you. You take a few minutes to let your nerves settle.
 

@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="CARE_Design_3" startnode="1" creator="Twine" creator-version="2.3.5" ifid="5F4EEEB7-D742-45DE-B8FE-C6A0E5F6DC89" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="cafe"] { 
+<tw-storydata name="CARE_Design_3" startnode="1" creator="Twine" creator-version="2.3.5" ifid="5F4EEEB7-D742-45DE-B8FE-C6A0E5F6DC89" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="cafe"] { 
 	background-image: url("https://i.imgur.com/wxnxWm9.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -89,13 +89,15 @@ div.speaker {
   display: inline;
 }
 
+tw-sidebar {
+ display: none;  
+}
+
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
-</script><tw-tag name="cafe" color="red"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="dorm" color="blue"></tw-tag>,<tw-tag name="hallway" color="yellow"></tw-tag>,<tw-tag name="bus" color="purple"></tw-tag>,<tw-tag name="speaker" color="green"></tw-tag><tw-passagedata pid="1" name="New Welcome" tags="start" position="50,175" size="100,100">(set: $surveyLink to &quot;https://qtrial2019q2az1.az1.qualtrics.com/jfe/form/SV_d4IRWXpS7QYWbPv&quot;) 
-(set: $q1 to &quot;&quot;)
-(set: $q2 to &quot;&quot;) 
+</script><tw-tag name="bus" color="purple"></tw-tag>,<tw-tag name="cafe" color="red"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="dorm" color="blue"></tw-tag>,<tw-tag name="hallway" color="yellow"></tw-tag>,<tw-tag name="speaker" color="green"></tw-tag><tw-passagedata pid="1" name="New Welcome" tags="" position="50,175" size="100,100">(set: $surveyLink to &quot;http://cmu.ca1.qualtrics.com/jfe/form/SV_ahN6pZe5fJa4UZv&quot;) 
 
 &lt;!--
 Set all variables you wish to send to survey at start of story.
@@ -132,7 +134,7 @@ The sound of the *crunch crunch crunch* paired with upbeat chatter gets you exci
 You pass some friendly faces and give a few nods. A group standing outside a bookstore waves at you and one of them yells, &quot;Hey Sam! What&#39;s up?&quot;
 
 [[Smile and wave -&gt; Smile and Wave]]
-[[Shout a greeting back -&gt; Shout Greeting]]
+[[Stop and chat for a minute -&gt; Shout Greeting]]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name=" Smile and Wave" tags="campus" position="475,125" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
@@ -176,7 +178,7 @@ Morgan glances up, “Hey Sam! What&#39;s going on?&quot;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name=" Lab Mates" tags="dorm" position="1100,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
 “Oh yeah, I know Ashley and Luis from intramural. But I don&#39;t think I&#39;ve met Mia,” he stares up at the ceiling, puzzling.
 
-“Yeah, I think she spends a lot of time over in the Engineering school so you probably wouldn’t see her around the multicultural center.” 
+“Yeah, I think she spends a lot of time over in the Engineering school.” 
 
 “Yeah this is a big school,&quot; he replies looking back at you, &quot;I’m not surprised.”
 
@@ -245,7 +247,9 @@ You smile back. “Hi everyone.”
 	(set: $drink to &quot;water&quot;)\
 	(go-to: &quot;Get Drink&quot;)\
 	]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Get Drink" tags="cafe" position="2850,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Get Drink" tags="cafe" position="2850,550" size="100,100">(set: $surveyLink to it + &quot;&amp;drink=&quot; + (text:$drink))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Could I get a $drink?&quot;
 
 “Of course! I’ll be right back” Prof. Smith stands up and heads for the counter. There wasn&#39;t much of a line and he quickly returns and hands you your drink. 
@@ -281,7 +285,7 @@ Professor Smith beams. “That is wonderful! There are so many opportunities wit
 
 “I actually plan to take a little break from academics. I’ve always planned on traveling for a bit and I want to take the opportunity to think about what I plan to spend the rest of my life doing.” 
 
-Prof. Smith smiles. “How exciting! Not many have the courage to decide something so major. I think the uniersity even has some programs for going abroad if you wanted to start while you&#39;re here. And in the future when you&#39;re ready, I&#39;d be glad to help in figuring out next steps.” 
+Prof. Smith smiles. “How exciting! Not many have the courage to decide something so major. I think the university even has some programs for going abroad if you wanted to start while you&#39;re here. And in the future when you&#39;re ready, I&#39;d be glad to help in figuring out next steps.” 
 
 [[That would be great! -&gt;Avery Articulate]] 
 [[Take notes -&gt;Avery Articulate]] 
@@ -304,9 +308,7 @@ Professor Smith smiles, “No worries, Sam. College is about exploring options. 
 
 Thanks for completing the story! Follow the link to complete the final survey.
 
-[NOTE TO TESTERS, LINK NOT ACTIVE YET, END HERE]
-
-(link: &quot;Exit&quot;) [(goto-url: &quot;http://alexandrato.com&quot;)]
+(link: &quot;Exit&quot;) [(goto-url: $surveyLink)]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Beginning, COMFORT SPEAKER" tags="start" position="175,175" size="100,100">
 &lt;div class=&quot;box&quot;&gt;	
@@ -374,7 +376,7 @@ Morgan laughs, &quot;What do you mean, this is great!&quot;
 You try not to grimace, and begin working around Morgan to throw together a sandwich.
 
 [[Drop off your backpack -&gt;Set-Up Voice]] 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name=" Enjoy lunch" tags="dorm speaker" position="2275,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name=" Enjoy lunch" tags="dorm speaker" position="2275,398.3333333333333" size="100,100">&lt;div class = &quot;box&quot;&gt;
 You go back to the living room and splay out on the couch, $lunch in one hand, phone in the other. 
 
 You see a couple of notifications from the lab group chat. Looks like Luis forwarded some article about bias in admissions, but it&#39;s already been buried in gifs and memes from Ashley and Mia. 
@@ -432,7 +434,9 @@ Unphased, she replies, &quot;oh really? I was wondering why you didn&#39;t have 
 	(set: $home to &quot;the Bay Area&quot;)\
 	(go-to: &quot;Interjection&quot;)\
 	]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Interjection" tags="cafe" position="3850,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Interjection" tags="cafe" position="3850,550" size="100,100">(set: $surveyLink to it + &quot;&amp;home=&quot; + (text:$home))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Oh, I&#39;m from $home.&quot;
 
 &quot;Hm,&quot; she ponders, &quot;how about your parents?&quot;
@@ -443,13 +447,16 @@ Professor Smith chimes happily in, “I am so glad that you all got to meet. Reg
 
 Professor Smith and Dr. Avery leave to get refills. 
 
-Luis says, “Gosh, Dr. Avery seems so nice doesn’t she? I am excited to get to talk to her more.” 
+Luis says, “Gosh, Dr. Avery seems so helpful doesn’t she? I am excited to get to talk to her more.” 
 
 [[Agree -&gt;Avery Agree]]
 [[Disagree -&gt;Avery Disagree]]
 [[Say Nothing -&gt;Avery Say Nothing]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Avery Agree" tags="cafe" position="4000,425" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Avery Agree" tags="cafe" position="4000,425" size="100,100">(set: $averyNice to &quot;agree&quot;)
+(set: $surveyLink to it + &quot;&amp;averyNice=&quot; + (text:$averyNice))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Yeah, she certainly seems interested in us.&quot;
 
 After Professor Smith and Dr. Avery return, the rest of the meeting goes by fairly quickly. 
@@ -460,7 +467,10 @@ You learn Mia is going to be using her degree to help with her family business, 
 [[Bring up summer internships-&gt;Summer Internships]]
 [[Stay quiet for the rest of the meeting-&gt;Stay Quiet]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Avery Disagree" tags="cafe" position="4000,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Avery Disagree" tags="cafe" position="4000,546.6666666666667" size="100,100">(set: $averyNice to &quot;disagree&quot;)
+(set: $surveyLink to it + &quot;&amp;averyNice=&quot; + (text:$averyNice))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;I don&#39;t know about that. That was a lot.&quot;
 
 After Professor Smith and Dr. Avery return, the rest of the meeting goes by fairly quickly. 
@@ -471,7 +481,10 @@ You learn Mia is going to be using her degree to help with her family business, 
 [[Bring up summer internships-&gt;Summer Internships]]
 [[Stay quiet for the rest of the meeting-&gt;Stay Quiet]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="Avery Say Nothing" tags="cafe" position="4000,675" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="Avery Say Nothing" tags="cafe" position="4001.6666666666665,675" size="100,100">(set: $averyNice to &quot;avoid&quot;)
+(set: $surveyLink to it + &quot;&amp;averyNice=&quot; + (text:$averyNice))
+
+&lt;div class = &quot;box&quot;&gt;
 You shrug and check your phone.
 
 After Professor Smith and Dr. Avery return, the rest of the meeting goes by fairly quickly. 
@@ -482,7 +495,10 @@ You learn Mia is going to be using her degree to help with her family business, 
 [[Bring up summer internships-&gt;Summer Internships]]
 [[Stay quiet for the rest of the meeting-&gt;Stay Quiet]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Casual Chat" tags="cafe" position="4200,425" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Casual Chat" tags="cafe" position="4200,425" size="100,100">(set: $conversation to &quot;casual&quot;)
+(set: $surveyLink to it + &quot;&amp;conversation=&quot; + (text:$conversation))
+
+&lt;div class = &quot;box&quot;&gt;
 Everyone breaks out into side conversations. You and Ashley chat a bit about your upcoming Thanksgiving plans. She’s going to be heading home to New York. 
 
 Dr. Avery looks down at her watch and raises her eyebrows. 
@@ -494,7 +510,10 @@ Professor Smith says a quick goodbye to you all, &quot;I&#39;ll see you all in l
 [[Gulp down your drink -&gt;Finish Drink]]
 [[Toss out your drink -&gt;Finish Drink]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Summer Internships" tags="cafe" position="4200,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Summer Internships" tags="cafe" position="4200,550" size="100,100">(set: $conversation to &quot;internship&quot;)
+(set: $surveyLink to it + &quot;&amp;conversation=&quot; + (text:$conversation))
+
+&lt;div class = &quot;box&quot;&gt;
 You get to talk to Dr. Avery about how you are hoping to get an internship at the company she worked at previously. She offers to review your resume and cover letter for you before you turn in your application.
 
 Dr. Avery looks down at her watch and raises her eyebrows. 
@@ -506,7 +525,10 @@ Professor Smith says a quick goodbye to you all, &quot;I&#39;ll see you all in l
 [[Gulp down your drink -&gt;Finish Drink]]
 [[Toss out your drink -&gt;Finish Drink]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Stay Quiet" tags="cafe" position="4200,675" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Stay Quiet" tags="cafe" position="4200,675" size="100,100">(set: $conversation to &quot;quiet&quot;)
+(set: $surveyLink to it + &quot;&amp;conversation=&quot; + (text:$conversation))
+
+&lt;div class = &quot;box&quot;&gt;
 Everyone breaks out into side conversations. You listen in here and there but don’t really engage much.
 
 Dr. Avery looks down at her watch and raises her eyebrows. 
@@ -536,7 +558,10 @@ Ashley turns to you.
 [[Express concern -&gt;Concerned]]
 [[Avoid the question -&gt;Avoid]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Satisfied" tags="bus" position="4650,425" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Satisfied" tags="bus" position="4650,425" size="100,100">(set: $opinion to &quot;satisfied&quot;)
+(set: $surveyLink to it + &quot;&amp;opinion=&quot; + (text:$opinion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Yeah that was cool. It was nice she was so interested in our careers.&quot;
 
 “Yeah! Oh shoot, my bus is here, are you taking this one too?&quot; she asks.
@@ -549,7 +574,10 @@ Ashley smiles and waves to you, and you can see your bus just pulling up behind 
 
 [[Head home-&gt;Return home]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Concerned" tags="bus" position="4650,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Concerned" tags="bus" position="4650,550" size="100,100">(set: $opinion to &quot;concerned&quot;)
+(set: $surveyLink to it + &quot;&amp;opinion=&quot; + (text:$opinion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Yeah I don&#39;t know, it was a little weird.&quot; 
 
 “Huh, yeah it did get a little weird. Oh that&#39;s my bus, are you taking this one too?&quot; she asks.
@@ -562,7 +590,10 @@ Ashley smiles and waves to you, and you can see your bus just pulling up behind 
 
 [[Head home-&gt;Return home]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Avoid" tags="bus" position="4650,675" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Avoid" tags="bus" position="4650,675" size="100,100">(set: $opinion to &quot;avoid&quot;)
+(set: $surveyLink to it + &quot;&amp;opinion=&quot; + (text:$opinion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Oh yeah I don&#39;t know. Same for me.&quot; 
 
 “Oh shoot, my bus is here, are you taking this one too?&quot; she asks.
@@ -589,7 +620,9 @@ Your speaker on the nightstand, $voice, lights up with warm yellow light.
 [[I&#39;m exhausted -&gt;Exhuasted]]
 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Set-Up Voice" tags="dorm speaker" position="1850,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Set-Up Voice" tags="dorm speaker" position="1850,400" size="100,100">(set: $surveyLink to it + &quot;?lunch=&quot; + (text:$lunch))
+
+&lt;div class = &quot;box&quot;&gt;
 You head to your room to drop off your bag. Your smart home speaker lights up. You’ve been meaning to set it up for a while now, some friends from back home have them and they said it was super comforting when they were stressed. 
 
 “&lt;div class=&quot;newspeaker&quot;&gt;He-llo SAM,&lt;/div&gt;” it says in a robotic voice, “&lt;div class=&quot;newspeaker&quot;&gt;are you ready to get set-up? Please choose a voice setting and I will be ready to assist you.&lt;/div&gt;”
@@ -606,7 +639,9 @@ You head to your room to drop off your bag. Your smart home speaker lights up. Y
 	(set: $voice to &quot;Opal&quot;)\
 	(go-to: &quot;Scents&quot;)\
 	]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="Scents" tags="dorm speaker" position="2000,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="Scents" tags="dorm speaker" position="2000,400" size="100,100">(set: $surveyLink to it + &quot;&amp;voice=&quot; + (text:$voice))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;&lt;div class=&quot;speaker&quot;&gt;Thanks Sam! I&#39;m $voice. I&#39;m here for whatever you might need, whether it’s sending messages, setting up lighting and music in your room, to just chatting.&lt;/div&gt;”
 
 $voice asks for permission to access your favorite music, as well as your contact list. Finally, $voice asks, &quot;&lt;div class=&quot;speaker&quot;&gt;what scent would you find the most relaxing?&lt;/div&gt;&quot; 
@@ -633,76 +668,99 @@ $voice asks for permission to access your favorite music, as well as your contac
 	(go-to: &quot;Finished Setting Up&quot;)\
 	]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name="Finished Setting Up" tags="dorm speaker" position="2125,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name="Finished Setting Up" tags="dorm speaker" position="2125,398.3333333333333" size="100,100">(set: $surveyLink to it + &quot;&amp;scent=&quot; + (text:$scent))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;&lt;div class=&quot;speaker&quot;&gt;Great! When you&#39;re feeling stressed, I&#39;ll infuse the room with the scent of $scent. That&#39;s all for now to set-up. Let me know if you need anything!&lt;/div&gt;&quot; $voice&#39;s light dims. 
 
 [[Go eat your lunch -&gt; Enjoy lunch]] 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Fine" tags="dorm speaker" position="5050,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Fine" tags="dorm speaker" position="5050,550" size="100,100">(set: $emotion to &quot;fine&quot;)
+(set: $surveyLink to it + &quot;&amp;emotion=&quot; + (text:$emotion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;I&#39;m doing alright.&quot; 
 
 “&lt;div class=&quot;speaker&quot;&gt;Glad to hear it. Even so, I’m happy to listen if you want to chat. Or I could help with something else. What would you prefer?&lt;/div&gt;”
 
-[[Vent to $voice -&gt;Vent]]
+[[Talk to $voice -&gt;Talk]]
 [[Call Mom -&gt;Call Mom]]
 [[Text Ashley -&gt;Text Ashley]]
 [[Listen to music -&gt;Play Music]]
 [[Turn off for now -&gt;Turn off]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Sad" tags="dorm speaker" position="5050,675" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Sad" tags="dorm speaker" position="5050,675" size="100,100">(set: $emotion to &quot;sad&quot;)
+(set: $surveyLink to it + &quot;&amp;emotion=&quot; + (text:$emotion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Not so great, I&#39;m kind of upset actually.&quot; 
 
 “&lt;div class=&quot;speaker&quot;&gt;I’m sorry to hear that. I have some suggestions. I could help you call a friend, or maybe play some relaxing music? Or if you want to just vent to me, I’d be happy to listen to what happened today. What would you prefer?&lt;/div&gt;”
 
-[[Vent -&gt;Vent]]
+[[Talk to $voice -&gt;Talk]]
 [[Call Mom -&gt;Call Mom]]
 [[Text Ashley -&gt;Text Ashley]]
 [[Listen to music -&gt;Play Music]]
 [[Turn off for now -&gt;Turn off]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="Excited" tags="dorm speaker" position="5050,800" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="Excited" tags="dorm speaker" position="5050,800" size="100,100">(set: $emotion to &quot;excited&quot;)
+(set: $surveyLink to it + &quot;&amp;emotion=&quot; + (text:$emotion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Feeling pretty good! How about you?&quot;
 
 “&lt;div class=&quot;speaker&quot;&gt;I”m glad to hear it! Even so, I’m happy to listen if you want to chat or vent about anything. What would you prefer?&lt;/div&gt;”
 
-[[Vent to $voice -&gt;Vent]]
+[[Talk to $voice -&gt;Talk]]
 [[Call Mom -&gt;Call Mom]]
 [[Text Ashley -&gt;Text Ashley]]
 [[Listen to music -&gt;Play Music]]
 [[Turn off for now -&gt;Turn off]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="Angry" tags="dorm speaker" position="5050,925" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="Angry" tags="dorm speaker" position="5050,925" size="100,100">(set: $emotion to &quot;angry&quot;)
+(set: $surveyLink to it + &quot;&amp;emotion=&quot; + (text:$emotion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Honestly I’m pretty mad. It wasn’t a great day.&quot;
 
 “&lt;div class=&quot;speaker&quot;&gt;I’m sorry to hear that. I have some suggestions. I could help you call a friend, or maybe play some relaxing music? Or if you want to just vent to me, I’d be happy to listen to what happened today.What would you prefer?&lt;/div&gt;”
 
-[[Vent to $voice -&gt;Vent]]
+[[Talk to $voice -&gt;Talk]]
 [[Call Mom -&gt;Call Mom]]
 [[Text Ashley -&gt;Text Ashley]]
 [[Listen to music -&gt;Play Music]]
 [[Turn off for now -&gt;Turn off]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="Exhuasted" tags="dorm speaker" position="5050,1050" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="Exhuasted" tags="dorm speaker" position="5050,1048.3333333333333" size="100,100">(set: $emotion to &quot;exhausted&quot;)
+(set: $surveyLink to it + &quot;&amp;emotion=&quot; + (text:$emotion))
+
+&lt;div class = &quot;box&quot;&gt;
 “I’m feeling pretty exhausted. Today was a lot.” 
 
 “&lt;div class=&quot;speaker&quot;&gt;I’m sorry to hear that. I have some suggestions. I could help you call a friend, or maybe play some relaxing music? Or if you want to just vent to me, I’d be happy to listen to what happened today. What would you prefer?&lt;/div&gt;”
 
-[[Vent to $voice -&gt;Vent]]
+[[Talk to $voice -&gt;Talk]]
 [[Call Mom -&gt;Call Mom]]
 [[Text Ashley -&gt;Text Ashley]]
 [[Listen to music -&gt;Play Music]]
 [[Turn off for now -&gt;Turn off]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="Vent" tags="dorm speaker" position="5375,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
-“It’d be nice to vent, yeah.” 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="Talk" tags="dorm speaker" position="5375,550" size="100,100">(set: $speakerUse to &quot;talk&quot;)
+(set: $surveyLink to it + &quot;&amp;speakerUse=&quot; + (text:$speakerUse))
 
-“&lt;div class=&quot;speaker&quot;&gt;What’s on your mind?&lt;/div&gt;” You spend the next half hour venting about everything that happened today as well as the other stressors on your mind. $voice listens, chiming in here and there to offer comfort and support. 
+&lt;div class = &quot;box&quot;&gt;
+“It’d be nice to talk, yeah.” 
+
+“&lt;div class=&quot;speaker&quot;&gt;What’s on your mind?&lt;/div&gt;” You spend the next half hour talking and venting about everything that happened today as well as the other stressors on your mind. $voice listens, chiming in here and there to offer comfort and support. 
 
 You smell the faint scent of $scent and feel yourself relaxing.
 
 It was a pretty busy day and you still have hours of homework tonight and a test next week. Maybe you can catch a quick nap before digging in for the night. 
 
 [[Take a nap -&gt;END]] 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="Call Mom" tags="dorm speaker" position="5375,675" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="Call Mom" tags="dorm speaker" position="5375,675" size="100,100">(set: $speakerUse to &quot;callMom&quot;)
+(set: $surveyLink to it + &quot;&amp;speakerUse=&quot; + (text:$speakerUse))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;It would be nice to talk to someone. Can you call my mom actually?&quot; 
 
 &quot;&lt;div class=&quot;speaker&quot;&gt;Of course, just a second.&lt;/div&gt;&quot; $voice dials and you hear the phone ring over the speaker. Your mom picks up the the two of you chat for about half an hour. 
@@ -712,7 +770,10 @@ You smell the faint scent of $scent and feel yourself relaxing.
 It was a pretty busy day and you still have hours of homework tonight and a test next week. Maybe you can catch a quick nap before digging in for the night. 
 
 [[Take a nap -&gt;END]] 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="Text Ashley" tags="dorm speaker" position="5375,800" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="Text Ashley" tags="dorm speaker" position="5375,800" size="100,100">(set: $speakerUse to &quot;textAshley&quot;)
+(set: $surveyLink to it + &quot;&amp;speakerUse=&quot; + (text:$speakerUse))
+
+&lt;div class = &quot;box&quot;&gt;
 “It would be nice to talk to someone. Could you send a text to Ashley Williams?”
 
 &quot;&lt;div class=&quot;speaker&quot;&gt;Of course, what do you want to say?&lt;/div&gt;&quot; $voice helps you converse with Ashley while you rest comfortably. 
@@ -722,7 +783,10 @@ You smell the faint scent of $scent and feel yourself relaxing.
 It was a pretty busy day and you still have hours of homework tonight and a test next week. Maybe you can catch a quick nap before digging in for the night. 
 
 [[Take a nap -&gt;END]] 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="Play Music" tags="dorm speaker" position="5375,925" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="Play Music" tags="dorm speaker" position="5376.666666666667,925" size="100,100">(set: $speakerUse to &quot;playMusic&quot;)
+(set: $surveyLink to it + &quot;&amp;speakerUse=&quot; + (text:$speakerUse))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Music would be great.&quot;
 
 &quot;&lt;div class=&quot;speaker&quot;&gt;Ok, let me pull up one of your playlists. I&#39;ll dim the lights as well.&lt;/div&gt;&quot; You work with $voice to get all the settings just right, lay back and relax. 
@@ -732,7 +796,10 @@ You smell the faint scent of $scent.
 It was a pretty busy day and you still have hours of homework tonight and a test next week. Maybe you can catch a quick nap before digging in for the night. 
 
 [[Take a nap -&gt;END]] 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="Turn off" tags="dorm speaker" position="5375,1050" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="Turn off" tags="dorm speaker" position="5376.666666666667,1050" size="100,100">(set: $speakerUse to &quot;turnOff&quot;)
+(set: $surveyLink to it + &quot;&amp;speakerUse=&quot; + (text:$speakerUse))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Actually, I&#39;m good for now, thanks.&quot;
 
 &quot;&lt;div class=&quot;speaker&quot;&gt;Ok, I&#39;ll turn off for the night.&lt;/div&gt;

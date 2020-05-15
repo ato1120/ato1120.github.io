@@ -89,6 +89,10 @@ div.speaker {
   display: inline;
 }
 
+tw-sidebar {
+ display: none;  
+}
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
@@ -173,7 +177,7 @@ Morgan glances up, “Hey Sam! What&#39;s going on?&quot;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name=" Lab Mates" tags="dorm" position="1100,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
 “Oh yeah, I know Ashley and Luis from intramural. But I don&#39;t think I&#39;ve met Mia,” he stares up at the ceiling, puzzling.
 
-“Yeah, I think she spends a lot of time over in the Engineering school so you probably wouldn’t see her around the multicultural center.” 
+“Yeah, I think she spends a lot of time over in the Engineering school.” 
 
 “Yeah this is a big school,&quot; he replies looking back at you, &quot;I’m not surprised.”
 
@@ -506,7 +510,10 @@ You learn Mia is going to be using her degree to help with her family business, 
 [[Bring up summer internships-&gt;Summer Internships]]
 [[Stay quiet for the rest of the meeting-&gt;Stay Quiet]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Casual Chat" tags="cafe" position="4100,525" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Casual Chat" tags="cafe" position="4100,525" size="100,100">(set: $conversation to &quot;casual&quot;)
+(set: $surveyLink to it + &quot;&amp;conversation=&quot; + (text:$conversation))
+
+&lt;div class = &quot;box&quot;&gt;
 Everyone breaks out into side conversations. You and Ashley chat a bit about your upcoming Thanksgiving plans. She’s going to be heading home to New York. 
 
 Dr. Avery looks down at her watch and raises her eyebrows. 
@@ -518,7 +525,10 @@ Professor Smith says a quick goodbye to you all, &quot;I&#39;ll see you all in l
 [[Gulp down your drink -&gt;Finish Drink]]
 [[Toss out your drink -&gt;Finish Drink]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Summer Internships" tags="cafe" position="4100,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Summer Internships" tags="cafe" position="4100,650" size="100,100">(set: $conversation to &quot;internship&quot;)
+(set: $surveyLink to it + &quot;&amp;conversation=&quot; + (text:$conversation))
+
+&lt;div class = &quot;box&quot;&gt;
 You talk to Dr. Avery about how you are hoping to get an internship at the company she worked at previously. She offers to review your resume and cover letter for you before you turn in your application.
 
 Dr. Avery looks down at her watch and raises her eyebrows. 
@@ -530,7 +540,10 @@ Professor Smith says a quick goodbye to you all, &quot;I&#39;ll see you all in l
 [[Gulp down your drink -&gt;Finish Drink]]
 [[Toss out your drink -&gt;Finish Drink]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Stay Quiet" tags="cafe" position="4100,775" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Stay Quiet" tags="cafe" position="4100,775" size="100,100">(set: $conversation to &quot;quiet&quot;)
+(set: $surveyLink to it + &quot;&amp;conversation=&quot; + (text:$conversation))
+
+&lt;div class = &quot;box&quot;&gt;
 Everyone breaks out into side conversations. You listen in here and there but don’t really engage much.
 
 Dr. Avery looks down at her watch and raises her eyebrows. 
@@ -560,7 +573,10 @@ Ashley turns to you.
 [[Express concern -&gt;Concerned]]
 [[Avoid the question -&gt;Avoid]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Satisfied" tags="bus" position="4550,523" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="41" name="Satisfied" tags="bus" position="4550,525" size="100,100">(set: $opinion to &quot;satisfied&quot;)
+(set: $surveyLink to it + &quot;&amp;opinion=&quot; + (text:$opinion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Yeah that was cool. It was nice she was so interested in our careers.&quot;
 
 “Yeah! Oh shoot, my bus is here, are you taking this one too?&quot; she asks.
@@ -573,7 +589,10 @@ Ashley smiles and waves to you, and you can see your bus just pulling up behind 
 
 [[Head home-&gt;Return home]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Concerned" tags="bus" position="4550,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Concerned" tags="bus" position="4550,650" size="100,100">(set: $opinion to &quot;concerned&quot;)
+(set: $surveyLink to it + &quot;&amp;opinion=&quot; + (text:$opinion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Yeah I don&#39;t know, it was a little weird.&quot; 
 
 “Huh, yeah it did get a little weird. Oh that&#39;s my bus, are you taking this one too?&quot; she asks.
@@ -586,7 +605,10 @@ Ashley smiles and waves to you, and you can see your bus just pulling up behind 
 
 [[Head home-&gt;Return home]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Avoid" tags="bus" position="4550,775" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="Avoid" tags="bus" position="4550,775" size="100,100">(set: $opinion to &quot;avoid&quot;)
+(set: $surveyLink to it + &quot;&amp;opinion=&quot; + (text:$opinion))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Oh yeah I don&#39;t know. Same for me.&quot; 
 
 “Oh shoot, my bus is here, are you taking this one too?&quot; she asks.
@@ -606,7 +628,10 @@ It was a pretty busy day and you still have hours of homework tonight and a test
 
 [[Take a nap-&gt;END]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Shrug" tags="cafe alarm" position="3425,475" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Shrug" tags="cafe alarm" position="3425,475" size="100,100">(set: $alarmResponse to &quot;shrug&quot;)
+(set: $surveyLink to it + &quot;&amp;alarmResponse=&quot; + (text:$alarmResponse))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Oh yeah I&#39;m not sure.&quot; 
 &lt;div class=&quot;alarm&quot;&gt;
 *BWAAAAP BWAAAAP BWAAAAAAAAP*
@@ -626,7 +651,10 @@ Dr. Avery continues to read, “When you compliment someone on their English, or
 [[Smile encouragingly -&gt;Interjection]]
 [[Look down -&gt;Interjection]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="Explain Bother" tags="cafe alarm" position="3425,850" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="Explain Bother" tags="cafe alarm" position="3425,850" size="100,100">(set: $alarmResponse to &quot;explain&quot;)
+(set: $surveyLink to it + &quot;&amp;alarmResponse=&quot; + (text:$alarmResponse))
+
+&lt;div class = &quot;box&quot;&gt;
 You explain to her what bothered you. 
 &lt;div class=&quot;alarm&quot;&gt;
 *BWAAAAP BWAAAAP BWAAAAAAAAP*
@@ -646,7 +674,10 @@ Dr. Avery continues to read, “When you compliment someone on their English, or
 [[Smile encouragingly -&gt;Interjection]]
 [[Look down -&gt;Interjection]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name="Defer to Smith" tags="cafe alarm" position="3425,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name="Defer to Smith" tags="cafe alarm" position="3425,600" size="100,100">(set: $alarmResponse to &quot;defer&quot;)
+(set: $surveyLink to it + &quot;&amp;alarmResponse=&quot; + (text:$alarmResponse))
+
+&lt;div class = &quot;box&quot;&gt;
 You glance at Professor Smith. &quot;What does the placard say?&quot;
 &lt;div class=&quot;alarm&quot;&gt;
 *BWAAAAP BWAAAAP BWAAAAAAAAP*
@@ -666,7 +697,10 @@ Dr. Avery continues to read, “When you compliment someone on their English, or
 [[Smile encouragingly -&gt;Interjection]]
 [[Look down -&gt;Interjection]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Broken" tags="cafe alarm" position="3425,725" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Broken" tags="cafe alarm" position="3425,725" size="100,100">(set: $alarmResponse to &quot;broken&quot;)
+(set: $surveyLink to it + &quot;&amp;alarmResponse=&quot; + (text:$alarmResponse))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Oh, well maybe it&#39;s broken.&quot;
 &lt;div class=&quot;alarm&quot;&gt;
 *BWAAAAP BWAAAAP BWAAAAAAAAP*
