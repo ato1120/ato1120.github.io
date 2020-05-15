@@ -238,7 +238,9 @@ You smile back. “Hi everyone.”
 	(set: $drink to &quot;water&quot;)\
 	(go-to: &quot;Get Drink&quot;)\
 	]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Get Drink" tags="cafe" position="2725,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Get Drink" tags="cafe" position="2725,600" size="100,100">(set: $surveyLink to it + &quot;&amp;drink=&quot; + (text:$drink))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Could I get a $drink?&quot;
 
 “Of course! I’ll be right back” Prof. Smith stands up and heads for the counter. There wasn&#39;t much of a line and he quickly returns and hands you your drink. 
@@ -424,7 +426,9 @@ Unphased, she replies, &quot;oh really? I was wondering why you didn&#39;t have 
 	(set: $home to &quot;the Bay Area&quot;)\
 	(go-to: &quot;Should I Capture This&quot;)\
 	]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Should I Capture This" tags="cafe smartwatch" position="3725,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Should I Capture This" tags="cafe smartwatch" position="3725,600" size="100,100">(set: $surveyLink to it + &quot;&amp;home=&quot; + (text:$home))
+
+&lt;div class = &quot;box&quot;&gt;
 &quot;Oh, I&#39;m from $home.&quot;
 
 Your watch *buzzes* again and you look down at it. It&#39;s the new app. A question pops up on the screen. 
@@ -604,7 +608,10 @@ It asks for you to speak first in an angry voice, then a scared voice, a startle
 [[Read the pre-set phrases -&gt; Pre-Set Phrases]]
 [[Recite some Shakespeare -&gt; Shakespeare]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name=" Pre-Set Phrases" tags="dorm smartwatch" position="2275,325" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name=" Pre-Set Phrases" tags="dorm smartwatch" position="2275,325" size="100,100">(set: $setup to &quot;preSet&quot;)
+(set: $surveyLink to it + &quot;&amp;setup=&quot; + (text:$setup))
+
+&lt;div class = &quot;box&quot;&gt;
 You awkwardly read through the pre-set phrases, trying your best to act out the emotions. By the end you actually feel kind of excited - you haven&#39;t really acted since your last middle school play. 
 
 Finally the set-up is done. The app goes to the background and you check your email again. Nothing needs your immediate attention, but then your watch buzzes. 
@@ -613,7 +620,10 @@ Gah! The meeting with Dr Avery and your lab mates starts in ten minutes!
 
 [[Rush out the door! -&gt; Enter Cafe]] 
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name=" Shakespeare" tags="dorm smartwatch" position="2275,449" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name=" Shakespeare" tags="dorm smartwatch" position="2275,449" size="100,100">(set: $setup to &quot;shakespeare&quot;)
+(set: $surveyLink to it + &quot;&amp;setup=&quot; + (text:$setup))
+
+&lt;div class = &quot;box&quot;&gt;
 You go full drama-nerd and start reciting some Shakespeare. By the end you actually feel kind of excited - you haven&#39;t really acted since your last middle school play. 
 
 Finally the set-up is done. The app goes to the background and you check your email again. Nothing needs your immediate attention, but then your watch buzzes. 
