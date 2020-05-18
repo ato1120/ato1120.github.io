@@ -161,7 +161,7 @@ You fumble in your pocket for your keys and remove your shoes.
 
 [[Open the Door -&gt; Hi Morgan]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name=" Hi Morgan" tags="dorm" position="801.6666666666666,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name=" Hi Morgan" tags="dorm" position="801,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
 You’re instantly greeted by your roommate lounging on the sofa reading a book. 
 
@@ -205,15 +205,16 @@ The email icon flashes across the screen and you see your professor&#39;s email 
 (set: $lunch to &quot;nothing&quot;)
 You glance back up at Morgan who had moved from the couch to the kitchen. He was dipping a spoon into a peanut butter jar and smearing the peanut butter onto a peeled banana.
 
-(link: &quot;Make one for me!&quot;)[\
+(link: &quot;&#39;Make one for me!&#39;&quot;)[\
 	(set: $lunch to &quot;banana&quot;)\
 	(go-to: &quot;Eat Banana&quot;)\
 	]	
-(link: &quot;Gross.&quot;)[\
+(link: &quot;&#39;Gross.&#39;&quot;)[\
 	(set: $lunch to &quot;sandwich&quot;)\
 	(go-to: &quot;Eat Sandwich&quot;)\
 	]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name=" Enter Cafe" tags="cafe" position="2550,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Enter Cafe" tags="cafe" position="2550,548.3333333333334" size="100,100">(set: $surveyLink to it + &quot;&amp;attention1Roommate=&quot; + (text:$attention1Roommate))
+&lt;div class = &quot;box&quot;&gt;
 *At 2:58 pm..*
 
 You pick up the pace as you reach the door to the cafe. People exiting brush past, and you notice the place is fully packed. Tables are full and noise is bustling as you scan the room, looking for your peers. Out of the corner of your eye, you see a hand waving. It&#39;s Luis. 
@@ -231,19 +232,19 @@ You smile back. “Hi everyone.”
 
 “Drinks are on me for today!” he continues “Everyone else is already settled, what would you like, Sam?” 
 (set: $drink to &quot;nothing&quot;)
-(link: &quot;Pumpkin Spice Latte&quot;)[\
+(link: &quot;&#39;Pumpkin Spice Latte&#39;&quot;)[\
 	(set: $drink to &quot;Pumpkin Spice Latte&quot;)\
 	(go-to: &quot;Get Drink&quot;)\
 	]
-(link: &quot;Hot Tea&quot;)[\
+(link: &quot;&#39;Hot Tea&#39;&quot;)[\
 	(set: $drink to &quot;tea&quot;)\
 	(go-to: &quot;Get Drink&quot;)\
 	]
-(link: &quot;Black Coffee&quot;)[\
+(link: &quot;&#39;Black Coffee&#39;&quot;)[\
 	(set: $drink to &quot;coffee&quot;)\
 	(go-to: &quot;Get Drink&quot;)\
 	]
-(link: &quot;Water&quot;)[\
+(link: &quot;&#39;Water&#39;&quot;)[\
 	(set: $drink to &quot;water&quot;)\
 	(go-to: &quot;Get Drink&quot;)\
 	]
@@ -277,8 +278,8 @@ She begins to grill him about his favorite games and they animatedly chat.
 
 Professor Smith beams. “That is wonderful! There are so many opportunities with excellent programs. If you want to get started, I could send some summer internships your way that could certainly boost your application if you were to apply.”
 
-[[That would be great! -&gt;Avery Articulate]] 
-[[Take notes -&gt;Avery Articulate]] 
+[[&quot;That would be great!&quot; -&gt;Avery Articulate]] 
+[[Take notes -&gt;Avery Articulate]]  
 
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name=" Sam Travel" tags="cafe" position="3375,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
@@ -287,7 +288,7 @@ Professor Smith beams. “That is wonderful! There are so many opportunities wit
 
 Prof. Smith smiles. “How exciting! Not many have the courage to decide something so major. I think the university even has some programs for going abroad if you wanted to start while you&#39;re here. And in the future when you&#39;re ready, I&#39;d be glad to help in figuring out next steps.” 
 
-[[That would be great! -&gt;Avery Articulate]] 
+[[&quot;That would be great!&quot; -&gt;Avery Articulate]] 
 [[Take notes -&gt;Avery Articulate]] 
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name=" Sam Unsure" tags="cafe" position="3375,675" size="100,100">&lt;div class = &quot;box&quot;&gt;
@@ -296,13 +297,13 @@ Prof. Smith smiles. “How exciting! Not many have the courage to decide somethi
 
 Professor Smith smiles, “No worries, Sam. College is about exploring options. Keep working hard and looking for things you’re passionate about. Whenever you’d like I’d be happy to help you figure out some options in office hours or over email.&quot;
 
-[[That would be great! -&gt;Avery Articulate]] 
-[[Take notes -&gt;Avery Articulate]] 
+[[&quot;That would be great!&quot; -&gt;Avery Articulate]] 
+[[Take notes -&gt;Avery Articulate]] ] 
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Avery Articulate" tags="cafe" position="3550,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
 “I completely agree with Professor Smith!” Dr. Avery exclaims. “It looks like you’ve given this a lot of thought, Sam, and your English is so advanced; you’re so articulate. I know you’ll go far!”
  
-[[Actually, English is my first language -&gt;Where Are You From]]
+[[&quot;Actually, English is my first language&quot; -&gt;Where Are You From]]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="END" tags="campus" position="5750,900" size="100,100">&lt;div class = &quot;box&quot;&gt;
 
@@ -333,7 +334,7 @@ As she finally runs up, you give them a wave as you part ways.
 
 Morgan, &quot;That&#39;s awesome! Remind me who&#39;s in your lab again?&quot;
 
-[[Mia Zhang, Ashley Williams, and Luis Castillo -&gt; Lab Mates]]
+[[&quot;Mia Zhang, Ashley Williams, and Luis Castillo&quot; -&gt; Lab Mates]]
 
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="22" name=" Like Work" tags="dorm" position="950,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
@@ -342,7 +343,7 @@ Morgan, &quot;That&#39;s awesome! Remind me who&#39;s in your lab again?&quot;
 
 Morgan, &quot;That&#39;s awesome! Remind me who&#39;s in your lab again?&quot; 
 
-[[Mia Zhang, Ashley Williams, and Luis Castillo -&gt; Lab Mates]]
+[[&quot;Mia Zhang, Ashley Williams, and Luis Castillo&quot; -&gt; Lab Mates]]
 
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="23" name=" It&#39;s a job" tags="dorm" position="950,525" size="100,100">&lt;div class = &quot;box&quot;&gt;
@@ -351,7 +352,7 @@ Morgan, &quot;That&#39;s awesome! Remind me who&#39;s in your lab again?&quot;
 
 Morgan, &quot;Haha, yeah I get that. Remind me, who&#39;s in your lab again?&quot;
 
-[[Mia Zhang, Ashley Williams, Luis Castillo -&gt; Lab Mates]]
+[[&quot;Mia Zhang, Ashley Williams, Luis Castillo&quot; -&gt; Lab Mates]]
 
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name=" Anticipation" tags="dorm" position="1400,400" size="100,100">&lt;div class = &quot;box&quot;&gt;
@@ -392,7 +393,7 @@ Mia had sent a couple links yesterday for some new apps that you downloaded but 
 
 The time flies by and soon you need to head out the door. 
 
-[[Head to the cafe -&gt; Enter Cafe]]
+[[Head to the cafe -&gt;Attention Question 1]] 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Zone Out" tags="cafe" position="3150,475" size="100,100">&lt;div class = &quot;box&quot;&gt;
 It was a long morning, you have a bit of a hard time paying attention and you glance around the cafe, sipping your $drink. It&#39;s suprisingly crowded.
 
@@ -400,9 +401,9 @@ You snap back to attention as you hear your name.
 
 Professor Smith turns to you. “Now how about you Sam?”
 
-[[I&#39;m thinking about grad school -&gt; Sam Grad School]]
-[[I&#39;m thinking of traveling for a while -&gt; Sam Travel]]
-[[I&#39;m really not sure -&gt; Sam Unsure]]
+[[&quot;I&#39;m thinking about grad school&quot; -&gt; Sam Grad School]]
+[[&quot;I&#39;m thinking of traveling for a while&quot; -&gt; Sam Travel]]
+[[&quot;I&#39;m really not sure&quot; -&gt; Sam Unsure]]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="Listen to Luis" tags="cafe" position="3150,600" size="100,100">&lt;div class = &quot;box&quot;&gt;
 Luis and Dr. Avery debate the merits of different games. Luis is into quirky narrative games, but Dr. Avery seems to play bigger AAA games to unwind.
@@ -413,24 +414,24 @@ Luis and Dr. Avery debate the merits of different games. Luis is into quirky nar
 
 Professor Smith turns to you. “Now how about you Sam?”
 
-[[I&#39;m thinking about grad school -&gt; Sam Grad School]]
-[[I&#39;m thinking of traveling for a while -&gt; Sam Travel]]
-[[I&#39;m really not sure -&gt; Sam Unsure]]
+[[&quot;I&#39;m thinking about grad school&quot; -&gt; Sam Grad School]]
+[[&quot;I&#39;m thinking of traveling for a while&quot; -&gt; Sam Travel]]
+[[&quot;I&#39;m really not sure&quot; -&gt; Sam Unsure]]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Where Are You From" tags="cafe" position="3700,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
 &quot;Oh thanks Dr. Avery. English is my first language, actually.&quot; 
 
 Unphased, she replies, &quot;oh really? I was wondering why you didn&#39;t have an accent. Where are you from?&quot;
 (set: $home to &quot;nothing&quot;)
-(link: &quot;West Coast&quot;)[\
+(link: &quot;&#39;West Coast&#39;&quot;)[\
 	(set: $home to &quot;the west coast&quot;)\
 	(go-to: &quot;Interjection&quot;)\
 	]
-(link: &quot;Northern California&quot;)[\
+(link: &quot;&#39;Northern California&#39;&quot;)[\
 	(set: $home to &quot;NorCal&quot;)\
 	(go-to: &quot;Interjection&quot;)\
 	]
-(link: &quot;Bay Area&quot;)[\
+(link: &quot;&#39;Bay Area&#39;&quot;)[\
 	(set: $home to &quot;the Bay Area&quot;)\
 	(go-to: &quot;Interjection&quot;)\
 	]
@@ -495,7 +496,7 @@ You learn Mia is going to be using her degree to help with her family business, 
 [[Bring up summer internships-&gt;Summer Internships]]
 [[Stay quiet for the rest of the meeting-&gt;Stay Quiet]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Casual Chat" tags="cafe" position="4200,425" size="100,100">(set: $conversation to &quot;casual&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="Casual Chat" tags="cafe" position="4200,423" size="100,100">(set: $conversation to &quot;casual&quot;)
 (set: $surveyLink to it + &quot;&amp;conversation=&quot; + (text:$conversation))
 
 &lt;div class = &quot;box&quot;&gt;
@@ -540,7 +541,7 @@ Professor Smith says a quick goodbye to you all, &quot;I&#39;ll see you all in l
 [[Gulp down your drink -&gt;Finish Drink]]
 [[Toss out your drink -&gt;Finish Drink]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Finish Drink" tags="bus" position="4350,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Finish Drink" tags="bus" position="4350,548" size="100,100">&lt;div class = &quot;box&quot;&gt;
 The rest of your lab mates stand up to leave. Finishing your drink you toss it on your way out the door. 
 
 You and Ashley realize you&#39;re both headed to the same bus station and jovially wave to Mia and Luis as you head off together. 
@@ -549,7 +550,7 @@ Checking your phone, you smile slightly, seeing a couple texts from Morgan pop u
 
 Ashley turns to you. 
 
-[[What&#39;s up? -&gt;Ashley Question]]
+[[&quot;What&#39;s up?&quot; -&gt;Ashley Question]]
 [[Wait for her to speak -&gt;Ashley Question]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="40" name="Ashley Question" tags="bus" position="4500,550" size="100,100">&lt;div class = &quot;box&quot;&gt;
 “So what did you think of Dr. Avery?&quot; she asks, &quot;that was my first time meeting a visiting professor like that.”
@@ -613,11 +614,11 @@ Your speaker on the nightstand, $voice, lights up with warm yellow light.
 
 &quot;&lt;div class=&quot;speaker&quot;&gt;Hello Sam, how are you?&lt;/div&gt;&quot;
 
-[[I&#39;m fine -&gt;Fine]]
-[[I&#39;m sad -&gt;Sad]]
-[[I&#39;m excited -&gt;Excited]]
-[[I&#39;m angry -&gt;Angry]]
-[[I&#39;m exhausted -&gt;Exhuasted]]
+[[&quot;I&#39;m fine&quot; -&gt;Fine]]
+[[&quot;I&#39;m sad&quot; -&gt;Sad]]
+[[&quot;I&#39;m excited&quot; -&gt;Excited]]
+[[&quot;I&#39;m angry&quot; -&gt;Angry]]
+[[&quot;I&#39;m exhausted&quot; -&gt;Exhuasted]]
 
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Set-Up Voice" tags="dorm speaker" position="1850,400" size="100,100">(set: $surveyLink to it + &quot;?lunch=&quot; + (text:$lunch))
@@ -807,6 +808,26 @@ It was a pretty busy day and you still have hours of homework tonight and a test
 It was a pretty busy day and you still have hours of homework tonight and a test next week. Maybe you can catch a quick nap before digging in for the night. 
 
 [[Take a nap -&gt;END]] 
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="Attention Question 1" tags="" position="2573.3333333333335,394.99999999999994" size="100,100">(set: $attention1Roommate to &quot;nothing&quot;)
+&lt;div class = &quot;box&quot;&gt;
+What is Sam&#39;s roommate&#39;s name? 
+
+(link: &quot;Alice&quot;)[\
+	(set: $attention1Roommate to &quot;Alice&quot;)\
+	(go-to: &quot;Enter Cafe&quot;)\
+	]
+(link: &quot;Nicole&quot;)[\
+	(set: $attention1Roommate to &quot;Nicole&quot;)\
+	(go-to: &quot;Enter Cafe&quot;)\
+	]
+(link: &quot;Morgan&quot;)[\
+	(set: $attention1Roommate to &quot;Morgan&quot;)\
+	(go-to: &quot;Enter Cafe&quot;)\
+	]
+(link: &quot;Mei&quot;)[\
+	(set: $attention1Roommate to &quot;Mei&quot;)\
+	(go-to: &quot;Enter Cafe&quot;)\
+	]
 &lt;/div&gt;</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
