@@ -2263,6 +2263,14 @@ input, select, textarea {
 				background-color: #e8edec;
 			}
 
+/* Research Projects */
+section.project p, h1, h3, h4, li {
+	text-align: left;
+}	
+
+
+
+
 /* Wide */
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
