@@ -1995,6 +1995,10 @@ input, select, textarea {
 				font-size: 1em;
 			}
 
+			.item:hover {
+				opacity: 0.8;
+			}
+
 /* Icons */
 
 	.icon {
