@@ -2268,6 +2268,12 @@ section.project p, section.project h4, section.project li {
 	text-align: left;
 }	
 
+section.project img {
+	max-width: 50%;
+	float: right;
+	margin: 5px;
+	margin-top: 10px;
+}
 
 
 
