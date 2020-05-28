@@ -143,7 +143,7 @@ You stop in front of a door with a big wooden &#39;H&#39; on it. Your door has p
 You fumble in your pocket for your keys and remove your shoes.  
 
 [[Open the Door -&gt; Hi Morgan]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name=" Hi Morgan" tags="dorm" position="800,398.3333333333333" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name=" Hi Morgan" tags="dorm" position="800,398" size="100,100">&lt;div class = &quot;box&quot;&gt;
 You’re instantly greeted by your roommate lounging on the sofa reading a book. 
 
 Morgan glances up, “Hey Sam! What&#39;s going on?&quot; 
@@ -179,7 +179,7 @@ The email icon flashes across the screen and you see your professor&#39;s email 
 &lt;/div&gt;
 [[Write back to confirm -&gt; Anticipation]]
 [[Close phone -&gt; Anticipation]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Peanut Butter" tags="dorm" position="1551.6666666666667,400" size="100,100">&lt;div class = &quot;box&quot;&gt; (set: $lunch to &quot;nothing&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Peanut Butter" tags="dorm" position="1551,400" size="100,100">&lt;div class = &quot;box&quot;&gt; (set: $lunch to &quot;nothing&quot;)
 You glance back up at Morgan who had moved from the couch to the kitchen. He was dipping a spoon into a peanut butter jar and smearing the peanut butter onto a peeled banana.
 
 (link: &quot;&#39;Make one for me!&#39;&quot;)[\
@@ -190,7 +190,7 @@ You glance back up at Morgan who had moved from the couch to the kitchen. He was
 	(set: $lunch to &quot;sandwich&quot;)\
 	(go-to: &quot;Eat Sandwich&quot;)\
 	]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Enter Cafe" tags="cafe" position="1900,648.3333333333334" size="100,100">(set: $surveyLink to it + &quot;&amp;attention1Roommate=&quot; + (text:$attention1Roommate))
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Enter Cafe" tags="cafe" position="1900,648" size="100,100">(set: $surveyLink to it + &quot;&amp;attention1Roommate=&quot; + (text:$attention1Roommate))
 &lt;div class = &quot;box&quot;&gt;
 *At 2:58 pm..*
 
@@ -200,7 +200,7 @@ You recognize the rest of the lab as you walk over to their table, slipping and 
 
 [[Grab a seat -&gt; Meet Avery]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name=" Meet Avery" tags="cafe" position="2051.6666666666665,648.3333333333334" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name=" Meet Avery" tags="cafe" position="2051,648" size="100,100">&lt;div class = &quot;box&quot;&gt;
 “Good to see you Sam.” Professor Smith smiles as you sit. 
 
 You smile back. “Hi everyone.”
@@ -300,7 +300,7 @@ Working together in the lab, you have all come to be good friends.
 After a long morning at the lab, you glance at your watch, seeing it&#39;s high time you went home. Your dorm is just across campus.
 
 [[Head outside -&gt; Bookstore]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name=" Shout Greeting" tags="campus" position="475,248.33333333333334" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name=" Shout Greeting" tags="campus" position="475,248" size="100,100">&lt;div class = &quot;box&quot;&gt;
 &quot;Hey guys, how&#39;s it going?&quot; 
 
 You walk over and talk with them a while. They&#39;re waiting on a friend to grab a new lab notebook before heading off to class together. 
@@ -316,7 +316,7 @@ Morgan, &quot;That&#39;s awesome! Remind me who&#39;s in your lab again?&quot;
 
 [[&quot;Mia Zhang, Ashley Williams, and Luis Castillo&quot; -&gt; Lab Mates]]
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="22" name=" Like Work" tags="dorm" position="950,398.3333333333333" size="100,100">&lt;div class = &quot;box&quot;&gt;
+</tw-passagedata><tw-passagedata pid="22" name=" Like Work" tags="dorm" position="950,398" size="100,100">&lt;div class = &quot;box&quot;&gt;
 &quot;He&#39;s alright. I&#39;m really enjoying getting to do research though. It feels like I&#39;m really getting somewhere with it.&quot; 
 
 Morgan, &quot;That&#39;s awesome! Remind me who&#39;s in your lab again?&quot; 
@@ -392,31 +392,27 @@ Professor Smith turns to you. “Now how about you Sam?”
 [[&quot;I&#39;m thinking of traveling for a while&quot; -&gt; Sam Travel]]
 [[&quot;I&#39;m really not sure&quot; -&gt; Sam Unsure]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Where Are You From" tags="cafe" position="3050,650" size="100,100">&lt;div class = &quot;box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Where Are You From" tags="cafe" position="3050,648.3333333333334" size="100,100">&lt;div class = &quot;box&quot;&gt;
 &quot;Thank you, I really appreciate that.&quot; 
 
-&quot;Where are you from?&quot;
+&quot;What year are you?&quot;
 
-(set: $home to &quot;nothing&quot;)
-(link: &quot;&#39;West Coast&#39;&quot;)[\
-	(set: $home to &quot;the west coast&quot;)\
+(set: $year to &quot;nothing&quot;)
+(link: &quot;&#39;Sophomore&#39;&quot;)[\
+	(set: $year to &quot;Sophomore&quot;)\
 	(go-to: &quot;Interjection&quot;)\
 	]
-(link: &quot;&#39;Northern California&#39;&quot;)[\
-	(set: $home to &quot;NorCal&quot;)\
+(link: &quot;&#39;Second-Year&#39;&quot;)[\
+	(set: $year to &quot;second-year&quot;)\
 	(go-to: &quot;Interjection&quot;)\
 	]
-(link: &quot;&#39;Bay Area&#39;&quot;)[\
-	(set: $home to &quot;the Bay Area&quot;)\
-	(go-to: &quot;Interjection&quot;)\
-	]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Interjection" tags="cafe" position="3200,650" size="100,100">(set: $surveyLink to it + &quot;&amp;home=&quot; + (text:$home))
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Interjection" tags="cafe" position="3200,650" size="100,100">(set: $surveyLink to it + &quot;&amp;year=&quot; + (text:$year))
 &lt;div class = &quot;box&quot;&gt;
-&quot;Oh, I&#39;m from $home.&quot;
+&quot;Oh, I&#39;m a $year.&quot;
 
-&quot;Oh interesting, I didn&#39;t really like the Bay Area,&quot; she says as she makes a sour face, &quot;too much hustle and bustle. Which part of the Bay?&quot;
+&quot;Oh good, you&#39;ve gots lots of time to figure this stuff out. And that&#39;s what professors are for anyhow! I&#39;d definitely encourage all of you to take up Professor Smith&#39;s offer to chat more in office hours.&quot; 
 
-&quot;My parents are in San Jose right now, but we moved from LA when I was a kid.&quot; 
+&quot;Yeah, I think I will.&quot; 
 
 Professor Smith chimes happily in, “I am so glad that you all got to meet. Regarding your future plans, if either of you need any further consulting, you know how to reach me. But I see that Dr. Avery needs a refill. Let’s take a short break.”
 
@@ -582,7 +578,7 @@ It was a pretty busy day and you still have hours of homework tonight and a test
 
 [[Take a nap-&gt;END]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Attention Question 1" tags="" position="2150,398.3333333333333" size="100,100">(set: $attention1Roommate to &quot;nothing&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="Attention Question 1" tags="" position="2150,398" size="100,100">(set: $attention1Roommate to &quot;nothing&quot;)
 &lt;div class = &quot;box&quot;&gt;
 What is Sam&#39;s roommate&#39;s name? 
 
