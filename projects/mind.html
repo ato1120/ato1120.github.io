@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play What&#39;s on Your Mind?.</tw-noscript></noscript></tw-story>
-<tw-storydata name="What&#39;s on Your Mind?" startnode="1" creator="Twine" creator-version="2.3.14" ifid="0E3AB68C-9D88-4623-9128-13A752FA003F" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="meeting1"]{ 
+<tw-storydata name="What&#39;s on Your Mind?" startnode="116" creator="Twine" creator-version="2.3.14" ifid="0E3AB68C-9D88-4623-9128-13A752FA003F" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story[tags~="meeting1"]{ 
   background-image: url(https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80);
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,13 +139,16 @@ tw-passage[tags~="border"]{
 tw-sidebar { 
   display: none;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Campus" color="green"></tw-tag>,<tw-tag name="cafeteria" color="purple"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="celebration" color="green"></tw-tag>,<tw-tag name="classroom" color="orange"></tw-tag>,<tw-tag name="dorm" color="red"></tw-tag>,<tw-tag name="dormBed" color="red"></tw-tag>,<tw-tag name="dormDesk" color="red"></tw-tag>,<tw-tag name="email" color="yellow"></tw-tag>,<tw-tag name="emptyRoom" color="red"></tw-tag>,<tw-tag name="ending" color="green"></tw-tag>,<tw-tag name="event" color="orange"></tw-tag>,<tw-tag name="fallCampus" color="green"></tw-tag>,<tw-tag name="meeting1" color="blue"></tw-tag>,<tw-tag name="meeting2" color="blue"></tw-tag>,<tw-tag name="meeting3" color="blue"></tw-tag>,<tw-tag name="meeting4" color="blue"></tw-tag>,<tw-tag name="message" color="green"></tw-tag>,<tw-tag name="office" color="green"></tw-tag>,<tw-tag name="phone" color="red"></tw-tag>,<tw-tag name="walking" color="red"></tw-tag>,<tw-tag name="website" color="red"></tw-tag><tw-passagedata pid="1" name="Content Warning" tags="border" position="414,187" size="100,100">{(set: $surveyLink to &quot;&quot;)}\
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&#39;&#39;Content Warning&#39;&#39;
----
-This game contains material that may be difficult for some people to confront or discuss. Whether you&#39;ve experienced something similar or have been a bystander, feel free to pause the game at any time if it brings up any uncomfortable emotions. Please care for your safety and well-being.
-]
-==&gt;
-[[I understand.-&gt;Introduction]]</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="414,337" size="100,100">You are a second-year computer science major student who just transferred from another college. (after: 4s, (cond: visits &gt; 0, 400ms, 0))[=
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Campus" color="green"></tw-tag>,<tw-tag name="cafeteria" color="purple"></tw-tag>,<tw-tag name="campus" color="green"></tw-tag>,<tw-tag name="celebration" color="green"></tw-tag>,<tw-tag name="classroom" color="orange"></tw-tag>,<tw-tag name="dorm" color="red"></tw-tag>,<tw-tag name="dormBed" color="red"></tw-tag>,<tw-tag name="dormDesk" color="red"></tw-tag>,<tw-tag name="email" color="yellow"></tw-tag>,<tw-tag name="emptyRoom" color="red"></tw-tag>,<tw-tag name="ending" color="green"></tw-tag>,<tw-tag name="event" color="orange"></tw-tag>,<tw-tag name="fallCampus" color="green"></tw-tag>,<tw-tag name="meeting1" color="blue"></tw-tag>,<tw-tag name="meeting2" color="blue"></tw-tag>,<tw-tag name="meeting3" color="blue"></tw-tag>,<tw-tag name="meeting4" color="blue"></tw-tag>,<tw-tag name="message" color="green"></tw-tag>,<tw-tag name="office" color="green"></tw-tag>,<tw-tag name="phone" color="red"></tw-tag>,<tw-tag name="walking" color="red"></tw-tag>,<tw-tag name="website" color="red"></tw-tag><tw-passagedata pid="1" name="Title Page" tags="border" position="413,92" size="100,100">Welcome!
+
+This is an interactive fiction game about microaggressions and allyship used for research on the XXX Project at Northeastern University.
+
+Principal Investigator: Dilruba Showkat
+Game developer: Xinyu Hou
+Supervisor: Professor Alexandra To
+Lab: ATo Lab
+
+</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="414,337" size="100,100">You are a second-year computer science major student who just transferred from another college. (after: 4s, (cond: visits &gt; 0, 400ms, 0))[=
 
 Your new college is far away from your hometown where you have lived most of your life. You don&#39;t really know anyone here. (after: time + 4s, (cond: visits &gt; 0, 400ms, 0))[=
 
@@ -347,6 +350,8 @@ The process of recognizing microaggressions, responding to microaggressions, and
 Click [[here-&gt;Ending 1 Microaggression List]] to see the details of all the microaggressions that you have encountered in this game.
 
 Here are some [[resources-&gt;Resources]] that you may find helpful.
+
+[[Credits-&gt;Credits 1]]
 
 Image Source:
 All the images used in this game are free to use under the (link-repeat:&quot;Unsplash&quot;)[(open-url:&quot;https://www.unsplash.com/&quot;)] License.</tw-passagedata><tw-passagedata pid="39" name="Resources" tags="border ending" position="482,4684" size="100,100">&#39;&#39;What is a microaggression?&#39;&#39;
@@ -567,6 +572,8 @@ However, there are other kinds of microaggressions as well (e.g., racial microag
 Click [[here-&gt;Ending 2 Microaggression List]] to see the details of all the microaggressions that took place in this game.
 
 Here are some [[resources-&gt;Resources]] that you may find helpful.
+
+[[Credits-&gt;Credits 2]]
 
 Image Source:
 All the images used in this game are free to use under the (link-repeat:&quot;Unsplash&quot;)[(open-url:&quot;https://www.unsplash.com/&quot;)] License.</tw-passagedata><tw-passagedata pid="75" name="Ending 2 Microaggression List" tags="border ending" position="398,7249" size="100,100">[[(1)-&gt;Microaggression 1]] &quot;About the group project, I think we&#39;d better have a leader so //he// can keep everything organized. What do you say?&quot;
@@ -857,7 +864,21 @@ For example, someone may say: &quot;I&#39;m not racist. I have several Black fri
 &quot;When you say that you are not racist and you have several Black friends (//observation//), it sounds like you think you are immune to racism because you have some friends of color (//think//). I feel uncomfortable  (//feel//), and I would like us to discuss more about what we can do to actually reduce bias and end racism (//desire//).&quot;
 &lt;/div&gt;\
 
-[[Back-&gt;Intervention Strategies Poster]]</tw-passagedata></tw-storydata>
+[[Back-&gt;Intervention Strategies Poster]]</tw-passagedata><tw-passagedata pid="116" name="Content Warning" tags="border" position="412,217" size="100,100">{(set: $surveyLink to &quot;&quot;)}\
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[&#39;&#39;Content Warning&#39;&#39;
+---
+This game contains material that may be difficult for some people to confront or discuss. Whether you&#39;ve experienced something similar or have been a bystander, feel free to pause the game at any time if it brings up any uncomfortable emotions. Please care for your safety and well-being.
+]
+==&gt;
+[[I understand.-&gt;Introduction]]</tw-passagedata><tw-passagedata pid="117" name="Credits 2" tags="border ending" position="518,7249" size="100,100">Team Members: Dilruba Showkat &amp; Xinyu Hou (game developer)
+Principal Investigator: Professor Alexandra To
+Lab: ATo Lab
+
+[[Back-&gt;Ending 2]]</tw-passagedata><tw-passagedata pid="118" name="Credits 1" tags="border ending" position="722,4684" size="100,100">Team Members: Dilruba Showkat &amp; Xinyu Hou (game developer)
+Principal Investigator: Professor Alexandra To
+Lab: ATo Lab
+
+[[Back-&gt;Ending 1]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
