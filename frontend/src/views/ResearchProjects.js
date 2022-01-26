@@ -3,7 +3,7 @@ import { Row, Col, Container, Card } from 'react-bootstrap';
 
 const ResearchProjects = () => {
     return (
-        <Container className='py-3' style={{ textAlign: 'center' }}>
+        <Container className='py-3' style={{ textAlign: 'center' }} id='/portfolio'>
             <Row className='py-3'>
                 <Col sm={12} md={6} lg={4}>
                     <Card>

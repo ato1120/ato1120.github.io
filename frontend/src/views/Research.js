@@ -3,7 +3,7 @@ import { Container, Button } from 'react-bootstrap';
 
 const Research = () => {
     return (
-        <Container className='py-3' style={{ textAlign: 'center', width: '100vw'}}>
+        <Container className='py-3' style={{ textAlign: 'center', width: '100vw'}} id='/research'>
             <header>
                 <h2>Research Overview</h2>
             </header>

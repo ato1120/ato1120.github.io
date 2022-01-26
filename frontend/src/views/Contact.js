@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 
 const Contact = () => {
     return (
-        <Container className='py-3' style={{ textAlign: 'center' }}>
+        <Container className='py-3' style={{ textAlign: 'center' }} id='/contact'>
             <h2 className='py-3'>Contact</h2>
 
             <p>Get in touch with me to chat about research collaboration, speaking engagements, or to learn more about my work!</p>

@@ -4,8 +4,7 @@ import { Container, Button } from 'react-bootstrap';
 const Bio = () => {
     
     return (
-    <>
-        <Container className='py-3' style={{ textAlign: 'center'}}>
+        <Container className='py-3' style={{ textAlign: 'center'}} id='/'>
             <header>
                 <h2>Alexandra To, PhD</h2>
 
@@ -23,7 +22,6 @@ const Bio = () => {
                 </p>
             </Container>
         </Container>
-    </>
     )
 };
 
