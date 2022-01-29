@@ -3,15 +3,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
     return (
-        <footer>
-            <Container>
-                <Row>
-                    <Col className='text-center py-2'>
-                        &copy; Alexandra To. All rights reserved. | Designed by Durand Enterprises LLC
-                    </Col>
-                </Row>
-            </Container>
-        </footer>
+        <div id='footer'>
+            <ul className="copyright">
+                <li>&copy; Alexandra To. All rights reserved.</li><li>Template Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Web Development by Durand Enterprises LLC</li>
+            </ul>
+        </div>
     )
 }
 

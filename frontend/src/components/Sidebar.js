@@ -1,12 +1,12 @@
 import React from 'react';
-import {
-    CDBSidebar,
-    CDBSidebarContent,
-    CDBSidebarFooter,
-    CDBSidebarHeader,
-    CDBSidebarMenu,
-    CDBSidebarMenuItem
-} from 'cdbreact';
+// import {
+//     CDBSidebar,
+//     CDBSidebarContent,
+//     CDBSidebarFooter,
+//     CDBSidebarHeader,
+//     CDBSidebarMenu,
+//     CDBSidebarMenuItem
+// } from 'cdbreact';
 import { Nav, Container, Image, Row, Col } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as Scroll } from 'react-scroll';
@@ -14,73 +14,30 @@ import { Link as ScrollLink, animateScroll as Scroll } from 'react-scroll';
 const Sidebar = () => {
     
     return (
-        <div style={{height: '100%', overflow: 'scroll initial', position: 'fixed' }}>
-            <CDBSidebar textColor="#fff" backgroundColor="#222729">
-                <CDBSidebarHeader>
-                    <Container style={{ textAlign: 'center' }}>
-                        <Image src='/images/site_images/profile.png' width={50} height={50} border={0}></Image>
-                        <h3>Alexandra To</h3>
-                        <p>HCI Researcher</p>
-                    </Container>
-                </CDBSidebarHeader>
-                <CDBSidebarContent className="sidebar-content">
-                    <CDBSidebarMenu>
-                        <ScrollLink
-                            activeClass="active"
-                            to="/"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={250}
-                        >
-                            <CDBSidebarMenuItem icon="home">CV / Bio</CDBSidebarMenuItem>
-                        </ScrollLink>
-                        <ScrollLink
-                                activeClass="active"
-                                to="/research"
-                                spy={true}
-                                smooth={true}
-                                offset={0}
-                                duration={250}
-                        >
-                            <CDBSidebarMenuItem icon="user">Research</CDBSidebarMenuItem>
-                        </ScrollLink>
-                        <ScrollLink
-                            activeClass="active"
-                            to="/portfolio"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={250}
-                        >
-                            <CDBSidebarMenuItem icon="table">Research Projects</CDBSidebarMenuItem>
-                        </ScrollLink>
-                        <ScrollLink
-                                activeClass="active"
-                                to="/contact"
-                                spy={true}
-                                smooth={true}
-                                offset={0}
-                                duration={250}
-                        >
-                            <CDBSidebarMenuItem icon="envelope">Contact</CDBSidebarMenuItem>
-                        </ScrollLink>
-                    </CDBSidebarMenu>
-                </CDBSidebarContent>
-                <CDBSidebarFooter style={{ textAlign: 'center' }}>
-                    <Container className='py-3' style={{ display: 'flex', placeContent: 'space-evenly', width: '150px'}}>
-                    <span class='fa-stack fa-xs'>
-                        <a href="https://twitter.com/alexandra__to"><i class="fa-brands fa-twitter fa-lg" ></i></a>
-                    </span>
-                    <span class='fa-stack fa-xs'>
-                    <a href="mailto:a.to[at]northeastern.edu"><i class="fa-solid fa-envelope fa-lg" ></i></a>
-                    </span>
-                    <span class='fa-stack fa-xs'>
-                    <a href="https://scholar.google.com/citations?user=FB_pYfIAAAAJ&hl=en" textDecoration='none'><i class="fa-solid fa-graduation-cap fa-lg"></i></a>
-                    </span>
-                    </Container>
-                </CDBSidebarFooter>
-            </CDBSidebar>
+        <div id="header">
+            <div className="top">
+                <div id="logo">
+                    <span className="image avatar48"><Image src="/images/profile.png" alt="Alexandra To" /></span>
+                    <h1 id="title">Alexandra To</h1>
+                    <p>HCI Researcher</p>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#" id="top-link"><span className="icon solid fa-home">CV / Bio</span></a></li>
+                        <li><a href="#about" id="about-link"><span className="icon solid fa-user">Research</span></a></li>
+                        <li><a href="#portfolio" id="portfolio-link"><span className="icon solid fa-th">Research Projects</span></a></li>
+                        <li><a href="#contact" id="contact-link"><span className="icon solid fa-envelope">Contact</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div className="bottom">
+                <ul className="icons">
+                    <li><a href="https://twitter.com/alexandra__to" className="icon brands fa-twitter fa-2x"><span className="label">Twitter</span></a></li>
+                    <li><a href="mailto:a.to[at]northeastern.edu" className="icon solid fa-envelope fa-2x"><span className="label">Email</span></a></li>
+                    <li><a href="https://scholar.google.com/citations?user=FB_pYfIAAAAJ&hl=en" className="icon solid fa-graduation-cap fa-2x"><span className="label">Google Scholar</span></a></li>
+                </ul>
+            </div>
         </div>
     )
 }
