@@ -3,7 +3,7 @@ import { Container, Button } from 'react-bootstrap';
 
 const Research = () => {
     return (
-        <section id="about" className="three">
+        <section id="research" className="three">
             <Container>
                 <header>
                     <h2>Research Overview</h2>

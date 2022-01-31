@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 const Bio = () => {
     
     return (
-        <section id="top" className="one dark cover">
+        <section id="bio" className="one dark cover">
             <Container>
                 <header>
                     <h2>Alexandra To, PhD</h2>
