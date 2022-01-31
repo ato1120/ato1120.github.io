@@ -7,7 +7,7 @@ import React from 'react';
 //     CDBSidebarMenu,
 //     CDBSidebarMenuItem
 // } from 'cdbreact';
-import { Nav, Container, Image, Row, Col } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as Scroll } from 'react-scroll';
 
