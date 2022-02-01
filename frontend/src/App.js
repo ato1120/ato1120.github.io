@@ -8,6 +8,7 @@ import FlashTeams from './components/FlashTeams';
 import SCIPR from './components/SCIPR';
 import TTGD from './components/TTGD';
 import Home from './views/Home';
+import PageNotFound from './views/PageNotFound';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
               <Route path='/portfolio/characterdiversity' exact element={<CharacterDiversity />} />
               <Route path='/portfolio/flashteams' exact element={<FlashTeams />} />
               <Route path="/" exact element={<Home />} />
+              <Route path="*" element={<PageNotFound />} />
             </Routes>
           <Footer />
         </Router>
