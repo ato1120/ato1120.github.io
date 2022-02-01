@@ -1,11 +1,10 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 
 const Bio = () => {
     
     return (
         <section id="bio" className="one dark cover">
-            <Container>
+            <div className='container'>
                 <header>
                     <h2>Alexandra To, PhD</h2>
 
@@ -21,7 +20,7 @@ const Bio = () => {
                 <p>
                     She received her Ph.D. in Human-Computer Interaction from Carnegie Mellon University where she was advised by Dr. Jessica Hammer and Dr. Geoff Kaufman. Previously she received both an M.S. and B.S. in Symbolic Systems with a concentration in HCI and a minor in Asian American Studies at Stanford University, advised by Dr. Michael Bernstein. 
                 </p>
-            </Container>
+            </div>
         </section>
     )
 };

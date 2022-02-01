@@ -1,11 +1,10 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 
 const CRT = () => {
     return (
         <div id="main">
         <section className="project">
-            <Container>
+            <div className='container'>
                 <h2>Critical Race Theory for HCI</h2>
                 <br />
 
@@ -20,7 +19,7 @@ const CRT = () => {
                 </ol>
                 *These authors contributed equally
                 <p>Learn more and join our growing community of HCI researchers interested in race on Slack by visiting <a href="https://sites.google.com/view/raceinhci">raceinhci.com</a></p>
-            </Container>
+            </div>
         </section>
     </div>
     )

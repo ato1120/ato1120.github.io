@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
 const Sidebar = () => {
     const location = useLocation();
+    const [shown, setShown] = useState(true);
+
+    const showSidebar = () => {
+        setShown(true);
+    }
+
+    
+    // Determine whether sidebar is linking to sections on homepage or linking back to home from other page
     let isHomePage = false;
     if (location.pathname === '/') {
         isHomePage = true;

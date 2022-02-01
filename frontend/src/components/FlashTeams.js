@@ -1,15 +1,14 @@
 import React from 'react';
-import { Image, Container } from 'react-bootstrap';
 
 const FlashTeams = () => {
     return (
         <div id="main">
         <section className="project">
-            <Container>
+            <div className='container'>
                 <h2>Flash Teams and Organizations</h2>
                 <br />
 
-                <Image src="/images/flashteams.jpg" alt="A colorful gradient placeholder" />
+                <img src="/images/flashteams.jpg" alt="A colorful gradient placeholder" />
                 <h4>Project Abstract:</h4>
                 <p>
                     Flash teams are computationally-guided teams of crowd experts, supported by lightweight, reproducible, and scalable team structures. Crowdsourcing platforms give users access to thousands of workers, on-demand, but the most prevalent model, microtask crowd work, fails to take advantage of the combined expertise of these workers. Flash teams structure expert crowd work to enable users to complete complex and interdependent projects (e.g., web design) by embedding techniques of high performing offline teams within a model that can take advantage of computation’s ability to abstract, scale, and visualize progress. 
@@ -28,7 +27,7 @@ const FlashTeams = () => {
                 </ol>
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lcUQ3HDzKS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </Container>
+            </div>
         </section>
     </div>
     )
