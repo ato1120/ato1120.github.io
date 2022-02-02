@@ -1,4 +1,5 @@
 import React from 'react';
+import carePicture from '../images/careworkshop.jpg';
 
 
 const Care = () => {
@@ -9,7 +10,7 @@ const Care = () => {
                     <h2>Coping After Racist Experiences (CARE)</h2>
                     <br />
                     <h4>Project Abstract:</h4>
-                    <img src="/images/careworkshop.jpg" style={{ height: '250px', width: '250px' }} alt="Several hands place sticky notes on a table at a PD workshop" />
+                    <img src={ carePicture } style={{ height: '250px', width: '250px' }} alt="Several hands place sticky notes on a table at a PD workshop" />
                     <p>
                         Over 35% of Americans belong to racial minority groups. Pernicious, ubiquitous experiences with everday racism - both overt and subtle, profoundly impact physical, mental, and emotional well-being. While social support is one of the better documented coping strategies, people of color remain rightfully mistrustful and hesistant to utilize online social networks. In this work, I investigate how people of color use social technology to cope with the aftermath of interpersonal racism. I identify the current challenges in using social technology, and use participatory design approaches to examine speculative future technology design.
                     </p>

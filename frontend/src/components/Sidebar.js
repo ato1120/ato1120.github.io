@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
+import profilePicture from '../images/profile.png';
 
 const Sidebar = () => {
     const location = useLocation();
@@ -22,7 +23,7 @@ const Sidebar = () => {
         <div id="header">
             <div className="top">
                 <div id="logo">
-                    <span className="image avatar48"><img src="/images/profile.png" alt="Alexandra To" /></span>
+                    <span className="image avatar48"><img src={ profilePicture } alt="Alexandra To" /></span>
                     <h1 id="title">Alexandra To</h1>
                     <p>HCI Researcher</p>
                 </div>

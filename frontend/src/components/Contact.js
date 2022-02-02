@@ -19,8 +19,8 @@ const Contact = () => {
                     </p>
                 </Container>
                 <Container className='py-3'>
-                    <a href="https://twitter.com/alexandra__to" className="icon brands fa-twitter fa-2x" style={{ padding: '0 12px' }}><span className="label">Twitter</span></a>
-                    <a href="https://scholar.google.com/citations?user=FB_pYfIAAAAJ&hl=en" className="icon solid fa-graduation-cap fa-2x" style={{ padding: '0 12px' }}><span className="label">Google Scholar</span></a>
+                    <a href="https://twitter.com/alexandra__to" className="icon brands fa-twitter" style={{ padding: '0 5px' }}><span className="label">Twitter</span></a>
+                    <a href="https://scholar.google.com/citations?user=FB_pYfIAAAAJ&hl=en" className="icon solid fa-graduation-cap" style={{ padding: '0 5px' }}><span className="label">Google Scholar</span></a>
                 </Container>
 
                 <b>Email</b>: <a href="mailto:a.to[at]northeastern.edu" style={{textDecoration: 'none', color: 'black'}}>a.to&#64;northeastern.edu</a>

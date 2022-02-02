@@ -1,15 +1,15 @@
 import React from 'react';
-import { Container, Image } from 'react-bootstrap';
+import ned from '../images/ned.gif'
 
 const ErrorScreen = () => {
   return (
     <div id="main">
         <section className="project">
-            <Container>
+            <div className='container'>
                 <h2>404 Error</h2>
                 <h4 style={{ textAlign: 'center' }}>YOU DIDN'T SAY THE MAGIC WORD</h4>
-                <Image src="/images/ned.gif" style={{ float: 'none' }} />
-            </Container>
+                <img src={ ned } style={{ float: 'none' }} alt='Ned'/>
+            </div>
         </section>
     </div>
 )

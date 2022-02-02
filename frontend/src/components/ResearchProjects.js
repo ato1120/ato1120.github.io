@@ -1,5 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import carePicture from '../images/careworkshop.jpg';
+import crtPicture from '../images/pic02.jpg';
+import outbreak from '../images/oldoutbreak.png'
+import ttgdPicture from '../images/TTGD.png';
+import arkham from '../images/diversityarkham.jpg';
+import flashTeamsPicture from '../images/pic03.jpg';
 
 const ResearchProjects = () => {
     return (
@@ -12,7 +18,7 @@ const ResearchProjects = () => {
                     <div className="col-4 col-12-mobile">
                         <article className='item'>
                             <Link to={'/portfolio/care'} className="image fit" style={{ textDecoration: 'none', color: 'black' }}>
-                                <img src="images/careworkshop.jpg" alt="Several hands place sticky notes on a table at a PD workshop" />
+                                <img src={ carePicture } alt="Several hands place sticky notes on a table at a PD workshop" />
                                 <header>
                                     <h3>Coping After Racist Experiences (CARE)</h3>
                                 </header>
@@ -20,7 +26,7 @@ const ResearchProjects = () => {
                         </article>
                         <article className='item'>
                             <Link to={'/portfolio/crt'} className="image fit" style={{ textDecoration: 'none', color: 'black' }}>
-                                <img src="images/pic02.jpg" alt="A colorful gradient placeholder" />
+                                <img src={ crtPicture } alt="A colorful gradient placeholder" />
                                 <header>
                                     <h3>Critical Race Theory for HCI</h3>
                                 </header>
@@ -30,7 +36,7 @@ const ResearchProjects = () => {
                     <div className="col-4 col-12-mobile">
                         <article className='item'>
                             <Link to={'/portfolio/scipr'} className="image fit" style={{ textDecoration: 'none', color: 'black' }}>
-                                <img src="images/oldoutbreak.png" alt="A table with a four-person board game laid out" />
+                                <img src={ outbreak } alt="A table with a four-person board game laid out" />
                                 <header>
                                     <h3>Sensing Curiosity in Play and Responding (SCIPR)</h3>
                                 </header>
@@ -38,7 +44,7 @@ const ResearchProjects = () => {
                         </article>
                         <article className="item">
                             <Link to={'/portfolio/ttgd'} className="image fit" style={{ textDecoration: 'none', color: 'black' }}>
-                                <img src="images/TTGD.png" alt="An infinity-like diagram that demonstrates the game design process flow" />
+                                <img src={ ttgdPicture } alt="An infinity-like diagram that demonstrates the game design process flow" />
                                 <header>
                                     <h3>Tandem Transformational Game Design</h3>
                                 </header>
@@ -48,7 +54,7 @@ const ResearchProjects = () => {
                     <div className="col-4 col-12-mobile">
                         <article className="item">
                             <Link to={'/portfolio/characterdiversity'} className="image fit" style={{ textDecoration: 'none', color: 'black' }}>
-                                <img src="images/diversityarkham.jpg" alt="Many character images from the Arkham Horror game" />
+                                <img src={ arkham } alt="Many character images from the Arkham Horror game" />
                                 <header>
                                     <h3>Character Diversity for Digital and Non-Digital Games</h3>
                                 </header>
@@ -56,7 +62,7 @@ const ResearchProjects = () => {
                         </article>
                         <article className="item">
                             <Link to={'/portfolio/flashteams'} className="image fit" style={{ textDecoration: 'none', color: 'black' }}>
-                                <img src="images/pic03.jpg" alt="A colorful gradient placeholder" />
+                                <img src={ flashTeamsPicture } alt="A colorful gradient placeholder" />
                                 <header>
                                     <h3>Flash Teams &amp; Orgs</h3>
                                 </header>

@@ -1,4 +1,5 @@
 import React from 'react';
+import ttgdPicture from '../images/TTGD_Icons.png';
 
 const TTGD = () => {
     return (
@@ -8,7 +9,7 @@ const TTGD = () => {
                 <h2>Tandem Transformational Game Design</h2>
                 <br />
 
-                <img src="/images/TTGD_Icons.png" alt="An infinity-like diagram that demonstrates the game design process flow" />
+                <img src={ ttgdPicture } alt="An infinity-like diagram that demonstrates the game design process flow" />
                 <h4>Project Abstract:</h4>
                 <p>
                     In transformational game design, developing a clear, shared vision of how the player should change as a result of the game is a critical and ongoing process. However, multidisciplinary teams, particularly those comprised of both expert and novice designers and researchers, may experience barriers to a shared vision due to disparate vocabulary and theoretical frameworks. Tandem Transformational Game Design is a game design process framework. It encourages making to reflect and iterating on theory and related transformational goals in order to help align interdisciplinary team members and maximize their contributions. 

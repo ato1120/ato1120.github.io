@@ -1,4 +1,5 @@
 import React from 'react';
+import arkham from '../images/diversityarkham.jpg';
 
 const CharacterDiversity = () => {
     return (
@@ -8,7 +9,7 @@ const CharacterDiversity = () => {
                 <h2>Character Diversity for Digital and Non-Digital Games</h2>
                 <br />
 
-                <img src="/images/diversityarkham.jpg" alt="Many character images from the Arkham Horror game" />
+                <img src={ arkham } alt="Many character images from the Arkham Horror game" />
                 <h4>Project Abstract:</h4>
                 <p>
                     We explore how digital and non-digital games express diversity through characters, understood as representations of marginalized groups to which the player may or may not belong. We identify a range of techniques using visual design, abstract character representation, delineation of game setting and roles, conversation design, and the design of rules and systems. We illustrate these techniques with exemplar games identified through consultation with experts. This analysis yields four key recommendations for designing diversity across a range of game platforms: match diversity affordances to player needs; draw strengths from both the digital and non-digital realms; design for conversation; and consider player diversity. We conclude by proposing diversity as an end-to-end process in both game research and design.

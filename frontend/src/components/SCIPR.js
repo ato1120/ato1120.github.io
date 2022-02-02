@@ -1,4 +1,5 @@
 import React from 'react';
+import outbreak from '../images/outbreak.png';
 
 const SCIPR = () => {
     return (
@@ -8,7 +9,7 @@ const SCIPR = () => {
                 <h2>Sensing Curiosity in Play and Responding (SCIPR)</h2>
                 <br />
 
-                <img src="/images/outbreak.png" alt="A table with a four-person board game laid out" />
+                <img src={ outbreak }alt="A table with a four-person board game laid out" />
                 <h4>Project Abstract:</h4>
                 <p>
                     Women and underrepresented racial minority students are marginalized in STEM contexts. The anxiety and burden that come with marginalization first appear in adolescence and can contribute to long-term disengagement.  In the SCIPR project, we design transformational games for middle-school aged students who are marginalized in STEM. The games encourage and foster curiosity, as a type of STEM skill to increase comfort and competency in STEM spaces. 
