@@ -17,7 +17,7 @@ const CharacterDiversity = () => {
 
                 <h4>Key Publications:</h4>
                 <ol>
-                    <li>To, A., McDonald, J., Holmes, J., Kaufman, G., &amp; Hammer, J. (2018). <a href="http://todigra.org/index.php/todigra/article/download/84/135">Character Diversity in Digital and Non-Digital Games.</a> Transactions of the Digital Games Research Association, 4(1).</li>
+                    <li><strong>To, A.</strong>, McDonald, J., Holmes, J., Kaufman, G., &amp; Hammer, J. (2018). <a href="http://todigra.org/index.php/todigra/article/download/84/135">Character Diversity in Digital and Non-Digital Games.</a> Transactions of the Digital Games Research Association, 4(1).</li>
                 </ol>
             </div>
         </section>

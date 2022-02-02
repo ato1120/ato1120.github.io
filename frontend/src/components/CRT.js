@@ -15,7 +15,7 @@ const CRT = () => {
 
                 <h4>Key Publications:</h4>
                 <ol>
-                    <li>[Ogbonnaya-Ogburu, I. F., Smith, A. D., To, A.]*, &amp; Toyama, K. (2020, April). Critical Race Theory for HCI. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (pp. 1-16). Best Paper Award [top 1%]</li>
+                    <li>[Ogbonnaya-Ogburu, I. F., Smith, A. D., <strong>To, A.</strong>]*, &amp; Toyama, K. (2020, April). Critical Race Theory for HCI. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (pp. 1-16). Best Paper Award [top 1%]</li>
                 </ol>
                 *These authors contributed equally
                 <p>Learn more and join our growing community of HCI researchers interested in race on Slack by visiting <a href="https://sites.google.com/view/raceinhci">raceinhci.com</a></p>

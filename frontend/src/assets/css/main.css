@@ -155,7 +155,7 @@ input, select, textarea {
 	}
 
 	strong, b {
-		font-weight: 300;
+		font-weight: 500;
 		color: #666;
 	}
 
@@ -2248,7 +2248,7 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/boston.jpeg");
 			}
 
 			#main > section.two {

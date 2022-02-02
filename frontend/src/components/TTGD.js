@@ -17,8 +17,8 @@ const TTGD = () => {
 
                 <h4>Key Publications:</h4>
                 <ol>
-                    <li>Ali, S., To, A., Bai, Z., Holmes, J., Fath, E., Kaufman, G., Hammer, J. (2018). Transition from Goal Driven Game Design to Game Driven Goal Delineation in Tandem Transformational Game Design. In Proc. Meaningful Play 2018</li>
-                    <li>To, A., Fath, E., Zhang, E., Ali, S., Kildunne, C., Fan, A., &amp; Kaufman, G. (2016). Tandem Transformational Game Design: A Game Design Process Case Study. In Proceedings of the International Academic Conference on Meaningful Play.</li>
+                    <li>Ali, S., <strong>To, A.</strong>, Bai, Z., Holmes, J., Fath, E., Kaufman, G., Hammer, J. (2018). Transition from Goal Driven Game Design to Game Driven Goal Delineation in Tandem Transformational Game Design. In Proc. Meaningful Play 2018</li>
+                    <li><strong>To, A.</strong>, Fath, E., Zhang, E., Ali, S., Kildunne, C., Fan, A., &amp; Kaufman, G. (2016). Tandem Transformational Game Design: A Game Design Process Case Study. In Proceedings of the International Academic Conference on Meaningful Play.</li>
                 </ol>
                 <p><a href="http://tandemdesign.mystrikingly.com/">More on our website here.</a></p>
             </div>

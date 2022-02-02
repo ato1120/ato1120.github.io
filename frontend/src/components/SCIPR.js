@@ -20,9 +20,9 @@ const SCIPR = () => {
 
                 <h4>Key Publications:</h4>
                 <ol>
-                    <li>To, A., Holmes, J., Fath, E., Zhang, E., Kaufman, G., &amp; Hammer, J. (2018). Modeling and Designing for Key Elements of Curiosity: Risking Failure, Valuing Questions. Transactions of the Digital Games Research Association, 4(2).</li>
-                    <li>Holmes, J. R., To, A., Zhang, F., Park, S. E., Ali, S., Bai, Z., &amp; Hammer, J. (2019, May). A good scare: leveraging game theming and narrative to impact player experience. In Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems (pp. 1-6).</li>
-                    <li>To, A., Ali, S., Kaufman, G. F., &amp; Hammer, J. (2016). Integrating Curiosity and Uncertainty in Game Design. In Digra/fdg.</li>
+                    <li><strong>To, A.</strong>, Holmes, J., Fath, E., Zhang, E., Kaufman, G., &amp; Hammer, J. (2018). Modeling and Designing for Key Elements of Curiosity: Risking Failure, Valuing Questions. Transactions of the Digital Games Research Association, 4(2).</li>
+                    <li>Holmes, J. R., <strong>To, A.</strong>, Zhang, F., Park, S. E., Ali, S., Bai, Z., &amp; Hammer, J. (2019, May). A good scare: leveraging game theming and narrative to impact player experience. In Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems (pp. 1-6).</li>
+                    <li><strong>To, A.</strong>, Ali, S., Kaufman, G. F., &amp; Hammer, J. (2016). Integrating Curiosity and Uncertainty in Game Design. In Digra/fdg.</li>
                 </ol>
             </div>
         </section>

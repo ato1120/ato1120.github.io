@@ -17,8 +17,8 @@ const FlashTeams = () => {
 
                 <h4>Key Publications:</h4>
                 <ol>
-                    <li>Valentine, M. A., Retelny, D., To, A., Rahmati, N., Doshi, T., &amp; Bernstein, M. S. (2017, May). Flash organizations: Crowdsourcing complex work by structuring crowds as organizations. In Proceedings of the 2017 CHI conference on human factors in computing systems (pp. 3523-3537). BEST PAPER AWARD</li>
-                    <li>Retelny, D., Robaszkiewicz, S., To, A., Lasecki, W. S., Patel, J., Rahmati, N., &amp; Bernstein, M. S. (2014, October). Expert crowdsourcing with flash teams. In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 75-85). BEST PAPER AWARD</li>
+                    <li>Valentine, M. A., Retelny, D., <strong>To, A.</strong>, Rahmati, N., Doshi, T., &amp; Bernstein, M. S. (2017, May). Flash organizations: Crowdsourcing complex work by structuring crowds as organizations. In Proceedings of the 2017 CHI conference on human factors in computing systems (pp. 3523-3537). BEST PAPER AWARD</li>
+                    <li>Retelny, D., Robaszkiewicz, S., <strong>To, A.</strong>, Lasecki, W. S., Patel, J., Rahmati, N., &amp; Bernstein, M. S. (2014, October). Expert crowdsourcing with flash teams. In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 75-85). BEST PAPER AWARD</li>
                 </ol>
                 <h4>Media:</h4>
                 <ol>

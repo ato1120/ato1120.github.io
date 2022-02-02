@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import CV from '../documents/ATo_CV.pdf';
 
 const Bio = () => {
-    
+    // State for storing additional bio text
+    const [readMore, setReadMore] = useState(false);
+
+    const extraBio = 
+        <div className='container'>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur nequeab 
+                porro quasi culpa nulla rerum quis minus voluptatibus sed hic ad quo sint, libero 
+                commodi officia aliquam! Maxime.
+            </p>
+        </div>
+
+    const linkName= readMore ? 'Show Less' : 'Show More';
+
     return (
         <section id="bio" className="one dark cover">
             <div className='container'>
@@ -21,6 +34,8 @@ const Bio = () => {
                 <p>
                     She received her Ph.D. in Human-Computer Interaction from Carnegie Mellon University where she was advised by Dr. Jessica Hammer and Dr. Geoff Kaufman. Previously she received both an M.S. and B.S. in Symbolic Systems with a concentration in HCI and a minor in Asian American Studies at Stanford University, advised by Dr. Michael Bernstein. 
                 </p>
+                <a className='button scrolly' onClick={() => {setReadMore(!readMore)}}>{linkName}</a>
+                {readMore && extraBio}
             </div>
         </section>
     )

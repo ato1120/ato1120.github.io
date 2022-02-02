@@ -83,7 +83,7 @@ const Sidebar = () => {
 						<ul>
 							<li><Link to='/'><span className="icon solid fa-home">CV / Bio</span></Link></li>
 							<li><Link to='/'><span className="icon solid fa-user">Research</span></Link></li>
-							<li><Link to='/'><span className="icon solid fa-th">Research Projects</span></Link></li>
+							<li><Link to='/' className='active'><span className="icon solid fa-th">Research Projects</span></Link></li>
 							<li><Link to='/'><span className="icon solid fa-envelope">Contact</span></Link></li>
 						</ul>
                     }
