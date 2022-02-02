@@ -1,5 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import './assets/js/breakpoints.min';
+// import './assets/js/browser.min';
+// import './assets/js/jquery.min';
+// import './assets/js/jquery.scrollex.min';
+// import './assets/js/jquery.scrolly.min';
+// import './assets/js/main';
+// import './assets/js/util'; 
+import './assets/css/main.css';
+import './assets/css/fontawesome-all.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
