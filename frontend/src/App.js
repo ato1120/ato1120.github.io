@@ -11,7 +11,7 @@ import Home from './views/Home';
 import PageNotFound from './views/PageNotFound';
 
 const App = () => {
-  
+
   return (
     <>
         <Router>
