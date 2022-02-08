@@ -34,8 +34,8 @@ const Bio = () => {
                 <p>
                     She received her Ph.D. in Human-Computer Interaction from Carnegie Mellon University where she was advised by Dr. Jessica Hammer and Dr. Geoff Kaufman. Previously she received both an M.S. and B.S. in Symbolic Systems with a concentration in HCI and a minor in Asian American Studies at Stanford University, advised by Dr. Michael Bernstein. 
                 </p>
-                <a className='button scrolly' onClick={() => {setReadMore(!readMore)}}>{linkName}</a>
                 {readMore && extraBio}
+                <a className='button scrolly' onClick={() => {setReadMore(!readMore)}}>{linkName}</a>
             </div>
         </section>
     )
