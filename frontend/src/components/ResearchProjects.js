@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import projects from '../projects';
 import carePicture from '../images/careworkshop.jpg';
 import crtPicture from '../images/pic02.jpg';
 import outbreak from '../images/oldoutbreak.png'
@@ -15,7 +16,19 @@ const ResearchProjects = () => {
                     <h2>Selected Research Projects</h2>
                 </header>
                 <div className='row'>
-                    <div className="col-4 col-12-mobile">
+                {projects.map(project => (
+                    <div key={project.title} className="col-4 col-12-mobile">
+                        <article className='item'>
+                            <Link to={`/portfolio/${project.linkName}`} className="image fit" style={{ textDecoration: 'none', color: 'black' }}>
+                                <img src={ project.image } alt={project.imageDescription} />
+                                <header>
+                                    <h3>{ project.title }</h3>
+                                </header>
+                            </Link> 
+                        </article>
+                    </div>
+                ))}
+                    {/* <div className="col-4 col-12-mobile">
                         <article className='item'>
                             <Link to={'/portfolio/care'} className="image fit" style={{ textDecoration: 'none', color: 'black' }}>
                                 <img src={ carePicture } alt="Several hands place sticky notes on a table at a PD workshop" />
@@ -68,7 +81,7 @@ const ResearchProjects = () => {
                                 </header>
                             </Link>
                         </article>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
