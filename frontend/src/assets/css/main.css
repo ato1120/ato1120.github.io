@@ -2241,7 +2241,7 @@ input, select, textarea {
 					}
 
 			#main > section.cover {
-				padding: 10em 0;
+				padding: 20px, 0, 10em 0;
 				background-size: cover;
 				background-position: center center;
 			}
@@ -2304,7 +2304,7 @@ input, select, textarea {
 			}
 
 			#main section.cover {
-				padding: 5em 0;
+				padding: 3em 0;
 			}
 
 	}
@@ -2631,3 +2631,18 @@ input, select, textarea {
 				}
 
 	}
+
+/* Custom */
+.breadcrumb {
+		display: flex;
+		width: 100%;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		list-style-type: none;
+		font-size: small;
+		align-items: center;
+}
+
+.breadcrumb-item {
+	padding: 20px 10px 0px 10px;
+}

@@ -17,7 +17,7 @@ const projects = [
                 publicationLink: null
             },
             {
-                name: '"They Just Don&#39t Get It": Towards Social Technologies for Coping with Interpersonal Racism',
+                name: '"They Just Don\'t Get It": Towards Social Technologies for Coping with Interpersonal Racism',
                 authors: ['To, A.', 'Sweeney, W.', 'Hammer, J.', 'Kaufman, G.'],
                 authorNotes: null,
                 status: 'In Proc.',
@@ -60,7 +60,7 @@ const projects = [
     {
         linkName: 'crt',
         title: 'Critical Race Theory for HCI',
-        abstract: 'The human-computer interaction community has made some efforts toward racial diversity, but the outcomes remain meager. We introduce critical race theory and adapt it for HCI to lay a theoretical basis for race-conscious efforts, both in research and within our community. Building on the theory&#39s original tenets, we argue that racism is pervasive in everyday socio-technical systems; that the HCI community is prone to "interest convergence", where concessions to inclusion require benefits to those in power; and that the neoliberal underpinnings of the technology industry itself propagate racism. Critical race theory uses storytelling as a means to upend deep-seated assumptions, and we relate several personal stories to highlight ongoing problems of race in HCI. The implications: all HCI research must be attuned to issues of race; participation of underrepresented minorities must be sought in all of our activities; and as a community, we cannot become comfortable while racial disparities exist.',
+        abstract: 'The human-computer interaction community has made some efforts toward racial diversity, but the outcomes remain meager. We introduce critical race theory and adapt it for HCI to lay a theoretical basis for race-conscious efforts, both in research and within our community. Building on the theory\'s original tenets, we argue that racism is pervasive in everyday socio-technical systems; that the HCI community is prone to "interest convergence", where concessions to inclusion require benefits to those in power; and that the neoliberal underpinnings of the technology industry itself propagate racism. Critical race theory uses storytelling as a means to upend deep-seated assumptions, and we relate several personal stories to highlight ongoing problems of race in HCI. The implications: all HCI research must be attuned to issues of race; participation of underrepresented minorities must be sought in all of our activities; and as a community, we cannot become comfortable while racial disparities exist.',
         image: require('./images/pic02.jpg'),
         imageDescription: 'A colorful gradient placeholder',
         media: [
@@ -87,7 +87,7 @@ const projects = [
     {
         linkName: 'flashteams',
         title: 'Flash Teams and Organizations',
-        abstract: 'Flash teams are computationally-guided teams of crowd experts, supported by lightweight, reproducible, and scalable team structures. Crowdsourcing platforms give users access to thousands of workers, on-demand, but the most prevalent model, microtask crowd work, fails to take advantage of the combined expertise of these workers. Flash teams structure expert crowd work to enable users to complete complex and interdependent projects (e.g., web design) by embedding techniques of high performing offline teams within a model that can take advantage of computation&#39s ability to abstract, scale, and visualize progress.',
+        abstract: 'Flash teams are computationally-guided teams of crowd experts, supported by lightweight, reproducible, and scalable team structures. Crowdsourcing platforms give users access to thousands of workers, on-demand, but the most prevalent model, microtask crowd work, fails to take advantage of the combined expertise of these workers. Flash teams structure expert crowd work to enable users to complete complex and interdependent projects (e.g., web design) by embedding techniques of high performing offline teams within a model that can take advantage of computation\'s ability to abstract, scale, and visualize progress.',
         image: require('./images/flashteams.jpg'),
         imageDescription: 'A colorful gradient placeholder',
         media: [
@@ -105,7 +105,7 @@ const projects = [
             },
             {
                 mediaLink: 'https://news.stanford.edu/features/2014/symbolic-systems/',
-                mediaLinkTitle: 'Stanford&#39s Symbolic Systems program bridges the gap between humanity and technology.',
+                mediaLinkTitle: 'Stanford\'s Symbolic Systems program bridges the gap between humanity and technology.',
                 mediaLinkDescription: null,
                 mediaLinkInfo: 'Stanford News. August, 2014.'
             }
@@ -123,7 +123,7 @@ const projects = [
             {
                 name: 'Expert crowdsourcing with flash teams.',
                 authors: ['Retelny, D.', 'Robaszkiewicz, S.', 'To, A.', 'Lasecki, W. S.', 'Patel, J.', 'Rahmati, N.', 'Bernstein, M. S.'],
-                authorNotes: '*These authors contributed equally',
+                authorNotes: null,
                 status: null,
                 publicationDate: '(2014, October)',
                 publicationInfo: 'In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 75-85). BEST PAPER AWARD',
@@ -135,7 +135,7 @@ const projects = [
     {
         linkName: 'scipr',
         title: 'Sensing Curiosity in Play and Responding (SCIPR)',
-        abstract: 'Women and underrepresented racial minority students are marginalized in STEM contexts. The anxiety and burden that come with marginalization first appear in adolescence and can contribute to long-term disengagement.  In the SCIPR project, we design transformational games for middle-school aged students who are marginalized in STEM.&#13 The games encourage and foster curiosity, as a type of STEM skill to increase comfort and competency in STEM spaces. This project has contributions in game design methodology, playtesting methods for marginalized children, curiosity and uncertainty theory, and has produced award-winning games.',
+        abstract: 'Women and underrepresented racial minority students are marginalized in STEM contexts. The anxiety and burden that come with marginalization first appear in adolescence and can contribute to long-term disengagement.  In the SCIPR project, we design transformational games for middle-school aged students who are marginalized in STEM.\n\rThe games encourage and foster curiosity, as a type of STEM skill to increase comfort and competency in STEM spaces. This project has contributions in game design methodology, playtesting methods for marginalized children, curiosity and uncertainty theory, and has produced award-winning games.',
         image: require('./images/oldoutbreak.png'),
         imageDescription: 'A table with a four-person board game laid out',
         media: null,
