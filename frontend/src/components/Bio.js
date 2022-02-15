@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
 import CV from '../documents/ATo_CV.pdf';
 
 const Bio = () => {
@@ -43,7 +44,7 @@ const Bio = () => {
                     </>
                 )
             }
-            <p className='button scrolly' onClick={() => {setReadMore(!readMore)}}>{linkName}</p>
+            <Button href="#" onClick={() => {setReadMore(!readMore)}}>{linkName}</Button>
             </div>
         </section>
     )

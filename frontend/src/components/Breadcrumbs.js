@@ -9,7 +9,7 @@ const Breadcrumbs = () => {
     
     return (
         <Breadcrumb>
-            <BreadcrumbItem href='/'>
+            <BreadcrumbItem>
                 <Link to='/'>Home</Link>
             </BreadcrumbItem>
             <BreadcrumbItem>

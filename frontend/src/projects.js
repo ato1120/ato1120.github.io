@@ -9,7 +9,7 @@ const projects = [
         publications: [
             {
                 name: 'Interactive Narrative as a Foundation to Talk about Racism',
-                authors: ['Carey, H.', 'To, A.', 'Hammer, J.', 'Kaufman, G.'],
+                authors: 'Carey, H., To, A., Hammer, J., Kaufman, G.',
                 authorNotes: null,
                 status: 'In Proc.',
                 publicationDate: null,
@@ -18,7 +18,7 @@ const projects = [
             },
             {
                 name: '"They Just Don\'t Get It": Towards Social Technologies for Coping with Interpersonal Racism',
-                authors: ['To, A.', 'Sweeney, W.', 'Hammer, J.', 'Kaufman, G.'],
+                authors: 'To, A., Sweeney, W., Hammer, J., Kaufman, G.',
                 authorNotes: null,
                 status: 'In Proc.',
                 publicationDate: null,
@@ -27,7 +27,7 @@ const projects = [
             },
             {
                 name: '"Reducing Uncertainty and Offering Comfort: Designing Technology for Coping with Interpersonal Racism"',
-                authors: ['To, A.', 'Carey, H.', 'Kaufman, G.', 'Hammer, J.'],
+                authors: 'To, A., Carey, H., Kaufman, G., Hammer, J.',
                 authorNotes: null,
                 status: '[IN PRESS]',
                 publicationDate: null,
@@ -47,7 +47,7 @@ const projects = [
         publications: [
             {
                 name: 'Character Diversity in Digital and Non-Digital Games.',
-                authors: ['To, A.', 'McDonald, J.', 'Holmes, J.', 'Kaufman, G.', 'Hammer, J.'],
+                authors: 'To, A., McDonald, J., Holmes, J., Kaufman, G., Hammer, J.',
                 authorNotes: null,
                 status: null,
                 publicationDate: null,
@@ -74,7 +74,7 @@ const projects = [
         publications: [
             {
                 name: 'Critical Race Theory for HCI.',
-                authors: ['Ogbonnaya-Ogburu, I. F.', 'Smith, A. D.', 'To, A.*', 'Toyama, K.'],
+                authors: 'Ogbonnaya-Ogburu, I. F., Smith, A. D., To, A.*, Toyama, K.',
                 authorNotes: '*These authors contributed equally',
                 status: null,
                 publicationDate: '(2020, April)',
@@ -113,7 +113,7 @@ const projects = [
         publications: [
             {
                 name: 'Flash organizations: Crowdsourcing complex work by structuring crowds as organizations.',
-                authors: ['Valentine, M. A.', 'Retelny, D.', 'To, A.', 'Rahmati, N.', 'Doshi, T.', 'Bernstein, M. S.'],
+                authors: 'Valentine, M. A., Retelny, D., To, A., Rahmati, N., Doshi, T., Bernstein, M. S.',
                 authorNotes: null,
                 status: null,
                 publicationDate: '(2017, May)',
@@ -122,7 +122,7 @@ const projects = [
             },
             {
                 name: 'Expert crowdsourcing with flash teams.',
-                authors: ['Retelny, D.', 'Robaszkiewicz, S.', 'To, A.', 'Lasecki, W. S.', 'Patel, J.', 'Rahmati, N.', 'Bernstein, M. S.'],
+                authors: 'Retelny, D., Robaszkiewicz, S., To, A., Lasecki, W. S., Patel, J., Rahmati, N., Bernstein, M. S.',
                 authorNotes: null,
                 status: null,
                 publicationDate: '(2014, October)',
@@ -142,7 +142,7 @@ const projects = [
         publications: [
             {
                 name: 'Modeling and Designing for Key Elements of Curiosity: Risking Failure, Valuing Questions.',
-                authors: ['To, A.', 'Holmes, J.', 'Fath, E.', 'Zhang, E.', 'Kaufman, G.', 'Hammer, J.'],
+                authors: 'To, A., Holmes, J., Fath, E., Zhang, E., Kaufman, G., Hammer, J.',
                 authorNotes: null,
                 status: null,
                 publicationDate: '(2018)',
@@ -151,7 +151,7 @@ const projects = [
             },
             {
                 name: 'A good scare: leveraging game theming and narrative to impact player experience.',
-                authors: ['Holmes, J. R.', 'To, A.', 'Zhang, F.', 'Park, S. E.', 'Ali, S.', 'Bai, Z.', 'Hammer, J.'],
+                authors: 'Holmes, J. R., To, A., Zhang, F., Park, S. E., Ali, S., Bai, Z., Hammer, J.',
                 authorNotes: null,
                 status: null,
                 publicationDate: '(2019, May)',
@@ -178,7 +178,7 @@ const projects = [
         publications: [
             {
                 name: 'Transition from Goal Driven Game Design to Game Driven Goal Delineation in Tandem Transformational Game Design.',
-                authors: ['Ali, S.', 'To, A.', 'Bai, Z.', 'Holmes, J.', 'Fath, E.', 'Kaufman, G.', 'Hammer, J.'],
+                authors: 'Ali, S., To, A., Bai, Z., Holmes, J., Fath, E., Kaufman, G., Hammer, J.',
                 authorNotes: null,
                 status: null,
                 publicationDate: '(2018)',
@@ -187,7 +187,7 @@ const projects = [
             },
             {
                 name: 'Tandem Transformational Game Design: A Game Design Process Case Study.',
-                authors: ['To, A.', 'Fath, E.', 'Zhang, E.', 'Ali, S.', 'Kildunne, C.', 'FAn, A.', 'Kaufman, G.'],
+                authors: 'To, A., Fath, E., Zhang, E., Ali, S., Kildunne, C., Fan, A., Kaufman, G.',
                 authorNotes: null,
                 status: null,
                 publicationDate: '(2016)',
