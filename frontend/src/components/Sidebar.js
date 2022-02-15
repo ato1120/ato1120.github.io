@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { HomepageContext } from '../App';
 import { useMediaQuery } from 'react-responsive';
 import { Link, useLocation } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
@@ -6,6 +7,7 @@ import profilePicture from '../images/profile.png';
 
 const Sidebar = () => {
     const location = useLocation();
+    const { setHomepageLocation } = useContext(HomepageContext);
 
     // Check for different screen sizes to control sidebar hiding mechanism
     const isTabletOrMobile = useMediaQuery({ maxWidth: 960 });
@@ -65,8 +67,9 @@ const Sidebar = () => {
                                         smooth={true}
                                         offset={0}
                                         duration={200}
+                                        onClick={() => setHomepageLocation('bio')}
                                     >
-                                        <span className="icon solid fa-home">CV / Bio</span>
+                                        <span className="icon solid fa-home" >CV / Bio</span>
                                     </ScrollLink>
                                 </li>
                                 <li>
@@ -77,6 +80,7 @@ const Sidebar = () => {
                                         smooth={true}
                                         offset={0}
                                         duration={200}
+                                        onClick={() => setHomepageLocation('research')}
                                     >
                                         <span className="icon solid fa-user">Research</span>
                                     </ScrollLink>
@@ -89,6 +93,7 @@ const Sidebar = () => {
                                         smooth={true}
                                         offset={0}
                                         duration={200}
+                                        onClick={() => setHomepageLocation('portfolio')}
                                     >
                                         <span className="icon solid fa-th">Research Projects</span>
                                     </ScrollLink>
@@ -101,6 +106,7 @@ const Sidebar = () => {
                                         smooth={true}
                                         offset={0}
                                         duration={200}
+                                        onClick={() => setHomepageLocation('contact')}
                                     >
                                         <span className="icon solid fa-envelope">Contact</span>
                                     </ScrollLink>
@@ -108,10 +114,10 @@ const Sidebar = () => {
                             </ul>
                             :
                             <ul>
-                                <li><Link to='/'><span className="icon solid fa-home">CV / Bio</span></Link></li>
-                                <li><Link to='/'><span className="icon solid fa-user">Research</span></Link></li>
-                                <li><Link to='/' className='active'><span className="icon solid fa-th">Research Projects</span></Link></li>
-                                <li><Link to='/'><span className="icon solid fa-envelope">Contact</span></Link></li>
+                                <li><Link to='/' onClick={() => setHomepageLocation('bio')}><span className="icon solid fa-home">CV / Bio</span></Link></li>
+                                <li><Link to='/' onClick={() => setHomepageLocation('research')}><span className="icon solid fa-user">Research</span></Link></li>
+                                <li><Link to='/' className='active' onClick={() => setHomepageLocation('portfolio')}><span className="icon solid fa-th">Research Projects</span></Link></li>
+                                <li><Link to='/' onClick={() => setHomepageLocation('contact')}><span className="icon solid fa-envelope">Contact</span></Link></li>
                             </ul>
                         }
                     </nav>

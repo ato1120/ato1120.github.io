@@ -17,7 +17,7 @@ const Project = () => {
   return (
     <>
       <div id='main'>
-        <Breadcrumbs />
+        <Breadcrumbs projectTitle = {project.title}/>
         <section>
           <h2>{project.title}</h2>
           <div className='container'>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import { Button } from 'react-bootstrap';
 import CV from '../documents/ATo_CV.pdf';
 
@@ -9,16 +10,15 @@ const Bio = () => {
     const longBio = 
         <div className='container'>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur nequeab 
-                porro quasi culpa nulla rerum quis minus voluptatibus sed hic ad quo sint, libero 
-                commodi officia aliquam! Maxime.
+            Alexandra To is an Assistant Professor at Northeastern University jointly appointed in the Art + Design (Games) department in the College of Art, Media, and Design and the Khoury College of Computer Science. Her lab’s core research interests are in studying and designing games and other social technologies to empower people in marginalized contexts. She uses qualitative methods to  gather counterstories and participatory methods to design for the future. She additionally has extensive experience leading teams of educational game designers and has designed award-winning games. She has received multiple ACM Best Paper awards and published at CHI, UIST, CSCW, CHI Play, ToDiGRA, and DIS. Alexandra is a racial justice activist, a critical race scholar, game designer. She received her PhD in Human-Computer Interaction from Carnegie Mellon University as well as a B.S. and M.S. in Symbolic Systems with a minor in Asian American Studies from Stanford University. In her free time she both GM’s and plays TTRPGs. 
             </p>
         </div>
 
     const linkName= readMore ? 'Show Less' : 'Show More';
 
     return (
-        <section id="bio" className="one dark cover">
+        
+        <section id="bio" className="one dark cover" href='#bio'>
             <div className='container'>
                 <header>
                     <h2>Alexandra To, PhD</h2>
