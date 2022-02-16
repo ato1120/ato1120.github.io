@@ -14,7 +14,7 @@ const ResearchProjects = () => {
                     <div key={project.title} className="col-4 col-12-mobile">
                         <article className='item'>
                             <Link to={`/portfolio/${project.linkName}`} className="image fit" style={{ textDecoration: 'none', color: 'black' }}>
-                                <img src={ project.image } alt={project.imageDescription} />
+                                <img src={ project.thumbnailImage } alt={project.thumbnailImageDescription} />
                                 <header>
                                     <h3>{ project.title }</h3>
                                 </header>

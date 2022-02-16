@@ -1,8 +1,60 @@
+/*
+---------------------------- HOW TO USE THIS FILE -------------------------------
+    To add a new project to the site, copy the project object below and paste it at the end of the file.
+
+    PROJECT OBJECT TEMPLATE: 
+    - Fill this out with the content you wish to see for a given project page
+    - For any field that's empty, enter null
+
+    // The Project Object Template starts here
+    {
+        linkName: 'name', // This field is used by the webpage to ensure that it loads the correct project page and is what is seen in the URL 
+        title: 'Project Title', // This field is the title of the project and acts as the header on the individual project page
+        abstract: 'abstract text', // This field contains the project abstract language; type it out exactly as you'd like to see it on your site
+        thumbnailImage: require('./thumbnails/imageName.fileExtension'), // This field pulls the correct thumbnail image from the thumbnails folder; fill out the imageName and fileExtension based on the image you'd like to use
+        thumbnailImageDescription: 'description', // This field populates the alt text if the thumbnail fails to load
+        image: require('./images/imageName.fileExtension'), // This field pulls the project image for the individual project page from the images folder; fill out the imageName and fileExtension based on the image you'd like to use
+        imageDescription: 'description', // This field populates the alt text if the image fails to load on the project page
+        media: [ // The media section is for any links to external sites you'd like to include on an individual project page; if there's no media, delete this and enter null
+            {
+                mediaLink: 'URL', // Enter the URL of the media you'd like to link to here
+                mediaLinkTitle: 'link title', // This generates the text for the clickable link on the individual project page
+                mediaLinkDescription: 'description', // Use this for any lead-in text you'd like to include prior to the mediaLink
+                mediaLinkInfo: 'info', // Include any additional info text about the media here; this is usually used for citations
+            }
+        ],
+        publications: [ // The publications sections is for all of the work you've contributed to related to a given project; if there aren't any publications, delete this and enter null
+            {
+                name: 'title of publication', // This field contains the title of the publication
+                authors: 'list of authors', // This field contains the list of authors that contributed to the project
+                authorNotes: 'notes', // This field contains notes about the contributing authors
+                status: 'status', // This field indicates the publication status
+                publicationDate: 'date', // This field populates the publication date
+                publicationInfo: 'info', // This field contains publication info
+                publicationLink: 'URL', // This field will provide a link to the publication
+            },
+            // To add additional publications, copy the curly braces {} and everything in between
+        ],
+        videoLinks: ['URL',] // This will render video players for each link listed here; all links should be placed inside the brackets [], surrounded by quotes, and separated by a comma if there are multiple videos
+    },
+    // The Project Object Template ends here
+
+    HELPFUL JAVASCRIPT CHARACTERS
+    JavaScript doesn't recognize certain characters that often come up when writing, so I've included these here if you see any errors while you're typing things out:
+        - To use a (') in a JavaScript string, use '\'' (e.g. 'that\'s amore')
+        - To use a (") in a JavaScript string, use '\"' (e.g. 'I said, \"this is how you do it\"')
+        - To use a (\) in a JavaScript string, use '\\' (e.g. 'here's a backslash: \\')
+        - To create a new line in a JavaScript string, use '\n' (e.g. 'Have another paragraph \n Here's the next paragraph')
+
+*/
+
 const projects = [
     {
         linkName: 'care',
         title: 'Coping After Racist Experiences (CARE)',
         abstract: 'Over 35% of Americans belong to racial minority groups. Pernicious, ubiquitous experiences with everday racism - both overt and subtle, profoundly impact physical, mental, and emotional well-being. While social support is one of the better documented coping strategies, people of color remain rightfully mistrustful and hesistant to utilize online social networks. In this work, I investigate how people of color use social technology to cope with the aftermath of interpersonal racism. I identify the current challenges in using social technology, and use participatory design approaches to examine speculative future technology design.',
+        thumbnailImage: require('./images/careworkshop.jpg'),
+        thumbnailImageDescription: 'Several hands place sticky notes on a table at a PD workshop',
         image: require('./images/careworkshop.jpg'),
         imageDescription: 'Several hands place sticky notes on a table at a PD workshop',
         media: null,
@@ -41,6 +93,8 @@ const projects = [
         linkName: 'characterdiversity',
         title: 'Character Diversity for Digital and Non-Digital Games',
         abstract: 'We explore how digital and non-digital games express diversity through characters, understood as representations of marginalized groups to which the player may or may not belong. We identify a range of techniques using visual design, abstract character representation, delineation of game setting and roles, conversation design, and the design of rules and systems. We illustrate these techniques with exemplar games identified through consultation with experts. This analysis yields four key recommendations for designing diversity across a range of game platforms: match diversity affordances to player needs; draw strengths from both the digital and non-digital realms; design for conversation; and consider player diversity. We conclude by proposing diversity as an end-to-end process in both game research and design.',
+        thumbnailImage: require('./images/diversityarkham.jpg'),
+        thumbnailImageDescription: 'Many character images from the Arkham Horror game',
         image: require('./images/diversityarkham.jpg'),
         imageDescription: 'Many character images from the Arkham Horror game',
         media: null,
@@ -61,6 +115,8 @@ const projects = [
         linkName: 'crt',
         title: 'Critical Race Theory for HCI',
         abstract: 'The human-computer interaction community has made some efforts toward racial diversity, but the outcomes remain meager. We introduce critical race theory and adapt it for HCI to lay a theoretical basis for race-conscious efforts, both in research and within our community. Building on the theory\'s original tenets, we argue that racism is pervasive in everyday socio-technical systems; that the HCI community is prone to "interest convergence", where concessions to inclusion require benefits to those in power; and that the neoliberal underpinnings of the technology industry itself propagate racism. Critical race theory uses storytelling as a means to upend deep-seated assumptions, and we relate several personal stories to highlight ongoing problems of race in HCI. The implications: all HCI research must be attuned to issues of race; participation of underrepresented minorities must be sought in all of our activities; and as a community, we cannot become comfortable while racial disparities exist.',
+        thumbnailImage: require('./images/pic02.jpg'),
+        thumbnailImageDescription: 'A colorful gradient placeholder',
         image: require('./images/pic02.jpg'),
         imageDescription: 'A colorful gradient placeholder',
         media: [
@@ -88,6 +144,8 @@ const projects = [
         linkName: 'flashteams',
         title: 'Flash Teams and Organizations',
         abstract: 'Flash teams are computationally-guided teams of crowd experts, supported by lightweight, reproducible, and scalable team structures. Crowdsourcing platforms give users access to thousands of workers, on-demand, but the most prevalent model, microtask crowd work, fails to take advantage of the combined expertise of these workers. Flash teams structure expert crowd work to enable users to complete complex and interdependent projects (e.g., web design) by embedding techniques of high performing offline teams within a model that can take advantage of computation\'s ability to abstract, scale, and visualize progress.',
+        thumbnailImage: require('./images/flashteams.jpg'),
+        thumbnailImageDescription: 'A colorful gradient placeholder',
         image: require('./images/flashteams.jpg'),
         imageDescription: 'A colorful gradient placeholder',
         media: [
@@ -136,6 +194,8 @@ const projects = [
         linkName: 'scipr',
         title: 'Sensing Curiosity in Play and Responding (SCIPR)',
         abstract: 'Women and underrepresented racial minority students are marginalized in STEM contexts. The anxiety and burden that come with marginalization first appear in adolescence and can contribute to long-term disengagement.  In the SCIPR project, we design transformational games for middle-school aged students who are marginalized in STEM.\n\rThe games encourage and foster curiosity, as a type of STEM skill to increase comfort and competency in STEM spaces. This project has contributions in game design methodology, playtesting methods for marginalized children, curiosity and uncertainty theory, and has produced award-winning games.',
+        thumbnailImage: require('./images/oldoutbreak.png'),
+        thumbnailImageDescription: 'A table with a four-person board game laid out',
         image: require('./images/oldoutbreak.png'),
         imageDescription: 'A table with a four-person board game laid out',
         media: null,
@@ -165,6 +225,8 @@ const projects = [
         linkName: 'ttgd',
         title: 'Tandem Transformational Game Design',
         abstract: 'In transformational game design, developing a clear, shared vision of how the player should change as a result of the game is a critical and ongoing process. However, multidisciplinary teams, particularly those comprised of both expert and novice designers and researchers, may experience barriers to a shared vision due to disparate vocabulary and theoretical frameworks. Tandem Transformational Game Design is a game design process framework. It encourages making to reflect and iterating on theory and related transformational goals in order to help align interdisciplinary team members and maximize their contributions.',
+        thumbnailImage: require('./images/TTGD_Icons.png'),
+        thumbnailImageDescription: 'An infinity-like diagram that demonstrates the game design process flow',
         image: require('./images/TTGD_Icons.png'),
         imageDescription: 'An infinity-like diagram that demonstrates the game design process flow',
         media: [
@@ -197,6 +259,7 @@ const projects = [
         ],
         videoLinks: null
     },
+    // PASTE NEW PROJECT OBJECTS HERE
 
 ]
 
