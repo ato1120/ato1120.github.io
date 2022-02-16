@@ -2646,3 +2646,10 @@ input, select, textarea {
 .breadcrumb-item {
 	padding: 20px 10px 0px 10px;
 }
+
+#mobile-crumbs > ol {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	padding-top: 10px;
+}

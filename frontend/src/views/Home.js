@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { HomepageContext } from '../App';
 import { scroller } from 'react-scroll';
 import Bio from '../components/Bio';

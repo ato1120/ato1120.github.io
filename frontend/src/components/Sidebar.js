@@ -67,7 +67,6 @@ const Sidebar = () => {
                                         smooth={true}
                                         offset={0}
                                         duration={200}
-                                        onClick={() => setHomepageLocation('bio')}
                                     >
                                         <span className="icon solid fa-home" >CV / Bio</span>
                                     </ScrollLink>
@@ -80,7 +79,6 @@ const Sidebar = () => {
                                         smooth={true}
                                         offset={0}
                                         duration={200}
-                                        onClick={() => setHomepageLocation('research')}
                                     >
                                         <span className="icon solid fa-user">Research</span>
                                     </ScrollLink>
@@ -93,7 +91,6 @@ const Sidebar = () => {
                                         smooth={true}
                                         offset={0}
                                         duration={200}
-                                        onClick={() => setHomepageLocation('portfolio')}
                                     >
                                         <span className="icon solid fa-th">Research Projects</span>
                                     </ScrollLink>
@@ -106,7 +103,6 @@ const Sidebar = () => {
                                         smooth={true}
                                         offset={0}
                                         duration={200}
-                                        onClick={() => setHomepageLocation('contact')}
                                     >
                                         <span className="icon solid fa-envelope">Contact</span>
                                     </ScrollLink>
