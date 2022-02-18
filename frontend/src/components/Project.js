@@ -21,101 +21,95 @@ const Project = () => {
     <>
       {isTabletOrMobile ? (
           <div id='main'>
-          <section>
-            <Breadcrumbs projectTitle = {project.title}/>
-            <h2>{project.title}</h2>
-            <div className='container'>
-              <h4 style={{ textAlign: 'left' }}>Project Abstract:</h4>
-              <div className='row'>
-                <div className='col-6' style={{ textAlign: 'left' }}>
-                  <p>{project.abstract}</p>
+            <section className='project'>
+              <Breadcrumbs projectTitle = {project.title}/>
+              <div className='container'>
+                <h2>{project.title}</h2>
+                <br />
+                  <h4>Project Abstract:</h4>
+                <div className='container'>
+                    <img src={project.image} alt={project.imageDescription} />
+                    <p>{project.abstract}</p>
                 </div>
-                <div className='col-2'>
-                  <img src={project.image} alt={project.imageDescription} />
-                </div>
-              </div>
-              <div className='container' style={{ textAlign: 'left' }}>
-                <h4>Key Publications:</h4>
-                <ol>
-                  {project.publications.map(publication => (
-                    <li key={publication.name}>
-                      {publication.authors} {publication.publicationDate ? publication.publicationDate : null} <a href={publication.publicationLink ? publication.publicationLink : null}><i>{publication.name}</i></a>{publication.status ? publication.status : null} {publication.publicationInfo} {publication.authorNotes ? publication.authorNotes : null}
-                    </li>
-                  ))}
-                </ol>
-              </div>
-              {project.media &&
-                <div className='container' style={{ textAlign: 'left' }}>
-                  <h4>Media:</h4>
+                <div className='container'>
+                  <h4>Key Publications:</h4>
                   <ol>
-                    {project.media.map(media => (
-                      <li key={media.mediaLinkTitle}>
-                        <a href={media.mediaLink}>{media.mediaLinkTitle}</a> {media.mediaLinkInfo}
+                    {project.publications.map(publication => (
+                      <li key={publication.name}>
+                        {publication.authors} {publication.publicationDate ? publication.publicationDate : null} <a href={publication.publicationLink ? publication.publicationLink : null}><i>{publication.name}</i></a>{publication.status ? publication.status : null} {publication.publicationInfo} {publication.authorNotes ? publication.authorNotes : null}
                       </li>
                     ))}
                   </ol>
                 </div>
-              }
-              {project.videoLinks &&
-                <>
-                  {project.videoLinks.map(video => (
-                    <ReactPlayer
-                      key={video}
-                      url={video}
-                    />
-                  ))}
-                </>
-              }
-            </div>
-          </section>
-        </div>
+                {project.media &&
+                  <div className='container'>
+                    <h4>Media:</h4>
+                    <ol>
+                      {project.media.map(media => (
+                        <li key={media.mediaLinkTitle}>
+                          <a href={media.mediaLink}>{media.mediaLinkTitle}</a> {media.mediaLinkInfo}
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                }
+                {project.videoLinks &&
+                  <div className='container'>
+                    {project.videoLinks.map(video => (
+                      <ReactPlayer
+                        key={video}
+                        url={video}
+                      />
+                    ))}
+                  </div>
+                }
+              </div>
+            </section>
+          </div>
       ) : (
         <div id='main'>
           <Breadcrumbs projectTitle = {project.title}/>
-          <section>
-            <h2>{project.title}</h2>
+          <section className='project'>
             <div className='container'>
-              <h4 style={{ textAlign: 'left' }}>Project Abstract:</h4>
-              <div className='row'>
-                <div className='col-6' style={{ textAlign: 'left' }}>
-                  <p>{project.abstract}</p>
+              <h2>{project.title}</h2>
+              <br />
+                <h4>Project Abstract:</h4>
+                <div className='container'>
+                    <img src={project.image} alt={project.imageDescription} />
+                    <p>{project.abstract}</p>
                 </div>
-                <div className='col-2'>
-                  <img src={project.image} alt={project.imageDescription} />
-                </div>
-              </div>
-              <div className='container' style={{ textAlign: 'left' }}>
-                <h4>Key Publications:</h4>
-                <ol>
-                  {project.publications.map(publication => (
-                    <li key={publication.name}>
-                      {publication.authors} {publication.publicationDate ? publication.publicationDate : null} <a href={publication.publicationLink ? publication.publicationLink : null}><i>{publication.name}</i></a>{publication.status ? publication.status : null} {publication.publicationInfo} {publication.authorNotes ? publication.authorNotes : null}
-                    </li>
-                  ))}
-                </ol>
-              </div>
-              {project.media &&
-                <div className='container' style={{ textAlign: 'left' }}>
-                  <h4>Media:</h4>
+                <div className='container'>
+                  <h4>Key Publications:</h4>
                   <ol>
-                    {project.media.map(media => (
-                      <li key={media.mediaLinkTitle}>
-                        <a href={media.mediaLink}>{media.mediaLinkTitle}</a> {media.mediaLinkInfo}
+                    {project.publications.map(publication => (
+                      <li key={publication.name}>
+                        {publication.authors} {publication.publicationDate ? publication.publicationDate : null} <a href={publication.publicationLink ? publication.publicationLink : null}><i>{publication.name}</i></a>{publication.status ? publication.status : null} {publication.publicationInfo} {publication.authorNotes ? publication.authorNotes : null}
                       </li>
                     ))}
                   </ol>
                 </div>
-              }
-              {project.videoLinks &&
-                <>
-                  {project.videoLinks.map(video => (
-                    <ReactPlayer
-                      key={video}
-                      url={video}
-                    />
-                  ))}
-                </>
-              }
+                {project.media &&
+                  <div className='container'>
+                    <h4>Media:</h4>
+                    <ol>
+                      {project.media.map(media => (
+                        <li key={media.mediaLinkTitle}>
+                          <a href={media.mediaLink}>{media.mediaLinkTitle}</a> {media.mediaLinkInfo}
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                }
+                {project.videoLinks &&
+                  <div className='container'>
+                    {project.videoLinks.map(video => (
+                      <ReactPlayer
+                        key={video}
+                        url={video}
+                      />
+                    ))}
+                  </div>
+                }
             </div>
           </section>
         </div>

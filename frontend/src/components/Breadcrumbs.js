@@ -17,29 +17,29 @@ const Breadcrumbs = (props) => {
         <>
             {isTabletOrMobile ? (
                 <Breadcrumb id='mobile-crumbs'>
-                    <BreadcrumbItem>
+                    <BreadcrumbItem linkAs='p' >
                         <Link to='/' onClick={() => setHomepageLocation('portfolio')} >&lt; &lt;</Link>
                     </BreadcrumbItem>
-                    <BreadcrumbItem href='/portfolio' active={path === '/portfolio' ? true : false}>
+                    <BreadcrumbItem linkAs='p'>
                         Back to Research Projects
                     </BreadcrumbItem>
                 </Breadcrumb>
             ) :
             (
                 <Breadcrumb>
-                    <BreadcrumbItem>
-                        <Link to='/' onClick={() => setHomepageLocation('bio')}>Home</Link>
+                    <BreadcrumbItem linkAs='p'>
+                        <Link to='/' onClick={() => setHomepageLocation('cv')}>Home</Link>
                     </BreadcrumbItem>
-                    <BreadcrumbItem>
-                        <Link to='/' onClick={() => setHomepageLocation('bio')}>&lt; &lt;</Link>
+                    <BreadcrumbItem linkAs='p'>
+                        <Link to='/' onClick={() => setHomepageLocation('cv')}>&lt; &lt;</Link>
                     </BreadcrumbItem>
-                    <BreadcrumbItem>
+                    <BreadcrumbItem linkAs='p'>
                         <Link to='/' onClick={() => setHomepageLocation('portfolio')} >Research Projects</Link>
                     </BreadcrumbItem>
-                    <BreadcrumbItem>
+                    <BreadcrumbItem linkAs='p'>
                         <Link to='/' onClick={() => setHomepageLocation('portfolio')} >&lt; &lt;</Link>
                     </BreadcrumbItem>
-                    <BreadcrumbItem href='/portfolio' active={path === '/portfolio' ? true : false}>
+                    <BreadcrumbItem linkAs='p'>
                         {projectTitle}
                     </BreadcrumbItem>
                 </Breadcrumb>

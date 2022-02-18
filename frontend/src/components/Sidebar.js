@@ -62,13 +62,25 @@ const Sidebar = () => {
                                 <li>
                                     <ScrollLink
                                         activeClass='active'
+                                        to='cv'
+                                        spy={true}
+                                        smooth={true}
+                                        offset={0}
+                                        duration={200}
+                                    >
+                                        <span className="icon solid fa-home" >CV</span>
+                                    </ScrollLink>
+                                </li>
+                                <li>
+                                    <ScrollLink
+                                        activeClass='active'
                                         to='bio'
                                         spy={true}
                                         smooth={true}
                                         offset={0}
                                         duration={200}
                                     >
-                                        <span className="icon solid fa-home" >CV / Bio</span>
+                                        <span className="icon solid fa-address-card" >Bio</span>
                                     </ScrollLink>
                                 </li>
                                 <li>
@@ -80,7 +92,7 @@ const Sidebar = () => {
                                         offset={0}
                                         duration={200}
                                     >
-                                        <span className="icon solid fa-user">Research</span>
+                                        <span className="icon solid fa-microscope">Research</span>
                                     </ScrollLink>
                                 </li>
                                 <li>
@@ -110,8 +122,9 @@ const Sidebar = () => {
                             </ul>
                             :
                             <ul>
-                                <li><Link to='/' onClick={() => setHomepageLocation('bio')}><span className="icon solid fa-home">CV / Bio</span></Link></li>
-                                <li><Link to='/' onClick={() => setHomepageLocation('research')}><span className="icon solid fa-user">Research</span></Link></li>
+                                <li><Link to='/' onClick={() => setHomepageLocation('cv')}><span className="icon solid fa-home">CV</span></Link></li>
+                                <li><Link to='/' onClick={() => setHomepageLocation('bio')}><span className="icon solid fa-address-card">Bio</span></Link></li>
+                                <li><Link to='/' onClick={() => setHomepageLocation('research')}><span className="icon solid fa-microscope">Research</span></Link></li>
                                 <li><Link to='/' className='active' onClick={() => setHomepageLocation('portfolio')}><span className="icon solid fa-th">Research Projects</span></Link></li>
                                 <li><Link to='/' onClick={() => setHomepageLocation('contact')}><span className="icon solid fa-envelope">Contact</span></Link></li>
                             </ul>

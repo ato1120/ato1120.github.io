@@ -1750,7 +1750,8 @@ input, select, textarea {
 	}
 
 		.image img {
-			display: block;
+			display: flex;
+			height: 175px;
 			width: 100%;
 		}
 
@@ -1986,9 +1987,13 @@ input, select, textarea {
 
 		.item header {
 			background: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
+			height: 85.31px;
 		}
 
 			.item header h3 {
@@ -2601,6 +2606,14 @@ input, select, textarea {
 				width: 2em;
 				font-size: 1.25em;
 			}
+		
+			/* Image */
+
+			.image img {
+				display: flex;
+				height: 330%;
+				width: 100%;
+			}
 
 		/* Main */
 
@@ -2652,4 +2665,15 @@ input, select, textarea {
 	width: 100%;
 	justify-content: flex-start;
 	padding-top: 10px;
+}
+
+section.project p, section.project h4, section.project li {
+	text-align: left;
+}	
+
+section.project img {
+	max-width: 50%;
+	float: right;
+	margin: 5px;
+	margin-top: 10px;
 }
