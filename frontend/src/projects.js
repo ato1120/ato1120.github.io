@@ -194,9 +194,9 @@ const projects = [
         linkName: 'scipr',
         title: 'Sensing Curiosity in Play and Responding (SCIPR)',
         abstract: 'Women and underrepresented racial minority students are marginalized in STEM contexts. The anxiety and burden that come with marginalization first appear in adolescence and can contribute to long-term disengagement.  In the SCIPR project, we design transformational games for middle-school aged students who are marginalized in STEM.\n\rThe games encourage and foster curiosity, as a type of STEM skill to increase comfort and competency in STEM spaces. This project has contributions in game design methodology, playtesting methods for marginalized children, curiosity and uncertainty theory, and has produced award-winning games.',
-        thumbnailImage: require('./thumbnails/oldoutbreak.png'),
+        thumbnailImage: require('./thumbnails/outbreak.png'),
         thumbnailImageDescription: 'A table with a four-person board game laid out',
-        image: require('./images/oldoutbreak.png'),
+        image: require('./images/outbreak.png'),
         imageDescription: 'A table with a four-person board game laid out',
         media: null,
         publications: [
@@ -216,6 +216,15 @@ const projects = [
                 status: null,
                 publicationDate: '(2019, May)',
                 publicationInfo: 'In Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems (pp. 1-6).',
+                publicationLink: null
+            },
+            {
+                name: 'Integrating Curiosity and Uncertainty in Game Design.',
+                authors: 'To, A., Ali, S., Kaufman G.F., & Hammer, J.',
+                authorNotes: null,
+                status: null,
+                publicationDate: '(2016)',
+                publicationInfo: 'In Digra/fdg.',
                 publicationLink: null
             }
         ],

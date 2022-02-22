@@ -2270,7 +2270,7 @@ input, select, textarea {
 
 /* Wide */
 
-	@media screen and (min-width: 961px) and (max-width: 1880px) {
+	@media screen and (min-width: 961px) and (max-width: 2000px) {
 
 		/* Basic */
 
@@ -2294,6 +2294,14 @@ input, select, textarea {
 
 			#main {
 				margin-left: 300px;
+			}
+
+		/* Image */
+			.image img{
+				display: flex;
+				height: 300px;
+				object-fit: cover;
+				width: 100%;
 			}
 
 	}
@@ -2577,6 +2585,15 @@ input, select, textarea {
 				#main section.cover {
 					padding: 4em 0;
 				}
+
+		/* Image */
+		
+			.image img{
+				display: flex;
+				height: 200px;
+				object-fit: cover;
+				width: 100%;
+			}
 
 	}
 
