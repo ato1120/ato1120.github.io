@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import React from 'react';
 import CV from '../documents/ATo_CV.pdf';
 
 const Banner = () => {

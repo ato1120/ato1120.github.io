@@ -7,7 +7,6 @@ import { HomepageContext } from '../App';
 const Breadcrumbs = (props) => {
     // Get the active page from the URL
     const location = useLocation();
-    const path = location.pathname.slice(0, 10);
     const projectTitle  = props.projectTitle;
     const isTabletOrMobile = useMediaQuery({ maxWidth: 960 });
 
