@@ -9,7 +9,7 @@ import PageNotFound from './views/PageNotFound';
 export const HomepageContext = createContext();
 
 const App = () => {
-  const [homepageLocation, setHomepageLocation] = useState('bio')
+  const [homepageLocation, setHomepageLocation] = useState('cv')
   const value = useMemo(() => ({ 
     homepageLocation, 
     setHomepageLocation }
