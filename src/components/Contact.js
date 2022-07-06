@@ -12,10 +12,16 @@ const Contact = () => {
                 <Container>
                     <h3>Prospective Students</h3>
                     <p>
-                        I'm happy to speak with PhD students looking for an advisor or co-advisor in CAMD (e.g., <a href="http://catalog.northeastern.edu/graduate/arts-media-design/interdisciplinary-programs/interdisciplinary-design-media-phd/">Interdisciplinary Design and Media PhD</a>) or Khoury (e.g., <a href="https://www.khoury.northeastern.edu/programs/computer-science-phd/">Computer Science PhD</a>). In an email to me, please include your interests, program, CV, and why you think we might be a good fit.
+                        <b>As of AY 2022-2023 I am not taking new PhD students.</b> 
+                        Typically I can advise or co-advise PhDs in CAMD 
+                        (e.g., <a href="http://catalog.northeastern.edu/graduate/arts-media-design/interdisciplinary-programs/interdisciplinary-design-media-phd/">Interdisciplinary Design and Media PhD</a>) 
+                        or Khoury (e.g., <a href="https://www.khoury.northeastern.edu/programs/computer-science-phd/">Computer Science PhD</a>).
                     </p>
                     <p>
-                        Undergraduate and Masters students who have already been admitted to Northeastern and are interested in studying human-computer interaction and critical race theory or who are interested in designing or developing games or social technologies are welcome to contact me. Include your interests, degree or major, and resume or CV.
+                        Undergraduate and Masters students who have already been admitted to Northeastern 
+                        and are interested in studying human-computer interaction and critical race theory 
+                        or who are interested in designing or developing games or social technologies are 
+                        welcome to contact me. Include your interests, degree or major, and resume or CV.
                     </p>
                 </Container>
                 <Container className='py-3'>

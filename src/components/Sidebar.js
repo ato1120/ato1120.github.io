@@ -1,3 +1,8 @@
+/*
+Rendering the sidebar with pieces that highlight 
+*/
+
+
 import React, { useEffect, useState, useContext } from 'react';
 import { HomepageContext } from '../App';
 import { useMediaQuery } from 'react-responsive';

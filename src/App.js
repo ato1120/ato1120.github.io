@@ -1,3 +1,9 @@
+/*
+Structure of the React App
+Permanent components of the website (e.g., main page, sidebar, etc.)
+I have project pages, home page, and page not found (kept in views)
+*/
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { createContext, useState, useMemo, useEffect } from 'react';
 import Sidebar from './components/Sidebar';
@@ -21,9 +27,10 @@ const App = () => {
     window.scrollTo(0, 0)
   }, [])
 
+  //React uses return to render on screen 
   return (
     <>
-      <Router>
+      <Router> 
         <HomepageContext.Provider value={value}>
           <Sidebar />
           <Routes>

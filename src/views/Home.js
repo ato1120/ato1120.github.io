@@ -1,3 +1,8 @@
+/*
+All the structure of the main home page 
+SEE components folder for the content of each component
+*/
+
 import React, { useEffect, useContext } from 'react';
 import { HomepageContext } from '../App';
 import { scroller } from 'react-scroll';
