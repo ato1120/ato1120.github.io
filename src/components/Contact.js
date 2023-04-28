@@ -8,11 +8,11 @@ const Contact = () => {
                 <header>
                     <h2>Contact</h2>
                 </header>
-                <p>Get in touch with me to chat about research collaboration, speaking engagements, or to learn more about my work!</p>
+                <p>Get in touch with me to chat about research collaboration, speaking engagements, consulting, or to learn more about my work!</p>
                 <Container>
                     <h3>Prospective Students</h3>
                     <p>
-                        <b>As of AY 2022-2023 I am not taking new PhD students.</b> 
+                        <b>As of AY 2022-2023 I am not taking new PhD students. </b> 
                         Typically I can advise or co-advise PhDs in CAMD 
                         (e.g., <a href="http://catalog.northeastern.edu/graduate/arts-media-design/interdisciplinary-programs/interdisciplinary-design-media-phd/">Interdisciplinary Design and Media PhD</a>) 
                         or Khoury (e.g., <a href="https://www.khoury.northeastern.edu/programs/computer-science-phd/">Computer Science PhD</a>).
@@ -29,7 +29,7 @@ const Contact = () => {
                     <a href="https://scholar.google.com/citations?user=FB_pYfIAAAAJ&hl=en" className="icon solid fa-graduation-cap" style={{ padding: '0 5px' }}><span className="label">Google Scholar</span></a>
                 </Container>
 
-                <b>Email</b>: <a href="mailto:a.to[at]northeastern.edu" style={{textDecoration: 'none', color: 'black'}}>a.to&#64;northeastern.edu</a>
+                <b>Email</b>: <a href="mailto:a.to[at]northeastern.edu" style={{textDecoration: 'none', color: 'black'}}>a.to[at]northeastern.edu</a>
             </Container>
         </section>
     );

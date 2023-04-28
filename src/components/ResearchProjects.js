@@ -8,6 +8,7 @@ const ResearchProjects = () => {
             <div className='container'>
                 <header>
                     <h2>Selected Research Projects</h2>
+                    *Last Updated 2020
                 </header>
                 <div className='row'>
                 {projects.map(project => (
