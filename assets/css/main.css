@@ -2252,7 +2252,8 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/pgh.png");
+				background-image: url("../../images/alma-mater.avif");
+				
 			}
 
 			#main > section.two {
@@ -2649,3 +2650,138 @@ section.project img {
 				}
 
 	}
+
+	/* Timeline Layout */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    margin: 2em 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2em;
+    padding-left: 20px;
+}
+
+.timeline-date {
+    font-size: 0.9em;
+    color: #df4141;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.timeline-content {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.timeline-content h3 a {
+    color: #0078d7;
+    text-decoration: none;
+}
+
+.timeline-content h3 a:hover {
+    text-decoration: underline;
+}
+
+.timeline-content p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* Timeline Item Background Images */
+.timeline-item {
+    position: relative;
+    margin-bottom: 2em;
+    padding-left: 20px;
+    background-size: cover; /* Ensure the image covers the area */
+    background-position: center; /* Center the image */
+    border-radius: 10px; /* Rounded corners for the card */
+    overflow: hidden; /* Prevent content from overflowing */
+    min-height: 200px; /* Ensure a consistent card height */
+    color: #fff; /* Make text color white for contrast */
+}
+
+/* Semi-transparent overlay for better readability */
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text contrast */
+    z-index: 1;
+}
+
+.timeline-content {
+    position: relative;
+    z-index: 2; /* Ensure content appears above the overlay */
+    background: none; /* Remove default background */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.timeline-content h3 a {
+    color: #ff9; /* White text for contrast */
+}
+
+.timeline-content p {
+    color: #f0f0f0; /* Light grey for paragraph text */
+}
+
+/* Specific Background Images for Each Experience */
+.timeline-polxr {
+    background-image: url('./images/ie/cgui.png'); 
+}
+
+.timeline-community-ar {
+    background-image: url('./images/ie/ceal.png'); 
+}
+
+.timeline-nomadfi {
+	background-image: url('./images/ie/cbl.png'); 
+}
+
+.timeline-shure {
+	background-image: url('./images/ie/shure.png'); 
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 960px) {
+    .timeline-item {
+        padding-left: 15px;
+        min-height: 150px; /* Adjust height for smaller screens */
+    }
+    .timeline-content {
+        font-size: 0.9em; /* Smaller font size */
+    }
+}
+
+
+
+
+/* Responsive Adjustments */
+@media screen and (max-width: 960px) {
+    .timeline::before {
+        left: 5px;
+    }
+    .timeline-item {
+        padding-left: 15px;
+    }
+}
